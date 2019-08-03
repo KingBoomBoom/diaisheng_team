@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="diaiisheng-dataplatform:diaisheng exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/diaiisheng_dataplatform_diaisheng_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="diaiisheng-dataplatform/web/diaisheng" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="diaiisheng-dataplatform" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

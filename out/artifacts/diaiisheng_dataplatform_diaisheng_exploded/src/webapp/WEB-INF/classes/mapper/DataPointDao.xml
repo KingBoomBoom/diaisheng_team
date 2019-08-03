@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qdu.diaisheng.dao.DataPointDao">
+    <insert id="insertDataPoint" parameterType="com.qdu.diaisheng.entity.DataPoint" keyProperty="pointId" keyColumn="point_id">
+        insert into data_point(data_point_id,data_model_id,data_point_name,
+         data_point_register,data_type,power,data_unit,var_desc,data_formual,
+         data_reverse_formual,data_value_type,create_time)
+        values (#{dataPointId},#{dataModel.dataModelId},#{dataPointName},
+                #{dataPointRegister},#{dataType},#{power},#{dataPointUnit},
+                #{varDesc},#{dataFormual},#{dataReverseFormual},#{dataValueType},
+                #{createTime});
+    </insert>
+
+    <select id="queryDataPointListByDataModel" parameterType="Integer" resultType="com.qdu.diaisheng.entity.DataPoint">
+        select data_point_id,data_point_name, data_point_register,data_type,power,last_edit_time from data_point where data_model_id=#{dataModelId};
+    </select>
+    <select id="getPointNameByPointId" resultType="String">
+        select data_point_name from data_point where data_point_id=#{dataPointId}
+    </select>
+
+</mapper>
