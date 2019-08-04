@@ -14,7 +14,11 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+/**
+ * @Autor wangxi
+ * @Description 数据模板controller
+ * @Date 2019/7/22
+ */
 @Controller
 @RequestMapping("/modeladmin")
 public class DataModelManagementController {
@@ -23,7 +27,15 @@ public class DataModelManagementController {
     private DataModelService dataModelService;
 
 
-
+    /**
+     * @author wangxi
+     * @Description 根据数据id获取数据模板 通过前端的数据id调取Serviece层的方法从数据库获取数据，然后
+     * 通过modelMap返回数据
+     * @date  2019/7/23
+     * @return Map
+     * @throws
+     * @since
+     */
     @RequestMapping(value = "/getdatamodel",method = RequestMethod.POST)
     @ResponseBody
     public Map<String,Object> getDataModel(HttpServletRequest request){

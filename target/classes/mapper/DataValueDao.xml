@@ -41,21 +41,16 @@
         and data_point_id=#{dataPointId};
     </select>
 
-  <select id="exportDataValue">
-
-      select*from
-      (select 'data_point', 'time', 'val'  union all
-      select data_point_id,create_time,val from data_value
-      where data_point_id=#{pointId} and create_time between #{startDate} and #{endDate})a  into outfile 'tmp.csv' fields terminated by ",";
 
 
-  </select>
+    <!-- 根据dataPoint查询最新的数据   -->
+    <!--mysql中建立了（data_point_id,create_time）的复合索引-->
 
-    <select id="getnowdate" parameterType="String" resultMap="dataValueMap" >
+    <select id="getnowdate" resultMap="dataValueMap" >
 
-         select*from data_value where  data_point_id =#{dataPointId} order by create_time desc limit 0,1;
-
-
+        <foreach collection="dataPointIds" item="dataPointId"  separator="union all" close="">
+            ( select*from data_value where data_point_id=#{dataPointId} order by create_time desc limit 0,1)
+        </foreach>
 
     </select>
 

@@ -1,6 +1,11 @@
 package com.qdu.diaisheng.controller;
 
-
+/**
+ * @Autor wangxi
+ * @Description 数据点controller
+ * @Date 2019/7/22
+ *
+ */
 import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.qdu.diaisheng.DataValueEnum;
 import com.qdu.diaisheng.dto.DataValueExecution;
@@ -59,6 +64,15 @@ public class DataValueManagementController {
 
 
 
+    /**
+     * @author wangxi
+     * @Description
+     * @date  2017/7/20
+     * @Description 获取最新的数据，然后返回给前端
+     * @return Map
+     * @throws
+     * @since
+     */
     @RequestMapping(value = "/getdata",method = RequestMethod.POST)
     @ResponseBody
     public Map<String,Object>getData(){
@@ -75,7 +89,41 @@ public class DataValueManagementController {
 
     }
 
+    /**
+     * @author wangxi
+     * @Description
+     * @date  2017/7/20
+     * @Description 前端主动获取数据，前端输入数据点id，返回该数据点的最新数据
+     * @return Map
+     * @throws
+     * @since
+     */
+    @RequestMapping(value = "/getdatabypoint",method = RequestMethod.POST)
+    @ResponseBody
+    public Map<String,Object>getDataByPoint(String x){
+        Map<String,Object>modelMap=new HashMap<>();
+        DataValueExecution dve=dataValueService.getDataValueByDataPoint(x);
+        if(dve.getState()==DataValueEnum.SUCCESS.getState()){
+            modelMap.put("data",dve.getDataValue());
+            modelMap.put("success",true);
+        }else{
+            modelMap.put("success",false);
+        }
+        return modelMap;
+    }
 
+
+
+
+    /**
+     * @author wangxi
+     * @Description
+     * @date  2017/7/20
+     * @Description 获取前端的数据id,开始时间，结束时间，然后返回某一数据点在某一时间段的数据
+     * @return Map
+     * @throws
+     * @since
+     */
     @RequestMapping(value = "/getdatabetweendate",method = RequestMethod.POST)
     @ResponseBody
     public Map<String,Object> getDataValueBetweenDate(String[] data,String stime,String etime){
@@ -102,48 +150,15 @@ public class DataValueManagementController {
     }
 
 
-
-
-
-    @RequestMapping(value = "/exportdate")
-    @ResponseBody
-    public Map<String,Object> exportDate(HttpServletRequest request) {
-        Map<String, Object> modelMap = new HashMap<String, Object>();
-        String dataPointId = HttpServletUtil.getString(request, "dataPointId");
-        String startDate = HttpServletUtil.getString(request, "startDate");
-        String endDate = HttpServletUtil.getString(request, "endDate");
-        try{
-            dataValueService.exportDateValue(dataPointId,startDate,endDate);
-        }catch (Exception e){
-            throw new RuntimeException("导出数据出错");
-        }
-        modelMap.put("success",true);
-        return modelMap;
-    }
-
-    /*
-    @RequestMapping(value = "/getnowdatavalue")
-    @ResponseBody
-    public Map<String,Object> getDataValue(HttpServletRequest request){
-
-        String date=HttpServletUtil.getString(request,"date");
-        String pointId=HttpServletUtil.getString(request,"pointId");
-        Map<String,Object> modelMap=new HashMap<String, Object>();
-        DataValueExecution dve= dataValueService.getnowdate(date,pointId);
-        if(dve.getState()== DataValueEnum.SUCCESS.getState()){
-            modelMap.put("success",true);
-            modelMap.put("dataValue",dve.getDataValueList());
-        }else{
-            modelMap.put("success",false);
-            modelMap.put("errMsg",dve.getStateInfo());
-        }
-        return modelMap;
-
-    }
-
-*/
-
-
+    /**
+     * @author wangxi
+     * @Description
+     * @date  2017/7/20
+     * @Description 下载数据 获取前端的数据id,开始时间，结束时间，然后返回某一数据点在某一时间段的数据
+     * @return Map
+     * @throws
+     * @since
+     */
         @RequestMapping(value = "/downLoadExcel",method =RequestMethod.GET)
         public void downLoadExcel(String[] data,String stime,String etime, HttpServletResponse response) throws IOException{
 

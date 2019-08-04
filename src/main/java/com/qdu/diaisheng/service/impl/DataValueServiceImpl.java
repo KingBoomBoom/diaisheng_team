@@ -81,11 +81,16 @@ public class DataValueServiceImpl implements DataValueService {
         List<DataValue>dataValueList=new ArrayList<>();
         DataValueExecution dve=new DataValueExecution();
         List<DataPoint> dataPointList=dataPointDao.getDataPointbyDevice(deviceId);
+        List<String>ds=new ArrayList<>();
         if(dataPointList!=null){
             for(DataPoint dataPoint:dataPointList){
-                dataValueList.add(dataValueDao.getnowdate(dataPoint.getDataPointId()));
+                ds.add(dataPoint.getDataPointId());
             }
-        }else{
+            dataValueList=dataValueDao.getnowdate(ds);
+
+        }
+
+        else{
             dve.setState(DataValueEnum.EMPTY.getState());
 
         }
@@ -98,7 +103,6 @@ public class DataValueServiceImpl implements DataValueService {
 
         }
         return dve;
-
     }
 
     /**
@@ -140,9 +144,24 @@ public class DataValueServiceImpl implements DataValueService {
         return dve;
     }
 
+
+
     @Override
-    public void exportDateValue(String pointId, String startDate, String endDate) {
-        dataValueDao.exportDataValue(pointId,startDate,endDate);
+    public DataValueExecution getDataValueByDataPoint(String dataPointId) {
+        DataValueExecution dve=new DataValueExecution();
+
+        if(dataPointId!=null){
+            DataValue dataValue=dataValueDao.getDataByPointId(dataPointId);
+            if(dataValue!=null){
+                dve.setDataValue(dataValue);
+                dve.setState(DataValueEnum.SUCCESS.getState());
+            }else{
+                dve.setState(DataValueEnum.EMPTY.getState());
+            }
+        }else{
+            dve.setState(DataValueEnum.PAR_EMPTY.getState());
+        }
+        return dve;
     }
 
 }

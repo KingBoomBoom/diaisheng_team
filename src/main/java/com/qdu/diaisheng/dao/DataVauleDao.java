@@ -16,14 +16,13 @@ public interface DataVauleDao {
                                                @Param("date2") String date2,
                                                @Param("dataPointId") String dataPointId);//在一个数据点中查询两个日期之间的数据
 
-    DataValue getnowdate(@Param("dataPointId")String dataPointId);
-
-    void exportDataValue(@Param("pointId")String pointId,
-                        @Param("startDate")String startDate,
-                        @Param("endDate")String endDate);
+    List<DataValue> getnowdate(@Param("dataPointIds") List<String> dataPointId);//获取最新的数据
 
 
     List<DataValue> queryBetweenDateAtPointIds(@Param("date1") String date1,
                                                @Param("date2") String date2,
-                                               @Param("dataPointIds") List<String> dataPointId);
+                                               @Param("dataPointIds") List<String> dataPointId);//在多个数据点查询两个日期之间的数据
+
+    DataValue getDataByPointId(String dataPointId);//通过数据点查询最新的数据
+
 }
