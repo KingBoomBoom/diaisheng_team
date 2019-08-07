@@ -5,6 +5,9 @@
         insert into device(device_id,device_name,user_id,create_time)
         values (#{deviceId},#{deviceName},#{userId},#{createTime});
     </insert>
+
+
+    <!-- 根据userid查询设备   -->
     <select id="queryDevice" resultType="com.qdu.diaisheng.entity.Device">
         select *from device where user_id=#{userId};
     </select>

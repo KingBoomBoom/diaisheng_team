@@ -29,6 +29,15 @@ public class DataPointManageController {
     @Autowired
     private DataModelService dataModelService;
 
+    /**
+     * @author wangxi
+     * @Description 根据modelid获取数据点
+     * 通过modelMap返回数据
+     * @date  2019/8/5
+     * @return Map
+     * @throws
+     * @since
+     */
     @RequestMapping(value = "/getdatapoint",method = RequestMethod.GET)
     @ResponseBody
     public Map<String,Object> getDataPoint(HttpServletRequest request){

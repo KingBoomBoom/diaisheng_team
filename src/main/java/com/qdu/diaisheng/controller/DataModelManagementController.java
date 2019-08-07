@@ -29,7 +29,7 @@ public class DataModelManagementController {
 
     /**
      * @author wangxi
-     * @Description 根据数据id获取数据模板 通过前端的数据id调取Serviece层的方法从数据库获取数据，然后
+     * @Description 根据数据id获取数据模板
      * 通过modelMap返回数据
      * @date  2019/7/23
      * @return Map

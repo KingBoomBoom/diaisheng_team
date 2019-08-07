@@ -62,7 +62,15 @@ public class DeviceManagementController {
     }
 
 
-
+    /**
+     * @author wangxi
+     * @Description 根据user_id获取设备
+     * 通过modelMap返回数据
+     * @date  2019/8/4
+     * @return Map
+     * @throws
+     * @since
+     */
     @RequestMapping(value = "/getdevice",method = RequestMethod.POST)
     @ResponseBody
     public Map<String,Object>getDevice(HttpServletRequest request){

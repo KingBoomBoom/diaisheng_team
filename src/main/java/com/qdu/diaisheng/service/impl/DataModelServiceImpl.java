@@ -15,8 +15,8 @@ public class DataModelServiceImpl implements DataModelService {
     private DataModelDao dataModelDao;
 
     @Override
-    public List<DataModel> getDataModelByDeviceId(String deviceId) {
-        return dataModelDao.queryDataModelByDeviceId(deviceId);
+    public List<DataModel> getDataModelByDeviceId(String deviceID) {
+        return dataModelDao.queryDataModelByDeviceId(deviceID);
     }
 
     @Override

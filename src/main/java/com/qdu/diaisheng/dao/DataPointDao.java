@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface DataPointDao {
     int insertDataPoint(DataPoint dataPoint);
-    List<DataPoint> queryDataPointListByDataModel(Integer dataModelId);
+    List<DataPoint> queryDataPointListByDataModel(Integer dataModelId);//通过modelid查询数据点
     String getPointNameByPointId(String pointId);
     int deleteDataPoint(String dataPonitId);
     int updateDataPoint(@Param("dataPoint")DataPoint dataPoint,
