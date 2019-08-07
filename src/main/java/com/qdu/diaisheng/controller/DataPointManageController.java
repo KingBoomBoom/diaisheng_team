@@ -43,8 +43,6 @@ public class DataPointManageController {
                 modelMap.put("success",false);
                 modelMap.put("errMsg","数据点为空");
             }
-
-
         }else{
             modelMap.put("success",false);
             modelMap.put("errMsg","数据模型id错误");

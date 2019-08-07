@@ -87,20 +87,15 @@ public class DataValueServiceImpl implements DataValueService {
                 ds.add(dataPoint.getDataPointId());
             }
             dataValueList=dataValueDao.getnowdate(ds);
-
         }
-
         else{
             dve.setState(DataValueEnum.EMPTY.getState());
-
         }
-
         if(dataValueList!=null){
             dve.setDataValueList(dataValueList);
             dve.setState(DataValueEnum.SUCCESS.getState());
         }else{
             dve.setState(DataValueEnum.EMPTY.getState());
-
         }
         return dve;
     }

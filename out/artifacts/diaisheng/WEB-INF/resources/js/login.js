@@ -70,7 +70,7 @@ $(document).ready(function() {
 			function(data) {
 				if (data.success) {
 					alert(data.msg);
-					window.location.href="/diaisheng/data/list2";
+					window.location.href="/diaisheng/data/index";
 				} else {
 					alert(data.errorMsg);
 				}
@@ -148,5 +148,15 @@ $(document).ready(function() {
 					alert(data.errorMsg);
 				}
 			},'JSON');
+	});
+	$("#xieyi").click(function () {
+		layer.open({
+			type : 2,
+			title : "注册协议",
+			area : [ '500px', '500px' ],
+			fixed : false, //不固定
+			maxmin : false,
+			content :"/diaisheng/admin/agreement"
+		});
 	});
 });

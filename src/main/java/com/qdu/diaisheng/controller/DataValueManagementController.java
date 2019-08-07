@@ -7,12 +7,10 @@ package com.qdu.diaisheng.controller;
  *
  */
 import com.fasterxml.jackson.databind.util.JSONPObject;
+import com.github.pagehelper.PageHelper;
 import com.qdu.diaisheng.DataValueEnum;
 import com.qdu.diaisheng.dto.DataValueExecution;
-import com.qdu.diaisheng.entity.DataModel;
-import com.qdu.diaisheng.entity.DataPoint;
-import com.qdu.diaisheng.entity.DataValue;
-import com.qdu.diaisheng.entity.Device;
+import com.qdu.diaisheng.entity.*;
 import com.qdu.diaisheng.service.DataModelService;
 import com.qdu.diaisheng.service.DataPointService;
 import com.qdu.diaisheng.service.DataValueService;
@@ -43,10 +41,7 @@ import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.List;
+import java.util.*;
 
 import org.apache.poi.ss.usermodel.Cell;
 @Controller
@@ -73,19 +68,35 @@ public class DataValueManagementController {
      * @throws
      * @since
      */
-    @RequestMapping(value = "/getdata",method = RequestMethod.POST)
+    @RequestMapping(value = "/getdata")
     @ResponseBody
-    public Map<String,Object>getData(){
-        String deviceId="00015203000000000001";
-        Map<String,Object>modelMap=new HashMap<>();
-        DataValueExecution dve=dataValueService.getnowdate(deviceId);
-        if(dve.getState()==DataValueEnum.SUCCESS.getState()){
-            modelMap.put("data",dve.getDataValueList());
-            modelMap.put("success",true);
-        }else{
-            modelMap.put("success",false);
+    public PageInfo getData(int page,int limit){
+       PageInfo pageInfo = new PageInfo();
+        List<DataValue> list = new ArrayList<>();
+        //Map<String,Object>modelMap=new HashMap<>();
+        try{
+          // PageHelper pageHelper = new PageHelper();
+          // pageHelper.startPage(page, limit);
+            String deviceId="00015203000000000001";
+            DataValueExecution dve=dataValueService.getnowdate(deviceId);
+            list = dve.getDataValueList();
+           //int total = (int) new com.github.pagehelper.PageInfo<>(list).getTotal();
+            if(dve.getState()==DataValueEnum.SUCCESS.getState()){
+                //modelMap.put("data",dve.getDataValueList());
+                pageInfo.setData(dve.getDataValueList());
+              //  pageInfo.setCount(total);
+                pageInfo.setMsg("查询数据点信息成功");
+                //modelMap.put("success",true);
+            }else{
+                //modelMap.put("success",false);
+                pageInfo.setMsg("查询数据点信息失败");
+            }
+        }catch (Exception e){
+            logger.error("查询数据点信息失败！",e);
+            pageInfo.setMsg("查询数据点信息失败");
         }
-        return modelMap;
+
+        return pageInfo;
 
     }
 

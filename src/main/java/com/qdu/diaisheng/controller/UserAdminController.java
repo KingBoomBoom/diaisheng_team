@@ -35,4 +35,9 @@ public class UserAdminController {
     private String loginAdmin(){
         return "admin/loginAdmin";
     }
+    /*注册协议*/
+    @RequestMapping(value = "/agreement")
+    private String agreement(){
+        return "admin/agreement";
+    }
 }

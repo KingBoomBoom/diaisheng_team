@@ -27,6 +27,10 @@
         <property name="checkoutTimeout" value="10000" />
         <!-- 当获取连接失败重试次数 -->
         <property name="acquireRetryAttempts" value="2" />
+        <!--解决Java中链接MySql的时候，经常会出现时间长不操作，再去点操作的时候，就会报错的异常-->
+        <property name="idleConnectionTestPeriod" value="60" />
+        <property name="preferredTestQuery" value="select 1" />
+        <property name="testConnectionOnCheckin" value="true"/>
     </bean>
 
     <!-- 3.配置SqlSessionFactory对象 -->
@@ -39,6 +43,20 @@
         <property name="typeAliasesPackage" value="com.qdu.diaisheng.entity" />
         <!-- 扫描sql配置文件:mapper需要的xml文件 -->
         <property name="mapperLocations" value="classpath:mapper/*.xml" />
+        <property name="plugins">
+            <array>
+                <bean class="com.github.pagehelper.PageInterceptor">
+                    <property name="properties">
+                        <!--使用下面的方式配置参数，一行配置一个 -->
+                        <value>
+                            helperDialect=mysql
+                            reasonable=true
+                            autoRuntimeDialect=true
+                        </value>
+                    </property>
+                </bean>
+            </array>
+        </property>
     </bean>
 
     <!-- 4.配置扫描Dao接口包，动态实现Dao接口，注入到spring容器中 -->

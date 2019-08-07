@@ -27,7 +27,7 @@
     </select>
 
     <select id="getDataPointbyDevice" resultMap="dataPointMap">
-        select*from data_point p,data_model m where p.data_model_id=m.data_model_id and m.device_id=#{deviceId};
+        select*from data_point p,data_model m where p.data_model_id=m.data_model_id and m.device_id=#{deviceId} order by data_point_id asc
     </select>
 
     <update id="updateDataPoint" >
