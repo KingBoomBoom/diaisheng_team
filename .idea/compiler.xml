@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="diaisheng-dataplatform" />
         <module name="diaisheng_team" />
+        <module name="diaisheng-dataplatform" />
+        <module name="project" />
       </profile>
     </annotationProcessing>
   </component>

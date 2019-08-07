@@ -53,6 +53,7 @@ public class UserManageController {
         int i = userService.login(user.getUserName(), passwordMd5);
         try{
             if (i ==1) {
+                user=userService.findByUserName(user.getUserName());
                 session.setAttribute("loginUser", user);
                 result.setSuccess(true);
                 result.setMsg("登陆成功，欢迎您！");
