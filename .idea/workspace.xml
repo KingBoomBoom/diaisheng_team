@@ -2,21 +2,53 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="project:war exploded" />
+      <artifact name="diaisheng-dataplatform:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5505eefe-6939-4759-b25b-857a31b359e3" name="Default Changelist" comment="更新级联查询">
+    <list default="true" id="5505eefe-6939-4759-b25b-857a31b359e3" name="Default Changelist" comment="（version2.0）list页面样式修整，注册协议添加，跳转到list时显示当前时间前一小时至当前时间，冗余代码归并">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/com/qdu/diaisheng/controller/DataModelManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/com/qdu/diaisheng/controller/DataModelManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/com/qdu/diaisheng/controller/DataPointManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/com/qdu/diaisheng/controller/DataPointManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/com/qdu/diaisheng/controller/DataValueManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/com/qdu/diaisheng/controller/DataValueManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/com/qdu/diaisheng/controller/DeviceManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/com/qdu/diaisheng/controller/DeviceManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/com/qdu/diaisheng/controller/UserManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/com/qdu/diaisheng/controller/UserManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/com/qdu/diaisheng/service/impl/DataModelServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/com/qdu/diaisheng/service/impl/DataModelServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/com/qdu/diaisheng/service/impl/DataPointServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/com/qdu/diaisheng/service/impl/DataPointServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/mapper/DataModelDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/mapper/DataModelDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/mapper/DataPointDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/mapper/DataPointDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/mapper/DataValueDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/mapper/DataValueDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/mapper/DeviceDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/classes/mapper/DeviceDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/List.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/List.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/table-export.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/table-export.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/table-export2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/resources/js/dataexport.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/resources/js/dataexport.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataModelManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataModelManagementController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataPointManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataPointManageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataValueManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataValueManagementController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DeviceManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DeviceManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/dao/DataPointDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/dao/DataPointDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/dao/DeviceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/dao/DeviceDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DataModelDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DataModelDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DataPointDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DataPointDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DataValueDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DataValueDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DeviceDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DeviceDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/List.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/List.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/table-export.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/table-export.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/table-export2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/js/dataexport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/js/dataexport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/js/lib/gmap/gmaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/js/lib/gmap/gmaps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DataModelManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DataModelManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DataPointManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DataPointManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DataValueManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DataValueManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DeviceManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DeviceManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/impl/DataModelServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/impl/DataModelServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/impl/DataPointServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/impl/DataPointServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/DataModelDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/DataModelDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/DataPointDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/DataPointDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/DataValueDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/DataValueDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/DeviceDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/DeviceDao.xml" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +57,9 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,10 +92,59 @@
       <find>submenu</find>
       <find>menu_a</find>
       <find>divider</find>
+      <find>queryDataPointListByDataModel</find>
+      <find>getDataByPointId</find>
+      <find>getDataValueByDataPoint</find>
+      <find>downLoad</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/PageInfo.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-service.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/DataValueServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/DataValueService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/table-export21.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" />
+        <option value="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/loginAdmin.html" />
+        <option value="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/resources/css/list.css" />
+        <option value="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/resources/js/echarts.js" />
+        <option value="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/resources/css/layui.css" />
+        <option value="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/resources/layui/css/layui.css" />
+        <option value="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/resources/css/login2.css" />
+        <option value="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/resources/js/login.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/UserAdminController.java" />
+        <option value="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/agreement.html" />
+        <option value="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/login.html" />
+        <option value="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/index.html" />
+        <option value="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/table-export2.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataAdminController.java" />
+        <option value="$PROJECT_DIR$/src/test/js/lib/gmap/gmaps.js" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/table-export.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DeviceManagementController.java" />
+        <option value="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/table-export.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataModelManagementController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/DeviceDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataPointManageController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/DataModelDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/DataPointDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/DataValueDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataValueManagementController.java" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/List.html" />
+        <option value="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/List.html" />
+        <option value="$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/resources/js/dataexport.js" />
+      </list>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -76,33 +160,75 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1P5cosREibDNK97z2d2KyIrwxjV" />
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="diaisheng-dataplatform" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="diaisheng-dataplatform" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="diaisheng-dataplatform" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="diaisheng-dataplatform" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="com.github.pagehelper:pagehelper:5.1.2-beta" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="960" />
+    <option name="height" value="1032" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="ChangesTree.GroupingKeys" value="module&#10;directory" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/webapp/WEB-INF" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31352153" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Public\project\src\webapp\WEB-INF\html\admin" />
-      <recent name="E:\diaiisheng-dataplatform-master\src\webapp\WEB-INF" />
-      <recent name="E:\diaiisheng-dataplatform-master\out\artifacts\diaisheng\WEB-INF\html\admin" />
-      <recent name="E:\diaiisheng-dataplatform-master\out\artifacts\diaisheng\WEB-INF\resources" />
-      <recent name="E:\diaiisheng-dataplatform-master\src\main\java\com\qdu\diaisheng\entity" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\diaiisheng-dataplatform-master\src\webapp\WEB-INF\resources" />
       <recent name="E:\diaiisheng-dataplatform-master\src\test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\diaiisheng-dataplatform-master\src\webapp\WEB-INF" />
+      <recent name="E:\diaiisheng-dataplatform-master\src\webapp\WEB-INF\resources\js" />
+      <recent name="E:\diaiisheng-dataplatform-master\src\webapp\WEB-INF\html\admin" />
+      <recent name="E:\diaiisheng-dataplatform-master\out\artifacts\diaisheng\WEB-INF\html\admin" />
+      <recent name="E:\diaiisheng-dataplatform-master\out\artifacts\diaisheng\WEB-INF\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -117,44 +243,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DeviceDaoTest">
-    <configuration name="DataPointTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qdu.diaisheng.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qdu.diaisheng.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.qdu.diaisheng.dao.DataPointTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeviceDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qdu.diaisheng.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qdu.diaisheng.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.qdu.diaisheng.dao.DeviceDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Tomcat 8.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/project_war_exploded/" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
-        <artifact name="project:war exploded">
+        <artifact name="diaisheng-dataplatform:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/project_war_exploded" />
+            <option name="CONTEXT_PATH" value="/diaisheng" />
           </settings>
         </artifact>
       </deployment>
@@ -218,7 +314,6 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="diaisheng-dataplatform:war exploded" />
-          <artifact name="project:war exploded" />
         </option>
       </method>
     </configuration>
@@ -296,12 +391,6 @@
         </option>
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.DeviceDaoTest" />
-        <item itemvalue="JUnit.DataPointTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -316,20 +405,21 @@
       <workItem from="1564821404983" duration="4698000" />
       <workItem from="1564975158321" duration="28012000" />
       <workItem from="1565056884685" duration="24876000" />
-      <workItem from="1565149787661" duration="9246000" />
-      <workItem from="1565167577410" duration="67000" />
-      <workItem from="1565168529894" duration="2712000" />
-      <workItem from="1565171392138" duration="820000" />
+      <workItem from="1565149787661" duration="10931000" />
+      <workItem from="1565241339667" duration="10207000" />
     </task>
-    <task id="LOCAL-00001" summary="更新级联查询">
-      <created>1565170816306</created>
+    <task id="LOCAL-00001" summary="（version2.0）list页面样式修整，注册协议添加，跳转到list时显示当前时间前一小时至当前时间，冗余代码归并">
+      <created>1565162879142</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1565170816306</updated>
+      <updated>1565162879142</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="106706000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -340,21 +430,83 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4966216" visible="true" weight="0.21190988" />
+      <window_info id="Structure" order="1" sideWeight="0.5033784" side_tool="true" weight="0.25375536" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Web" order="6" sideWeight="0.5033784" side_tool="true" weight="0.25375536" />
+      <window_info id="Image Layers" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295711" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49892703" visible="true" weight="0.26410836" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946353" weight="0.3295711" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3295711" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.17832957" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50107294" side_tool="true" weight="0.23927765" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.3295711" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3299356" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4966216" weight="0.21190988" />
+      <window_info id="Structure" order="1" sideWeight="0.5033784" side_tool="true" weight="0.25375536" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Web" order="6" sideWeight="0.5033784" side_tool="true" weight="0.25375536" />
+      <window_info id="Image Layers" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295711" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49892703" visible="true" weight="0.26410836" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946353" weight="0.3295711" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3295711" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.17832957" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50107294" side_tool="true" weight="0.23927765" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.3295711" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3299356" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout-to-restore>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -372,7 +524,443 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="（version2.0）list页面样式修整，注册协议添加，跳转到list时显示当前时间前一小时至当前时间，冗余代码归并" />
-    <MESSAGE value="更新级联查询" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新级联查询" />
+    <option name="LAST_COMMIT_MESSAGE" value="（version2.0）list页面样式修整，注册协议添加，跳转到list时显示当前时间前一小时至当前时间，冗余代码归并" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataValueManagementController.java</url>
+          <line>78</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/resources/js/echarts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="646834" selection-start-column="646834" selection-end-column="646834" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/resources/js/layui.all.js" />
+    <entry file="file://$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/resources/css/layui.css" />
+    <entry file="file://$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/table-export21.html" />
+    <entry file="file://$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/resources/layui/css/layui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="35736" selection-start-line="1" selection-start-column="35736" selection-end-line="1" selection-end-column="35736" />
+          <folding>
+            <element signature="e#62502#62641#2" expanded="true" />
+            <element signature="e#64095#64234#2" expanded="true" />
+            <element signature="e#64782#64921#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/UserManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/resources/css/login2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6129">
+          <caret line="227" selection-start-line="227" selection-end-line="227" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/resources/js/lib/gmap/gmaps.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/table-export2.html" />
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/resources/layui/font/iconfont.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="55" column="54" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/resources/js/dashboard1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3159" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/admin/List.html" />
+    <entry file="file://$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/agreement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="100" selection-start-line="9" selection-start-column="100" selection-end-line="9" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/newList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="232" column="14" lean-forward="true" selection-start-line="232" selection-start-column="14" selection-end-line="232" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#span#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="158" column="7" lean-forward="true" selection-start-line="158" selection-start-column="7" selection-end-line="158" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DeviceAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/loginAdmin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" column="45" lean-forward="true" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/DeviceServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/dao/DeviceDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/UserAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/DataModelService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/DataModelServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/Device.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/DeviceDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/DataModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DeviceManagementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="69" column="18" lean-forward="true" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataModelManagementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/DataPointServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="17" column="57" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/DataPointDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="24" column="122" selection-start-line="24" selection-start-column="122" selection-end-line="24" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataPointManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="49" column="43" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/DataModelDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="11" column="146" selection-start-line="11" selection-start-column="146" selection-end-line="11" selection-end-column="146" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/newList.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/DataValueService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/DataValueDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/dao/DataVauleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/DataValueServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/DataValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/dto/DataValueExecution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataValueManagementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="118" column="45" lean-forward="true" selection-start-line="118" selection-start-column="45" selection-end-line="118" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/agreement.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/resources/js/dataexport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-599">
+          <caret line="44" column="70" selection-start-line="44" selection-start-column="70" selection-end-line="44" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/resources/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="913">
+          <caret line="152" column="20" lean-forward="true" selection-start-line="152" selection-start-column="20" selection-end-line="152" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/List.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="73" column="51" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/diaisheng/WEB-INF/html/admin/table-export.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="81" column="22" lean-forward="true" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/table-export.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="87" column="11" lean-forward="true" selection-start-line="87" selection-start-column="11" selection-end-line="87" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/List.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="73" column="51" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/resources/js/dataexport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7862">
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>diaisheng-dataplatform:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31352153" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (diaisheng-dataplatform)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31352153" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web|diaisheng-dataplatform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31352153" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31352153" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

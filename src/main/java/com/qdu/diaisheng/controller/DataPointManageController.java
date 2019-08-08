@@ -38,13 +38,13 @@ public class DataPointManageController {
      * @throws
      * @since
      */
-    @RequestMapping(value = "/getdatapoint",method = RequestMethod.GET)
+    @RequestMapping(value = "/getdatapoint",method = RequestMethod.POST)
     @ResponseBody
-    public Map<String,Object> getDataPoint(HttpServletRequest request){
+    public Map<String,Object> getDataPoint(String dataModelId,HttpServletRequest request){
         Map<String,Object>modelMap=new HashMap<String,Object>();
-        int dataModelId= HttpServletUtil.getInt(request,"dataModelId");
-        if(dataModelId>0){
-            List<DataPoint> dataPointList=dataPointService.getDataPointListByDataModelId(dataModelId);
+        int modelId=Integer.parseInt(dataModelId);
+        if(modelId>0){
+            List<DataPoint> dataPointList=dataPointService.getDataPointListByDataModelId(modelId);
             if(dataPointList!=null&&dataPointList.size()>0){
                 modelMap.put("success",true);
                 modelMap.put("dataPointList",dataPointList);

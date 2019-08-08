@@ -38,9 +38,8 @@ public class DataModelManagementController {
      */
     @RequestMapping(value = "/getdatamodel",method = RequestMethod.POST)
     @ResponseBody
-    public Map<String,Object> getDataModel(HttpServletRequest request){
+    public Map<String,Object> getDataModel(String deviceId,HttpServletRequest request){
         Map<String,Object>modelMap=new HashMap<String,Object>();
-        String deviceId= HttpServletUtil.getString(request,"deviceId");
         if(deviceId!=null){
             List<DataModel> dataModelList=dataModelService.getDataModelByDeviceId(deviceId);
             if(dataModelList!=null&&dataModelList.size()>0){

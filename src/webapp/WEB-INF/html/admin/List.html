@@ -38,87 +38,9 @@
 </script>
 
 <script type="text/javascript">
-    function Get(x){
-        var pointID = document.getElementById(x).value;
-        var time = '';
-        var currentData = '';
-        $.ajax({
-            url:"/diaisheng/valueadmin/getdatabypoint",
-            type:"post",
-            data:{"x":x},
-            dataType:"json",
-            success:function(data){
-                $.each(data.dataValue,function(key,value){
-                    time=value.createTime;
-                    currentData=value.value;
-                });
-                if(pointID == d1){
-                    time1.innerHTML=time;
-                    value1.innerHTML=currentData;
-                }else if(pointID == d2){
-                    time2.innerHTML=time;
-                    value2.innerHTML=currentData;
-                }else if(pointID == d3){
-                    time3.innerHTML=time;
-                    value3.innerHTML=currentData;
-                }else if(pointID == d4){
-                    time4.innerHTML=time;
-                    value4.innerHTML=currentData;
-                }else if(pointID == d5){
-                    time5.innerHTML=time;
-                    value5.innerHTML=currentData;
-                }else if(pointID == d6){
-                    time6.innerHTML=time;
-                    value6.innerHTML=currentData;
-                }else if(pointID == d7){
-                    time7.innerHTML=time;
-                    value7.innerHTML=currentData;
-                }else if(pointID == d8){
-                    time8.innerHTML=time;
-                    value8.innerHTML=currentData;
-                }else if(pointID == d9){
-                    time9.innerHTML=time;
-                    value9.innerHTML=currentData;
-                }else if(pointID == d10){
-                    time10.innerHTML=time;
-                    value10.innerHTML=currentData;
-                }else if(pointID == d11){
-                    time11.innerHTML=time;
-                    value11.innerHTML=currentData;
-                }else if(pointID == d12){
-                    time12.innerHTML=time;
-                    value12.innerHTML=currentData;
-                }else if(pointID == d13){
-                    time13.innerHTML=time;
-                    value13.innerHTML=currentData;
-                }else if(pointID == d14){
-                    time14.innerHTML=time;
-                    value14.innerHTML=currentData;
-                }else if(pointID == d15){
-                    time15.innerHTML=time;
-                    value15.innerHTML=currentData;
-                }else if(pointID == d16){
-                    time16.innerHTML=time;
-                    value16.innerHTML=currentData;
-                }else{
-                    time17.innerHTML=time;
-                    value17.innerHTML=currentData;
-                }
-
-
-            },
-            error: function (errorMsg) {
-                //请求失败时执行该函数
-                alert("图表请求数据失败!");
-                myChart.hideLoading();
-            }
-        })
-    }
     function updateList(){
-        layui.use(['table','laypage'], function() {
-            var table = layui.table
-                , form = layui.form
-                ,laypage = layui.laypage;
+        layui.use(['table'], function() {
+            var table = layui.table;
             table.render({
                 elem: '#listInfo'
                 , url: "/diaisheng/valueadmin/getdata"
@@ -144,14 +66,39 @@
             //监听单元格事件
             table.on('tool(demoEvent)', function(obj){
                 var data = obj.data;
-
                 var tr = obj.tr; //获得当前行 tr 的DOM对象
                 if(obj.event==="history"){
-                    //console.log(data);
                     window.location.href="/diaisheng/data/dataexport?data="
                         +data.dataPoint.dataPointId+"&shebei="+encodeURI(data.dataPoint.dataPointName)
                         +"&congji="+encodeURI(data.dataPoint.dataModel.dataModelName);
                 }else if(obj.event==="collection"){
+                    var dataPointId = data.dataPoint.dataPointId;
+                    $.ajax({
+                        url:"/diaisheng/valueadmin/getdatabypoint",
+                        type:"post",
+                        data:{"x":dataPointId},
+                        dataType:"json",
+                        success:function(data){
+                            layer.open({
+                                type: 1,
+                                title:"最新信息",
+                                area: ['250px', '220px'],
+                                fixed: false, //不固定
+                                maxmin: false,
+                                content: "<p align='center'>ID："+data.dataValue.dataPoint.dataPointId+"</p>"+
+                                         "<p align='center'>数据点："+data.dataValue.dataPoint.dataPointName+"</p>"+
+                                         "<p align='center'>从机名称："+data.dataValue.dataPoint.dataModel.dataModelName+"</p>"+
+                                         "<p align='center'>更新时间："+data.dataValue.createTime+"</p>"+
+                                         "<p align='center'>当前值："+data.dataValue.value+"</p>"
+
+                            });
+                        },
+                        error: function (errorMsg) {
+                            //请求失败时执行该函数
+                            alert("图表请求数据失败!");
+                            table.render();
+                        }
+                    })
 
                 }else if(obj.event==="task"){
 

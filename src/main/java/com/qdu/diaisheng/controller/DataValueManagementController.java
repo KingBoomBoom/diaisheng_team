@@ -75,8 +75,8 @@ public class DataValueManagementController {
         List<DataValue> list = new ArrayList<>();
         //Map<String,Object>modelMap=new HashMap<>();
         try{
-          // PageHelper pageHelper = new PageHelper();
-          // pageHelper.startPage(page, limit);
+          //PageHelper pageHelper = new PageHelper();
+         // pageHelper.startPage(page, limit);
             String deviceId="00015203000000000001";
             DataValueExecution dve=dataValueService.getnowdate(deviceId);
             list = dve.getDataValueList();
@@ -84,7 +84,8 @@ public class DataValueManagementController {
             if(dve.getState()==DataValueEnum.SUCCESS.getState()){
                 //modelMap.put("data",dve.getDataValueList());
                 pageInfo.setData(dve.getDataValueList());
-              //  pageInfo.setCount(total);
+                pageInfo.setCode(0);
+               //pageInfo.setCount(total);
                 pageInfo.setMsg("查询数据点信息成功");
                 //modelMap.put("success",true);
             }else{
@@ -115,7 +116,7 @@ public class DataValueManagementController {
         Map<String,Object>modelMap=new HashMap<>();
         DataValueExecution dve=dataValueService.getDataValueByDataPoint(x);
         if(dve.getState()==DataValueEnum.SUCCESS.getState()){
-            modelMap.put("data",dve.getDataValue());
+            modelMap.put("dataValue",dve.getDataValue());
             modelMap.put("success",true);
         }else{
             modelMap.put("success",false);
@@ -150,12 +151,12 @@ public class DataValueManagementController {
             }else{
                 logger.error("历史记录查询失败！");
                 modelMap.put("success",false);
-                modelMap.put("errMsg",dve.getStateInfo());
+                modelMap.put("errMsg","请选择正确的设备、从机、数据点以及日期！");
             }
         }else{
             logger.error("历史记录查询失败！pointId为空或者日期为空");
             modelMap.put("success",false);
-            modelMap.put("errMsg","pointId为空或者日期为空");
+            modelMap.put("errMsg","数据点为空或者日期为空");
         }
         return modelMap;
     }

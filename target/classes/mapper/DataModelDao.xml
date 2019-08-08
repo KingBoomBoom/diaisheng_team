@@ -8,8 +8,8 @@
     </insert>
 
 
-    <select id="queryDataModelByDeviceId" resultType="com.qdu.diaisheng.entity.DataModel">
-      select data_model_id,data_model_name,last_edit_time,data_point_count from data_model where device_id=#{Device};
+    <select id="queryDataModelByDeviceId" parameterType="String" resultType="com.qdu.diaisheng.entity.DataModel">
+      select data_model_id,data_model_name,last_edit_time,data_point_count from data_model where device_id=#{device_id} order by data_model_id asc
     </select>
 
     <delete id="deleteDataModel" parameterType="Integer">

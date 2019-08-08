@@ -1,12 +1,13 @@
 $(function (){
+    getDevices();
     layui.use('form', function(){
         var form = layui.form;
         form.render();
         form.on('select(device)', function (data) {
-//        var = $("#shebei").options.length;
-            var device = $("#shebei");
-            console.log(data.value);
-            debugger;
+            getModels(data.value);
+        });
+        form.on('select(model)', function (data) {
+            getDataPoints(data.value);
         });
 
     });
@@ -17,10 +18,6 @@ $(function (){
     laydate.render({
         elem: '#end_time'
         ,type: 'datetime'
-    });
-    layui.use('form', function () {
-        var form = layui.form;
-
     });
     var urlData = decodeURI(location.search); //获取url中"?"符后的字串
     var theRequest = new Object();
@@ -45,7 +42,8 @@ $(function (){
     }
     var minute=date.getMinutes()<=9?"0"+date.getMinutes():date.getMinutes();
     var initEndTime = year + seperator1 + month + seperator1 + strDate+" "+date.getHours()+":"+minute+":"+date.getSeconds();
-    var initStartTime = year + seperator1 + month + seperator1 + strDate+" "+(date.getHours()-1)+":"+minute+":"+date.getSeconds();
+    var lastHour = (date.getHours()-1)<0?0:(date.getHours()-1);//判断0点时结果-1异常
+    var initStartTime = year + seperator1 + month + seperator1 + strDate+" "+lastHour+":"+minute+":"+date.getSeconds();
     $("#start_time").val(initStartTime);
     $("#end_time").val(initEndTime);
     initEcharts();
@@ -58,23 +56,22 @@ $(function (){
         data:{"data":theRequest.data,"stime":initStartTime,"etime":initEndTime},
         dataType:"json",
         success:function(data){
-            $.each(data.dataValue,function(key,value){
-                console.log(data.dataValue);
-                name.push(value.createTime);
-            });
-            $.each(data.dataValue,function(key,value){
-                series.push(value.value);
-            });
-            myCharts.hideLoading();
-            myCharts.setOption({
-                xAxis:{
-                    data:name
-                },
-                series:{
-                    data:series
-                }
-            });
-
+                $.each(data.dataValue,function(key,value){
+                    console.log(data.dataValue);
+                    name.push(value.createTime);
+                });
+                $.each(data.dataValue,function(key,value){
+                    series.push(value.value);
+                });
+                myCharts.hideLoading();
+                myCharts.setOption({
+                    xAxis:{
+                        data:name
+                    },
+                    series:{
+                        data:series
+                    }
+                });
         },
         error: function (errorMsg) {
             //请求失败时执行该函数
@@ -83,6 +80,7 @@ $(function (){
         }
     });
 });
+
 function query(){
     initEcharts();
     var shebei = document.getElementById("shebei").value;
@@ -90,11 +88,6 @@ function query(){
     var data = document.getElementById("data").value;
     var stime = document.getElementById("start_time").value;
     var etime = document.getElementById("end_time").value;
-    console.log(shebei);
-    console.log(congji);
-    console.log(data);
-    console.log(stime);
-    console.log(etime);
     myCharts.showLoading();
     var name = [];
     var series = [];
@@ -104,72 +97,92 @@ function query(){
         data:{"data":data,"stime":stime,"etime":etime},
         dataType:"json",
         success:function(data){
-            $.each(data.dataValue,function(key,value){
-                console.log(data.dataValue);
-                name.push(value.createTime);
-            });
-            $.each(data.dataValue,function(key,value){
-                series.push(value.value);
-            });
-            myCharts.hideLoading();
-            myCharts.setOption({
-                xAxis:{
-                    data:name
-                },
-                series:{
-                    data:series
-                }
-            });
-
+                $.each(data.dataValue,function(key,value){
+                    console.log(data.dataValue);
+                    name.push(value.createTime);
+                });
+                $.each(data.dataValue,function(key,value){
+                    series.push(value.value);
+                });
+                myCharts.hideLoading();
+                myCharts.setOption({
+                    xAxis:{
+                        data:name
+                    },
+                    series:{
+                        data:series
+                    }
+                });
         },
-        error: function (errorMsg) {
+        error: function (data) {
             //请求失败时执行该函数
             alert("图表请求数据失败!");
             myChart.hideLoading();
         }
-
-
     });
 
 }
 
-function onChange1(){
-    var x = document.getElementById("congji");
-    var y = document.getElementById("data");
-
-    y.options.length = 0;
-
-    if(x.selectedIndex == 0)
-    {
-        y.options.add(new Option("出水温度","32442",false,true));
-        y.options.add(new Option("出水累计流量小数","30948"));
-        y.options.add(new Option("出水累计流量整数","30946"));
-        y.options.add(new Option("出水瞬时流量","30945"));
-    }
-    else if(x.selectedIndex == 1)
-    {
-        y.options.add(new Option("远程启动","35290"));
-        y.options.add(new Option("COD即时数据","30947"));
-    }
-    else if(x.selectedIndex == 2)
-    {
-        y.options.add(new Option("进水瞬时流量","32445"));
-        y.options.add(new Option("进水温度","32443"));
-        y.options.add(new Option("进水正累计流量小数","32279"));
-        y.options.add(new Option("进水正累计流量整数","32278"));
-    }
-    else if(x.selectedIndex == 3)
-    {
-        y.options.add(new Option("罐壁温度","32270"));
-        y.options.add(new Option("罐内温度","32269"));
-        y.options.add(new Option("设定温度","32268"));
-    }
-    else{
-        y.options.add(new Option("高浓排进水温度","41610"));
-        y.options.add(new Option("高浓排瞬时流量","41609"));
-        y.options.add(new Option("高浓排正积累流量小数","41607"));
-        y.options.add(new Option("高浓排正积累流量整数","41608"));
-    }
+function getDataPoints(modelId){//获取对应数据点列表
+    $("#data").html('<option value="">直接选择或搜索选择</option>');
+    $.ajax({
+        type: "post",
+        url: "/diaisheng/datapointadmin/getdatapoint",
+        data: {"dataModelId": modelId},
+        dataType: "json",
+        success: function (data) {
+            $.each(data.dataPointList, function (key, value) {
+                //      $("#data").options.add(new Option(value.dataPointName, value.dataPointID));
+                $("#data").append("<option value='"+value.dataPointId+"'>"+value.dataPointName+"</option>");
+                renderForm();
+            });
+        },
+        error: function (data) {
+            alert("数据请求失败");
+        }
+    });
+}
+function getModels(deviceId) {//获取对应从机列表
+    $("#congji").html('<option value="">直接选择或搜索选择</option>');
+    $.ajax({
+        type: "POST",
+        url: "/diaisheng/modeladmin/getdatamodel",
+        data: {"deviceId": deviceId},
+        dataType: "json",
+        success: function (data) {
+            $.each(data.dataModelList, function (key, value) {
+                //$("congji").options.add(new Option(value.dataModelName, value.dataModelId));
+                $("#congji").append("<option value='"+value.dataModelId+"'>"+value.dataModelName+"</option>");
+                renderForm();
+            });
+        },
+        error: function (data) {
+            alert("数据请求失败");
+        }
+    });
+}
+function getDevices(){//获取设备列表
+    $("#shebei").html('<option value="">直接选择或搜索选择</option>');
+    $.ajax({
+        url: '/diaisheng/deviceadmin/getdevice',
+        type: 'POST',
+        dataType: 'json',
+        success: function (data) {
+            if (!data.success){
+                if (data.redirect){
+                    window.location.href=data.redirect;
+                }
+            }else{
+                $.each(data.device, function (key, value) {
+                    $("#shebei").append("<option value='"+value.deviceId+"'>"+value.deviceName+"</option>");
+                    renderForm();
+                });
+            }
+        },
+        error:function (data) {
+            console.log(data.errMsg);
+        }
+    });
 }
 
 
@@ -286,4 +299,10 @@ function initEcharts() {
 
     }
     myCharts.setOption(option);
+}
+function renderForm(){
+    layui.use('form', function(){
+        var form = layui.form;
+        form.render();
+    });
 }

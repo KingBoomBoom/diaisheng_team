@@ -37,8 +37,8 @@
         where data_point_id=#{dataPointId} and p.data_model_id=m.data_model_id
     </select>
 
-    <select id="queryByDataPointId" parameterType="String" resultMap="dataValueMap">
-       select*from data_value where data_point_id=#{dataPointId}
+    <select id="getDataByPointId" parameterType="String" resultMap="dataValueMap">
+       select*from data_value where data_point_id=#{dataPointId} order by create_time desc limit 1
     </select>
 
 

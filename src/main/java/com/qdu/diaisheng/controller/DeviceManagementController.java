@@ -75,11 +75,11 @@ public class DeviceManagementController {
     @ResponseBody
     public Map<String,Object>getDevice(HttpServletRequest request){
 
-        User user=(User) request.getSession().getAttribute("user");
+        User user=(User) request.getSession().getAttribute("loginUser");
         Map<String,Object>modelMap=new HashMap<>();
         if(user==null){
             modelMap.put("success",false);
-            modelMap.put("redirect",true);
+            modelMap.put("redirect","/diaisheng/admin/login");
             return modelMap;
         }else{
             List<Device> deviceList=deviceDao.queryDevice(user.getUserId());

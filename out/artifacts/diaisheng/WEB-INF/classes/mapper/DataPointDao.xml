@@ -19,8 +19,10 @@
             <result column="data_model_name" property="dataModelName"/>
         </association>
     </resultMap>
+
+
     <select id="queryDataPointListByDataModel" parameterType="Integer" resultType="com.qdu.diaisheng.entity.DataPoint">
-        select data_point_id,data_point_name, data_point_register,data_type,power,last_edit_time from data_point where data_model_id=#{dataModelId};
+        select data_point_id,data_point_name from data_point where data_model_id=#{dataModelId} order by data_point_id asc
     </select>
     <select id="getPointNameByPointId" resultType="String">
         select data_point_name from data_point where data_point_id=#{dataPointId}
