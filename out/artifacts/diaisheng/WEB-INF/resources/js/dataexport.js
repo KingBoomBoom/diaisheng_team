@@ -1,7 +1,18 @@
 $(function (){
-    getDevices();
+    getDevices('00015203000000000001');
+    var urlData = decodeURI(location.search); //获取url中"?"符后的字串
+    var theRequest = new Object();
+    if (urlData.indexOf("?") != -1) {
+        var str = urlData.substr(1);
+        strs = str.split("&");
+        for(var i = 0; i < strs.length; i ++) {
+            theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+        }
+    }
     layui.use('form', function(){
         var form = layui.form;
+        $("#congji").html('<option value="">'+theRequest.congji+'</option>');
+        $("#data").html('<option value="">'+theRequest.dataName+'</option>');
         form.render();
         form.on('select(device)', function (data) {
             getModels(data.value);
@@ -98,7 +109,6 @@ function query(){
         dataType:"json",
         success:function(data){
                 $.each(data.dataValue,function(key,value){
-                    console.log(data.dataValue);
                     name.push(value.createTime);
                 });
                 $.each(data.dataValue,function(key,value){
@@ -117,7 +127,7 @@ function query(){
         error: function (data) {
             //请求失败时执行该函数
             alert("图表请求数据失败!");
-            myChart.hideLoading();
+            myCharts.hideLoading();
         }
     });
 
@@ -132,8 +142,8 @@ function getDataPoints(modelId){//获取对应数据点列表
         dataType: "json",
         success: function (data) {
             $.each(data.dataPointList, function (key, value) {
-                //      $("#data").options.add(new Option(value.dataPointName, value.dataPointID));
-                $("#data").append("<option value='"+value.dataPointId+"'>"+value.dataPointName+"</option>");
+                var option = new Option(value.dataPointName,value.dataPointId);
+                $('#data').append(option);//往下拉菜单里添加元素
                 renderForm();
             });
         },
@@ -151,8 +161,8 @@ function getModels(deviceId) {//获取对应从机列表
         dataType: "json",
         success: function (data) {
             $.each(data.dataModelList, function (key, value) {
-                //$("congji").options.add(new Option(value.dataModelName, value.dataModelId));
-                $("#congji").append("<option value='"+value.dataModelId+"'>"+value.dataModelName+"</option>");
+                var option = new Option(value.dataModelName,value.dataModelId);
+                $('#congji').append(option);//往下拉菜单里添加元素
                 renderForm();
             });
         },
@@ -161,7 +171,7 @@ function getModels(deviceId) {//获取对应从机列表
         }
     });
 }
-function getDevices(){//获取设备列表
+function getDevices(deviceId){//获取设备列表
     $("#shebei").html('<option value="">直接选择或搜索选择</option>');
     $.ajax({
         url: '/diaisheng/deviceadmin/getdevice',
@@ -170,11 +180,15 @@ function getDevices(){//获取设备列表
         success: function (data) {
             if (!data.success){
                 if (data.redirect){
-                    window.location.href=data.redirect;
+                    parent.window.location.href=data.redirect;
                 }
             }else{
                 $.each(data.device, function (key, value) {
-                    $("#shebei").append("<option value='"+value.deviceId+"'>"+value.deviceName+"</option>");
+                    var option = new Option(value.deviceName,value.deviceId);
+                    if(value.deviceId == deviceId) {
+                        option.setAttribute("selected",'true');
+                    }
+                    $('#shebei').append(option);//往下拉菜单里添加元素
                     renderForm();
                 });
             }
@@ -217,6 +231,7 @@ function downLoad(){
     })*/
     var str="/diaisheng/valueadmin/downLoadExcel?"+"data="+data+"&stime="+stime+"&etime="+etime;
     window.open(str);
+    myCharts.hideLoading();
 }
 function initEcharts() {
     var option = {

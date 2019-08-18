@@ -69,7 +69,7 @@
                 var tr = obj.tr; //获得当前行 tr 的DOM对象
                 if(obj.event==="history"){
                     window.location.href="/diaisheng/data/dataexport?data="
-                        +data.dataPoint.dataPointId+"&shebei="+encodeURI(data.dataPoint.dataPointName)
+                        +data.dataPoint.dataPointId+"&dataName="+encodeURI(data.dataPoint.dataPointName)
                         +"&congji="+encodeURI(data.dataPoint.dataModel.dataModelName);
                 }else if(obj.event==="collection"){
                     var dataPointId = data.dataPoint.dataPointId;

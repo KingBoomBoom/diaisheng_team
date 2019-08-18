@@ -74,17 +74,18 @@
                     <div class="logo"><a href="index.html"><!-- <img src="../resources/images/logo.png" alt="" /> --><span>Focus</span></a></div>
                     <ul>
                         <li class="label">Main</li>
-                        <li><a linkSelect="1" class="sidebar-sub-toggle" link="/diaisheng/data/list">
+                        <li onclick="f('ul')"><a linkSelect="1" class="sidebar-sub-toggle">
                             <i class="ti-home"></i> 监控中心 <span class="badge badge-primary">2</span> <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a linkSelect="1" link="index.html">地图展示</a></li>
-                                <li><a linkSelect="1" link="/diaisheng/data/list">列表展示</a></li>
-
+                            <ul class="ul1" id="ul">
+                                <li><a linkSelect="1"><i class="ti-layout-grid2-alt"></i>地图展示</a></li>
+                                <li><a linkSelect="1" link="/diaisheng/data/list"><i class="ti-layout-grid2-alt"></i>列表展示</a></li>
                             </ul>
                         </li>
+
                         <li><a linkSelect="1" link="/diaisheng/data/dataexport?data=0"><i class="ti-layout-grid2-alt"></i> 历史记录</a></li>
+                        <!--<li><a linkSelect="1" link="/diaisheng/data/photo"><i class="ti-layout-grid2-alt"></i> 定时抓拍</a></li>-->
                         <li class="label">Apps</li>
-                        <li><a class="sidebar-sub-toggle" href="#"><i class="ti-bar-chart-alt"></i>用户中心 <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <li><a class="sidebar-sub-toggle" href="#"><i class="ti-bar-chart-alt"></i>用户中心<span class="sidebar-collapse-icon ti-angle-down"></span></a>
                             <ul>
                                 <li><a href="chart-flot.html">角色管理</a></li>
                                 <li><a href="chart-morris.html">子用户管理</a></li>
@@ -92,7 +93,6 @@
                                 <li><a href="chartist.html">用户密码</a></li>
                                 <li><a href="chart-peity.html">通讯密码</a></li>
                                 <li><a href="chart-sparkline.html">微信绑定管理</a></li>
-                            
                             </ul>
                         </li>
  
@@ -167,9 +167,21 @@
         $(window).resize(function() {
             init();
         });
-       $("#linkList").on("click", "a[linkSelect='1']", function(event){
-            $("#iframe-main").attr("src",event.currentTarget.attributes.link.value);
-        });
+        var ul1=document.getElementsByClassName("ul1");
+        var dis=ul1.style.display;
+        ul1.style.display='none';
     })
+    function f(str){
+        var sub_menu = document.getElementById(str);
+        var dis_v = sub_menu.style.display;
+        if(dis_v == "none")
+            sub_menu.style.display = "block";
+        else
+            sub_menu.style.display = "none";
+    }
+    $("#linkList").on("click", "a[linkSelect='1']", function(event){
+        $("#iframe-main").attr("src",event.currentTarget.attributes.link.value);
+    });
+
 </script>
 </html>
