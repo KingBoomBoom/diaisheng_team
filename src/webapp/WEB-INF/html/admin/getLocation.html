@@ -1,0 +1,53 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+		body, html{width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+		#allmap{height:500px;width:100%;}
+		#r-result{width:100%; font-size:14px;}
+	</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=50CuVfqAiqvhphxCRQ9XLG5GPKXlIg9t"></script>
+	<script type="text/javascript" src="../resources/js/jquery-1.9.0.min.js"></script>
+	<title>设备定位</title>
+</head>
+<body>
+	<div id="allmap"></div>
+	<div id="r-result">
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");
+	map.centerAndZoom(new BMap.Point(116.331398,39.897445),11);
+	map.enableScrollWheelZoom(true);
+	var lat;
+	var lon;
+	 $.ajax({
+	                        url:"/diaisheng/deviceadmin/getlocation",
+	                        type:"get",
+	                        dataType:"json",
+	                        success:function(data){
+	                           if(data.errcode==0){
+								   lat=data.lat;
+								   lon=data.lon;
+								   console.log(lat);
+								   console.log(lon);
+								   map.clearOverlays();
+								   var new_point = new BMap.Point(lon,lat);
+								   var marker = new BMap.Marker(new_point);  // 创建标注
+								   map.addOverlay(marker);              // 将标注添加到地图中
+								   map.panTo(new_point);  
+							   }
+							   else{
+								   alert("查询位置出错");
+							   }
+	                        },
+	                        error: function (errorMsg) {
+	                           alert("查询位置出错");
+	                           alert(errorMsg);
+	                        }
+	                    })
+	
+</script>
