@@ -4,7 +4,7 @@
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	<style type="text/css">
 		body, html{width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
-		#allmap{height:500px;width:100%;}
+		#allmap{height:700px;width:1200px;margin-left: 100px;margin-top: 100px}
 		#r-result{width:100%; font-size:14px;}
 	</style>
 	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=50CuVfqAiqvhphxCRQ9XLG5GPKXlIg9t"></script>
@@ -20,7 +20,7 @@
 <script type="text/javascript">
 	// 百度地图API功能
 	var map = new BMap.Map("allmap");
-	map.centerAndZoom(new BMap.Point(116.331398,39.897445),11);
+	map.centerAndZoom(new BMap.Point(116.331398,39.897445),15);
 	map.enableScrollWheelZoom(true);
 	var lat;
 	var lon;
@@ -38,7 +38,16 @@
 								   var new_point = new BMap.Point(lon,lat);
 								   var marker = new BMap.Marker(new_point);  // 创建标注
 								   map.addOverlay(marker);              // 将标注添加到地图中
-								   map.panTo(new_point);  
+								   map.panTo(new_point);
+                                   var opts={
+                                       width:200,
+                                       height:100,
+                                       titile:'设备地址',
+                                       enableMessage:true
+                                   }
+                                   var infoWindow=new BMap.InfoWindow("详细地址："+data.address,opts);
+                                   map.openInfoWindow(infoWindow,new_point); //开启信息窗口
+
 							   }
 							   else{
 								   alert("查询位置出错");
