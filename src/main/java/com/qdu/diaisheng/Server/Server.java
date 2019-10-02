@@ -5,7 +5,7 @@ import com.qdu.diaisheng.entity.RequestDataConfig;
 import java.io.IOException;
 import java.net.*;
 
-public class Srever {
+public class Server {
 
 
 
@@ -40,8 +40,10 @@ public class Srever {
        requestDataConfig[0].setSlavaId(1);
        requestDataConfig[0].setLength((short) 16);
        requestDataConfig[0].setMessage(new int[]{0x01, 0x03, 0x00, 0x00, 0x00, 0x0C, 0x45,0xCF});
-       requestDataConfig[0].setType(new String[]{"int16","float32","int32","float32"});
-       requestDataConfig[0].setColumn(new String[]{"32442","30948","30946","30945"});
+        requestDataConfig[0].setType(new String[]{"int16","float32","int32","float32"});
+        requestDataConfig[0].setColumn(new String[]{"32442","30948","30946","30945"});
+
+
 
         requestDataConfig[1]=new RequestDataConfig();
         requestDataConfig[1].setSlavaId(2);

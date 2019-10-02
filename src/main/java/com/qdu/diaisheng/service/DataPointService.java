@@ -2,6 +2,8 @@ package com.qdu.diaisheng.service;
 
 import com.qdu.diaisheng.entity.DataPoint;
 import java.util.List;
+
+import com.qdu.diaisheng.entity.Device;
 import org.springframework.stereotype.Service;
 
 
@@ -17,4 +19,5 @@ public interface DataPointService {
 
     List<DataPoint> getDataPointByDevice(String deviceId);
 
+    int getDataPointCount(List<Device> deviceList);
 }

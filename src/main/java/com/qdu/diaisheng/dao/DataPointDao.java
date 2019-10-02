@@ -13,5 +13,5 @@ public interface DataPointDao {
     int updateDataPoint(@Param("dataPoint")DataPoint dataPoint,
                         @Param("dataPointId")String dataPointId);
     List<DataPoint> getDataPointbyDevice(String deviceId);
-
+    int getDataPointCount(String deviceId);
 }

@@ -34,9 +34,9 @@ public class ClientHander extends Thread{
 
         DBMysqlUtil DBUtil =null;
         private   String DBDRIVER = "com.mysql.jdbc.Driver";
-        private   String DBURL = "jdbc:mysql://localhost:3306/diaisheng?useUnicode=true&characterEncoding=utf8";
+        private   String DBURL = "jdbc:mysql://106.12.184.95:3306/diaisheng?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&maxReconnects=10";
         private   String DBUSER = "root";
-        private   String DBPASSWORD = "123qweasdzxc";
+        private   String DBPASSWORD = "diaisheng";
 
         public void init(){
             DBUtil=new DBMysqlUtil(DBDRIVER,DBURL,DBUSER,DBPASSWORD);

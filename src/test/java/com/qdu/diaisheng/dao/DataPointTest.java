@@ -35,11 +35,19 @@ public class DataPointTest extends BaseTest {
     }
 
     @Test
+    @Ignore
     public void testQueryDataPointListByDataModel(){
         int dataModelId=1;
       List<DataPoint> dataPointList = dataPointDao.queryDataPointListByDataModel(dataModelId);
       for(DataPoint dataPoint:dataPointList){
           System.out.println(dataPoint);
       }
+    }
+
+    @Test
+    public void testDataPointCount(){
+        String deviceId="00015203000000000001";
+        int count=dataPointDao.getDataPointCount(deviceId);
+        System.out.println(count);
     }
 }

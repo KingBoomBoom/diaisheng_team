@@ -2,6 +2,7 @@ package com.qdu.diaisheng.service.impl;
 
 import com.qdu.diaisheng.dao.DataPointDao;
 import com.qdu.diaisheng.entity.DataPoint;
+import com.qdu.diaisheng.entity.Device;
 import com.qdu.diaisheng.service.DataPointService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -36,6 +37,19 @@ public class DataPointServiceImpl implements DataPointService {
     @Override
     public List<DataPoint> getDataPointByDevice(String deviceId) {
         return dataPointDao.getDataPointbyDevice(deviceId);
+    }
+
+    @Override
+    public int getDataPointCount(List<Device>deviceList) {
+        int res=0;
+        if(deviceList!=null){
+            for(Device device:deviceList) {
+                res += dataPointDao.getDataPointCount(device.getDeviceId());
+            }
+        }else {
+            return  -1;
+        }
+        return res;
     }
 
 }

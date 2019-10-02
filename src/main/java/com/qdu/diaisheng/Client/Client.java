@@ -51,7 +51,7 @@ public class Client {
         Socket socket=createSocket();
         initSocket(socket);
 
-        socket.connect(new InetSocketAddress(Inet4Address.getLocalHost(),20001),3000);
+        socket.connect(new InetSocketAddress("106.12.184.95",20001),3000);
         System.out.println("publish connect");
         System.out.println("client:"+socket.getLocalAddress()+"P:"+socket.getLocalPort());
         System.out.println("server:"+socket.getInetAddress()+"P:"+socket.getInetAddress());

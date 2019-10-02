@@ -71,7 +71,7 @@ public class DataAdminController {
      **/
     @RequestMapping(value = "/default")
     private String defaultPage(){
-        return "admin/index";
+        return "admin/indx";
     }
 
     @RequestMapping(value = "/photo")

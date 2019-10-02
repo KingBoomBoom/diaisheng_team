@@ -60,4 +60,7 @@
         where data_point_id=#{dataPointId}
     </update>
 
+    <select id="getDataPointCount" resultType="Integer">
+        select count(*)from data_point where data_model_id in(select data_model_id from data_model where device_id= #{deviceId})
+    </select>
 </mapper>

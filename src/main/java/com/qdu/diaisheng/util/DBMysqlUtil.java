@@ -6,7 +6,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
-import org.apache.log4j.Logger;
 
 public class DBMysqlUtil {
     private Connection conn = null;
@@ -16,7 +15,6 @@ public class DBMysqlUtil {
     private String dbConnectionURL = null;
     private String dbUsername = null;
     private String dbPassword = null;
-    private Logger logger = Logger.getLogger(DBMysqlUtil.class);
 
 
     public DBMysqlUtil(String dbDriver, String dbConnectionURL, String dbUsername,String dbPassword){
@@ -36,11 +34,8 @@ public class DBMysqlUtil {
             Class.forName(dbDriver);
             conn = DriverManager.getConnection(dbConnectionURL, dbUsername,
                     dbPassword);
-            logger.info("数据库连接成功");
         } catch (Exception e) {
-            logger.error("Error: DbUtil.getConnection() 获得数据库链接失败.\r\n链接类型:"
-                    + dbDriver + "\r\n链接URL:" + dbConnectionURL + "\r\n链接用户:"
-                    + dbUsername + "\r\n链接密码:" + dbPassword, e);
+            e.printStackTrace();
         }
         return conn;
     }
@@ -49,13 +44,12 @@ public class DBMysqlUtil {
      * 功能：执行查询语句
      */
     public ResultSet select(String sql) {
-        logger.info("Exec select sql:" + sql);
         try {
             conn = getConnection();
             ps = conn.prepareStatement(sql);
             rs = ps.executeQuery(sql);
         } catch (SQLException e) {
-            logger.error("查询数据异常:"+ e.getMessage());
+            e.printStackTrace();
         }
         return rs;
 
@@ -65,7 +59,6 @@ public class DBMysqlUtil {
      * 功能：执行查询语句，获取记录数
      */
     public int getRecordCount(String sql) {
-        logger.info("Exec getRecordCount sql:" + sql);
         int counter = 0;
         try {
             conn = getConnection();
@@ -75,7 +68,7 @@ public class DBMysqlUtil {
                 counter++;
             }
         } catch (SQLException e) {
-            logger.error("执行DbUtil.getRecordCount()方法发生异常，异常信息：", e);
+            e.printStackTrace();
         }finally {
             close();
         }
@@ -87,15 +80,13 @@ public class DBMysqlUtil {
      * 功能:针对单条记录执行更新操作(新增、修改、删除)
      */
     public int executeupdate(String sql) throws Exception {
-        logger.info("Exec update sql:" + sql);
         int num = 0;
         try {
             conn = getConnection();
             ps = conn.prepareStatement(sql);
             num = ps.executeUpdate();
         } catch (SQLException sqle) {
-            logger.error("insert/update/delete  data Exception: " +
-                    sqle.getMessage());
+            sqle.printStackTrace();
         } finally {
             close();
         }
@@ -137,9 +128,8 @@ public class DBMysqlUtil {
             if (conn != null) {
                 conn.close();
             }
-            logger.info("关闭数据库连接成功");
         } catch (Exception e) {
-            logger.error("执行DbUtil.close()方法发生异常，异常信息：", e);
+            e.printStackTrace();
         }
     }
 }

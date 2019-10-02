@@ -9,4 +9,5 @@
     <select id="queryDevice" resultType="com.qdu.diaisheng.entity.Device">
         select *from device where user_id='1'
     </select>
+
 </mapper>
