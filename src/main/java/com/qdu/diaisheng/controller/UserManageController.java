@@ -9,12 +9,10 @@ import com.qdu.diaisheng.util.HttpServletUtil;
 import com.qdu.diaisheng.util.Md5;
 import com.sun.tools.internal.ws.processor.model.Model;
 import com.sun.tools.javac.util.List;
+import org.apache.http.HttpResponse;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -25,6 +23,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Map;
@@ -137,5 +136,26 @@ public class UserManageController {
         return result;
     }
 
+    /**
+     * @Author changliang
+     * @Description 退出系统，如果当前无Session，则直接退出，有Session则移除user属性，同时转向登录
+     * @Date 2019/7/20 20:22
+     * @Param user
+     * @return result
+     **/
+   @RequestMapping(value = "/exit",method = RequestMethod.GET)
+    public void exitSystem(HttpServletRequest request, HttpServletResponse response){
+        HttpSession session=request.getSession(false);
+        if(session==null)
+            return;
+        else {
+            session.removeAttribute("loginUser");
+        }
+       try {
+           response.sendRedirect("/diaisheng/admin/login");
+       } catch (IOException e) {
+           e.printStackTrace();
+       }
 
+   }
 }

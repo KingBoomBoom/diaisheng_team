@@ -4,15 +4,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+@RequestMapping("/model")
 @Controller
-@RequestMapping("/device")
-public class DeviceAdminController {
-    @RequestMapping(value = "/location",method = RequestMethod.GET)
-    private String dataExport(){
-        return "admin/getLocation";
-    }
+public class DataModelAdminController {
     @RequestMapping(value = "/list",method = RequestMethod.GET)
-    private String deviceList(){
-        return "admin/device";
+    public String ModelList(){
+        return "admin/dataModel";
     }
 }
