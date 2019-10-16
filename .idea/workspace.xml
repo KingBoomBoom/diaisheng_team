@@ -7,36 +7,33 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5505eefe-6939-4759-b25b-857a31b359e3" name="Default Changelist" comment="更新退出系统">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataModelAdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/dataModel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/device.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/css/font.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/css/fonts/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/css/fonts/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/css/fonts/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/css/fonts/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/css/xadmin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/images/device/device1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/images/device/device2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/images/device/device3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/images/device/device4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/js/xadmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/js/xcity.js" afterDir="false" />
+    <list default="true" id="5505eefe-6939-4759-b25b-857a31b359e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/Camera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/Photo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/diaisheng_team_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/diaisheng_team_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DeviceAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DeviceAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/IndexAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/IndexAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/UserManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/UserManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/List.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/List.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/getLocation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/getLocation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/indx.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/indx.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/newList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/newList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/PhotoManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/PhotoManageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/photoShow.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/photoShow.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/table-export.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/table-export.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DeviceAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DeviceAdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/UserManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/UserManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/layui/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/layui/css/layui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/PhotoManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/PhotoManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qdu.diaisheng.BaseTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qdu.diaisheng.BaseTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qdu.diaisheng.dao.DataModelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qdu.diaisheng.dao.DataModelTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qdu.diaisheng.dao.DataPointTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qdu.diaisheng.dao.DataPointTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qdu.diaisheng.dao.DataValueTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qdu.diaisheng.dao.DataValueTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qdu.diaisheng.dao.DeviceDaoTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qdu.diaisheng.dao.DeviceDaoTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qdu.diaisheng.dao.UserDaoTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qdu.diaisheng.dao.UserDaoTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qdu.diaisheng.service.DataValueServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qdu.diaisheng.service.DataValueServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.qdu.diaisheng.BaseTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.qdu.diaisheng.BaseTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.qdu.diaisheng.dao.DataModelTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.qdu.diaisheng.dao.DataModelTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.qdu.diaisheng.dao.DataPointTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.qdu.diaisheng.dao.DataPointTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.qdu.diaisheng.dao.DataValueTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.qdu.diaisheng.dao.DataValueTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.qdu.diaisheng.dao.DeviceDaoTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.qdu.diaisheng.dao.DeviceDaoTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.qdu.diaisheng.dao.UserDaoTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.qdu.diaisheng.dao.UserDaoTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.qdu.diaisheng.service.DataValueServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.qdu.diaisheng.service.DataValueServiceTest.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +43,9 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="diaisheng-dataplatform" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -82,7 +82,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/webapp" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -92,16 +92,16 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\diaiisheng-dataplatform-master\src\webapp\WEB-INF\resources" />
+      <recent name="E:\diaiisheng-dataplatform-master\src\test" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\wangxi\diaisheng_team\src\webapp\WEB-INF\html\admin" />
       <recent name="C:\Users\wangxi\diaisheng_team\src\webapp\WEB-INF\resources\js" />
       <recent name="C:\Users\wangxi\diaisheng_team\src\webapp\WEB-INF\resources\css" />
       <recent name="C:\Users\wangxi\diaisheng_team\src\webapp\WEB-INF\resources\images\device" />
       <recent name="C:\Users\wangxi\diaisheng_team\src\webapp\WEB-INF\resources\css\index" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\diaiisheng-dataplatform-master\src\webapp\WEB-INF\resources" />
-      <recent name="E:\diaiisheng-dataplatform-master\src\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -378,7 +378,10 @@
       <workItem from="1570609319990" duration="3618000" />
       <workItem from="1570675044497" duration="7816000" />
       <workItem from="1570757014660" duration="1549000" />
-      <workItem from="1570857353691" duration="6333000" />
+      <workItem from="1570857353691" duration="7296000" />
+      <workItem from="1570870329297" duration="1036000" />
+      <workItem from="1571192617661" duration="6279000" />
+      <workItem from="1571218468664" duration="3958000" />
     </task>
     <task id="LOCAL-00001" summary="（version2.0）list页面样式修整，注册协议添加，跳转到list时显示当前时间前一小时至当前时间，冗余代码归并">
       <created>1565162879142</created>
@@ -415,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569995278487</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="更新退出以及数据管理，设备管理（静态）">
+      <created>1570867280484</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1570867280484</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,7 +462,8 @@
     <MESSAGE value="（version2.0）list页面样式修整，注册协议添加，跳转到list时显示当前时间前一小时至当前时间，冗余代码归并" />
     <MESSAGE value="历史记录级联查询bug修改，主动采集功能优化（changliang）" />
     <MESSAGE value="更新设备定位" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新设备定位" />
+    <MESSAGE value="更新退出以及数据管理，设备管理（静态）" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新退出以及数据管理，设备管理（静态）" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

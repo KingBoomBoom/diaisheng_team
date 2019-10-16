@@ -236,7 +236,7 @@ public class PhotoManageController {
      **/
     @RequestMapping(value = "/getSnapshotPhoto")
     @ResponseBody
-    public Map<String,Object>GetSnapshotPic(){
+    public String GetSnapshotPic(){
 
         String url="http://39.108.213.89:10100/GetSnapshotPic";
         Map<String,Object>map=new HashMap<>();
@@ -254,9 +254,7 @@ public class PhotoManageController {
             httpGet.setURI(URI.create(url + "?deviceid=c844150007b9&serverip=39.108.213.89"));
             response=client.execute(httpGet);
             String res=EntityUtils.toString(response.getEntity());
-            JSONObject json_test = JSONObject.parseObject(res);
-            ImageUtil.Base64ToImage(json_test.get("picBase64").toString());
-            map.put("data",res);
+            return res;
         }catch (Exception e){
             map.put("msg","java获取设备实时抓拍图片接口异常");
             logger.error("java获取设备实时抓拍图片接口异常", e);
@@ -271,7 +269,7 @@ public class PhotoManageController {
                 logger.error("client关闭出现异常(获取设备实时抓拍图片)",e);
             }
         }
-        return map;
+        return "error";
 
     }
 
