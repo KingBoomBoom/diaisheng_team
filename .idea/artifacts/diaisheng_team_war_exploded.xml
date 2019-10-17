@@ -71,6 +71,10 @@
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.9" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.5.6" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.10" />
+          <element id="library" level="project" name="Maven: org.quartz-scheduler:quartz:2.3.1" />
+          <element id="library" level="project" name="Maven: com.mchange:c3p0:0.9.5.3" />
+          <element id="library" level="project" name="Maven: com.mchange:mchange-commons-java:0.2.15" />
+          <element id="library" level="project" name="Maven: com.zaxxer:HikariCP-java7:2.4.13" />
         </element>
       </element>
       <element id="directory" name="META-INF">

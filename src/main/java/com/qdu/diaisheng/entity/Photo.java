@@ -1,16 +1,16 @@
 package com.qdu.diaisheng.entity;
 
 public class Photo {
-    private String photoId;
+    private Integer photoId;
     private String createTime;
-    private Object content;
+    private String content;
     private String cameraId;
 
-    public String getPhotoId() {
+    public Integer getPhotoId() {
         return photoId;
     }
 
-    public void setPhotoId(String photoId) {
+    public void setPhotoId(Integer photoId) {
         this.photoId = photoId;
     }
 
@@ -22,11 +22,11 @@ public class Photo {
         this.createTime = createTime;
     }
 
-    public Object getContent() {
+    public String getContent() {
         return content;
     }
 
-    public void setContent(Object content) {
+    public void setContent(String content) {
         this.content = content;
     }
 

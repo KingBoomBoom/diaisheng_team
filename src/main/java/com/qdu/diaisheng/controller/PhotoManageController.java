@@ -1,5 +1,8 @@
 package com.qdu.diaisheng.controller;
 
+import com.qdu.diaisheng.entity.Photo;
+import com.qdu.diaisheng.service.PhotoService;
+import com.qdu.diaisheng.util.HttpServletUtil;
 import com.qdu.diaisheng.util.ImageUtil;
 import com.qdu.diaisheng.util.Md5;
 import org.apache.commons.httpclient.HttpClient;
@@ -14,13 +17,17 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import java.io.IOException;
 import java.net.URI;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import com.alibaba.fastjson.JSONObject;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * @ClassName PhotoManageController
@@ -32,6 +39,8 @@ import com.alibaba.fastjson.JSONObject;
 @Controller
 @RequestMapping(value = "/photos")
 public class PhotoManageController {
+    @Autowired
+    private PhotoService photoService;
     private Logger logger = Logger.getLogger(this.getClass());
     /**
      * @Author changliang
@@ -228,48 +237,21 @@ public class PhotoManageController {
         return map;
     }
 
-    /**
-     * @Author wangxi
-     * @Description  获取设备实时抓拍图片
-     * @Date 2019/8/11 16:55
-     * HttpGet
-     **/
-    @RequestMapping(value = "/getSnapshotPhoto")
+    @RequestMapping(value = "/getnewphoto")
     @ResponseBody
-    public String GetSnapshotPic(){
-
-        String url="http://39.108.213.89:10100/GetSnapshotPic";
-        Map<String,Object>map=new HashMap<>();
-        CloseableHttpClient client=null;
-        HttpGet httpGet=null;
-        HttpResponse response=null;
-        try{
-            String charset="UTF-8";
-            client=HttpClientBuilder.create().build();
-            httpGet=new HttpGet(url);
-            RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(50000).setConnectTimeout(50000).build();
-            httpGet.setConfig(requestConfig);
-            httpGet.addHeader("Content-Type","application/x-www-form-urlencoded");
-            httpGet.addHeader("charset",charset);
-            httpGet.setURI(URI.create(url + "?deviceid=c844150007b9&serverip=39.108.213.89"));
-            response=client.execute(httpGet);
-            String res=EntityUtils.toString(response.getEntity());
-            return res;
-        }catch (Exception e){
-            map.put("msg","java获取设备实时抓拍图片接口异常");
-            logger.error("java获取设备实时抓拍图片接口异常", e);
-            e.printStackTrace();
-        }finally {
-            httpGet.releaseConnection();
-            try{
-                if(client!=null){
-                    client.close();
-                }
-            }catch (Exception e){
-                logger.error("client关闭出现异常(获取设备实时抓拍图片)",e);
-            }
+    public Map<String,Object>getNewPhoto(){
+        String camerId="c844150007b9";
+        Photo p=photoService.getNewPhoto(camerId);
+        Map<String,Object>map=new HashMap<String,Object>();
+        if(p==null){
+            map.put("err",1);
+            map.put("errMag","未查到图片");
+        }else {
+            map.put("picBase64",p.getContent());
+            map.put("err",0);
         }
-        return "error";
+        return  map;
+
 
     }
 
