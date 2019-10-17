@@ -11,8 +11,10 @@ $(function (){
     }
     layui.use('form', function(){
         var form = layui.form;
-        $("#congji").html('<option value="">'+theRequest.congji+'</option>');
-        $("#data").html('<option value="">'+theRequest.dataName+'</option>');
+        if(theRequest.congji&&theRequest.dataName){
+            $("#congji").html('<option value="">'+theRequest.congji+'</option>');
+            $("#data").html('<option value="'+theRequest.data+'">'+theRequest.dataName+'</option>');
+        }
         form.render();
         form.on('select(device)', function (data) {
             getModels(data.value);

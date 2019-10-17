@@ -1,10 +1,7 @@
 
-package com.qdu.diaisheng.util;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+package com.qdu.diaisheng.task;
+
+import java.sql.*;
 import java.util.List;
 
 public class DBMysqlUtil {
@@ -27,9 +24,6 @@ public class DBMysqlUtil {
      * 功能：获取数据库连接
      */
     public Connection getConnection() {
-        System.out.println("连接地址："+dbConnectionURL);
-        System.out.println("用户名："+dbUsername);
-        System.out.println("密码："+dbPassword);
         try {
             Class.forName(dbDriver);
             conn = DriverManager.getConnection(dbConnectionURL, dbUsername,
