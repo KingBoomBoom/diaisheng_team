@@ -21,6 +21,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import com.mysql.jdbc.Driver;
 
 public class ClientHander extends Thread{
 
@@ -30,7 +31,6 @@ public class ClientHander extends Thread{
         public ClientHander(Socket socket){
             this.socket=socket;
         }
-
 
         DBMysqlUtil DBUtil =null;
         private   String DBDRIVER = "com.mysql.jdbc.Driver";
@@ -120,7 +120,6 @@ public class ClientHander extends Thread{
                         System.out.println("error");
 
 
-
                 }
 
                 if(requestDataConfig.getColumn()[i]!="NG"){
@@ -173,7 +172,6 @@ public class ClientHander extends Thread{
 
         @Override
         public void run(){
-
             super.run();
             System.out.println("start comm");
             //   for(RequestDataConfig request:requestDataConfig){
