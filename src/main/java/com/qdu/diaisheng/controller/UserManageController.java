@@ -7,8 +7,7 @@ import com.qdu.diaisheng.entity.User;
 import com.qdu.diaisheng.service.UserService;
 import com.qdu.diaisheng.util.HttpServletUtil;
 import com.qdu.diaisheng.util.Md5;
-import com.sun.tools.internal.ws.processor.model.Model;
-import com.sun.tools.javac.util.List;
+
 import org.apache.http.HttpResponse;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

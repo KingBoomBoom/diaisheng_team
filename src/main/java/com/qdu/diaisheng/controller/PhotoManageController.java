@@ -255,4 +255,42 @@ public class PhotoManageController {
 
     }
 
+    @RequestMapping(value = "/getnewphototest")
+    @ResponseBody
+    public String getNewPhotoTest(){
+        String url="http://39.108.213.89:10100/GetSnapshotPic";
+        Map<String,Object> map=new HashMap<>();
+        CloseableHttpClient client=null;
+        HttpGet httpGet=null;
+        HttpResponse response=null;
+        try{
+            String charset="UTF-8";
+            client= HttpClientBuilder.create().build();
+            httpGet=new HttpGet(url);
+            RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(50000).setConnectTimeout(50000).build();
+            httpGet.setConfig(requestConfig);
+            httpGet.addHeader("Content-Type","application/x-www-form-urlencoded");
+            httpGet.addHeader("charset",charset);
+            httpGet.setURI(URI.create(url + "?deviceid=c844150007b9&serverip=39.108.213.89"));
+            response=client.execute(httpGet);
+            String res= EntityUtils.toString(response.getEntity());
+            return res;
+        }catch (Exception e){
+            map.put("msg","java获取设备实时抓拍图片接口异常");
+            e.printStackTrace();
+        }finally {
+            httpGet.releaseConnection();
+            try{
+                if(client!=null){
+                    client.close();
+                }
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+
+        return "err:1";
+
+    }
+
 }

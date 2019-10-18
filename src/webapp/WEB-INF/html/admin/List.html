@@ -117,6 +117,7 @@
                 <div>
                     <i class="menu-icon fa fa-th-large"></i>
                     <span class="menu-title">退出系统</span>
+
                 </div>
             </a>
 
@@ -125,22 +126,17 @@
     </ul>
 </div>
 
-
-
-
-
-
-
-<div class="right_content" style="position: relative;height: 650px; width:300px;border: solid; border-radius:10px;border-color:#cccccc; border-width:1px;margin-left:20px; margin-top: 30px; box-shadow: 5px 5px #e6d9d9;">
+<div class="right_content" style="position: relative;height: 650px; width:200px;border: solid; border-radius:10px;border-color:#cccccc; border-width:1px;margin-left:20px; margin-top: 30px; box-shadow: 5px 5px #e6d9d9;">
     <p class="ex"><b>迪爱生</b></p>
     <p class="ex" style=" color: #cccccc; font-size:10px;">00015203000000000001</p>
 </div>
-    <div id="l2"  style="position: relative;margin-left: 340px; margin-top:-650px;border: solid; border-radius:10px; border-color:  #ccccff; border-width: 1px; box-shadow: 5px 5px #e6d9d9; ">
+<div id="l2"  style="position: relative;margin-left: 250px; margin-top:-680px;border: solid; border-radius:10px; border-color:  #ccccff; border-width: 1px; box-shadow: 5px 5px #e6d9d9; ">
     <section id="dataList" style="height: 30px">
         <p style="margin: 0px;margin-left: 10px; padding-top: 10px; "><b style="">设备名称:迪爱生</b></p>
         <table class="layui-table" id="listInfo" lay-filter="demoEvent"></table>
     </section>
 </div>
+
 <script type="text/html" id="barDemo">
     <div id="caozuo">
         <button type="button" class="layui-btn" id="history" lay-event="history">历史记录</button>
@@ -156,17 +152,24 @@
             table.render({
                 elem: '#listInfo'
                 , url: "/diaisheng/valueadmin/getdata"
+                , initSort:{
+                    field:'dataModel',
+                    type:'desc',
+                    rule: function(v,i,arr){
+
+                    }
+                }
                 , cols: [[
                     {type: 'numbers'}
-                    , {field: 'dataPoint', title: 'ID', width: 70,sort:true,align: 'center',templet: '<div>{{d.dataPoint.dataPointId}}</div>'}
-                    , {field: 'dataPoint', title: '数据点', width: 145,align: 'center',templet: '<div>{{d.dataPoint.dataPointName}}</div>'}
-                    , {field: 'dataPoint', title: '从机名称', width: 150,align: 'center',templet: '<div>{{d.dataPoint.dataModel.dataModelName}}</div>'}
-                    , {field: 'createTime', title: '更新时间', width: 175,sort:true,align: 'center'}
-                    , {field: 'value', title: '当前值', width: 82,sort:true,align: 'center'}
+                    , {field: 'dataPoint', title: 'ID', width: 70,sort:true,align: 'center',templet: '<div>{{d.dataPoint.dataPointId}}</div>',sort:false}
+                    , {field: 'dataPoint', title: '数据点', width: 150,align: 'center',templet: '<div>{{d.dataPoint.dataPointName}}</div>',sort:false}
+                    , {field: 'dataModel', title: '从机名称', width: 165,align: 'center',templet: '<div>{{d.dataPoint.dataModel.dataModelName}}</div>',sort:true}
+                    , {field: 'createTime', title: '更新时间', width: 175,sort:true,align: 'center',sort:false}
+                    , {field: 'value', title: '当前值', width: 82,sort:true,align: 'center',sort:false}
                     , {
                         field: 'modify',
                         title: '操作',
-                        width: 270,
+                        width: 280,
                         unresize:true,
                         align: 'center',
                         toolbar: '#barDemo',

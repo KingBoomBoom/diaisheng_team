@@ -9,6 +9,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -26,16 +27,19 @@ public class PhotoTimerTask {
 
     @Autowired
     private PhotoService photoService;
+    private Logger logger = Logger.getLogger(this.getClass());
 
     /**
      * @Author wangxi
      * @Description 定时执行任务，每半小时从接口获取图片的Base64编码并存入数据库中
+     * 有错误，暂时注释
      * @Date 2019/7/21 23:35
      * @Param [request, response]
      * @return
      **/
 
-    @Scheduled(cron = "0 */30 * * * ?")
+   // @Scheduled(cron = "0 */1 * * * ?")
+    /*
     public void timerAddPhoto(){
         String url="http://39.108.213.89:10100/GetSnapshotPic";
         Map<String,Object> map=new HashMap<>();
@@ -63,7 +67,7 @@ public class PhotoTimerTask {
             p.setCreateTime(formatCurrent);
             p.setContent(Base64);
             if(photoService.addPhoto(p)>0){
-                System.out.println("添加成功");
+                logger.info("添加成功");
             }
         }catch (Exception e){
             map.put("msg","java获取设备实时抓拍图片接口异常");
@@ -79,6 +83,6 @@ public class PhotoTimerTask {
             }
         }
     }
-
+*/
 
 }
