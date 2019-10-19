@@ -27,7 +27,7 @@
     <select id="getnowdate" resultMap="dataValueMap" >
 
         <foreach collection="dataPointIds" item="dataPointId"  separator="union all" close="">
-            ( select * from data_value where data_point_id=#{dataPointId} order by create_time desc limit 1)
+            ( select data_value_id,val,data_point_id,DATE_FORMAT(create_time, '%Y-%m-%d %k:%i:%s') as create_time from data_value where data_point_id=#{dataPointId} order by create_time desc limit 1)
         </foreach>
 
     </select>

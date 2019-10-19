@@ -57,122 +57,140 @@ public class ClientHander extends Thread{
                 Connection conn=DBUtil.getConnection();
                 byte[] data11=new byte[]{0x01,0x03,0x00,0x02,0x00,0x01,(byte)0x25 ,(byte)0xCA}; //出水温度32442
                 s1 = queryData(data11);
-                ss = new BigInteger(s1[3]+s1[4],16).toString();//转换成十进制
-                decData = String.valueOf(Float.parseFloat(ss)/100); //String.format("%.2f",);
-                //System.out.println("\n获取出水温度为："+ss+"------->"+Float.parseFloat(decData)+"\n");
-                insertData(conn,"32442",decData);
-
+                if (s1!=null) {
+                    ss = new BigInteger(s1[3] + s1[4], 16).toString();//转换成十进制
+                    decData = String.valueOf(Float.parseFloat(ss) / 100); //String.format("%.2f",);
+                    //System.out.println("\n获取出水温度为："+ss+"------->"+Float.parseFloat(decData)+"\n");
+                    insertData(conn, "32442", decData);
+                }
                 byte[] data12=new byte[]{0x01,0x03,0x00,0x07,0x00,0x01,(byte)0x35 ,(byte)0xCB}; //出水累计流量小数30948
                 s1 = queryData(data12);
-                ss = new BigInteger(s1[3]+s1[4],16).toString();//转换成十进制
-                decData = String.valueOf(Float.parseFloat(ss)/1000);
-                //System.out.println("\n获取出水累计流量小数为："+ss+"------->"+decData+"\n");
-                insertData(conn,"30948",decData);
-
+                if (s1!=null) {
+                    ss = new BigInteger(s1[3] + s1[4], 16).toString();//转换成十进制
+                    decData = String.valueOf(Float.parseFloat(ss) / 1000);
+                    //System.out.println("\n获取出水累计流量小数为："+ss+"------->"+decData+"\n");
+                    insertData(conn, "30948", decData);
+                }
                 byte[] data13=new byte[]{0x01,0x03,0x00,0x05,0x00,0x02,(byte)0xD4 ,(byte)0x0A}; //出水累计流量整数30946
                 s1 = queryData(data13);
-                ss = new BigInteger(s1[3]+s1[4]+s1[5]+s1[6],16).toString();//转换成十进制
-                decData = String.valueOf(Integer.parseInt(ss));
-               // System.out.println("\n获取出水累计流量整数为："+ss+"------->"+decData+"\n");
-                insertData(conn,"30946",decData);
-
+                if (s1!=null) {
+                    ss = new BigInteger(s1[3] + s1[4] + s1[5] + s1[6], 16).toString();//转换成十进制
+                    decData = String.valueOf(Integer.parseInt(ss));
+                    // System.out.println("\n获取出水累计流量整数为："+ss+"------->"+decData+"\n");
+                    insertData(conn, "30946", decData);
+                }
                 byte[] data14=new byte[]{0x01,0x03,0x00,0x00,0x00,0x02,(byte)0xC4 ,(byte)0x0B}; //出水瞬时流量30945
                 s1 = queryData(data14);
-                ss = new BigInteger(s1[3]+s1[4]+s1[5]+s1[6],16).toString();//转换成十进制
-                decData = String.valueOf(Float.parseFloat(ss)/1000);
-                //System.out.println("\n获取出水瞬时流量为："+ss+"------->"+decData+"\n");
-                insertData(conn,"30945",decData);
-
+                if (s1!=null) {
+                    ss = new BigInteger(s1[3] + s1[4] + s1[5] + s1[6], 16).toString();//转换成十进制
+                    decData = String.valueOf(Float.parseFloat(ss) / 1000);
+                    //System.out.println("\n获取出水瞬时流量为："+ss+"------->"+decData+"\n");
+                    insertData(conn, "30945", decData);
+                }
                 byte[] data21=new byte[]{0x02,0x03,0x00,0x13,0x00,0x01,(byte)0x75 ,(byte)0xFC}; //远程启动35290
                 s1 = queryData(data21);
-                ss = new BigInteger(s1[3]+s1[4],16).toString();//转换成十进制
-                decData = String.valueOf(Integer.parseInt(ss));
-               // System.out.println("\n获取远程启动为："+ss+"------->"+decData+"\n");
-                insertData(conn,"35290",decData);
-
+                if (s1!=null) {
+                    ss = new BigInteger(s1[3] + s1[4], 16).toString();//转换成十进制
+                    decData = String.valueOf(Integer.parseInt(ss));
+                    // System.out.println("\n获取远程启动为："+ss+"------->"+decData+"\n");
+                    insertData(conn, "35290", decData);
+                }
                 byte[] data22=new byte[]{0x02,0x03,0x00,0x00,0x00,0x02,(byte)0xC4,(byte)0x38};//COD即时数据30947
                 s1 = queryData(data22);
-                ss = new BigInteger(s1[3]+s1[4]+s1[5]+s1[6],16).toString();//转换成十进制
-                decData = String.valueOf(Float.parseFloat(ss)/1000);
-              //  System.out.println("\n获取COD即时数据为："+ss+"------->"+decData+"\n");
-                insertData(conn,"30947",decData);
-
+                if (s1!=null) {
+                    ss = new BigInteger(s1[3] + s1[4] + s1[5] + s1[6], 16).toString();//转换成十进制
+                    decData = String.valueOf(Float.parseFloat(ss) / 1000);
+                    //  System.out.println("\n获取COD即时数据为："+ss+"------->"+decData+"\n");
+                    insertData(conn, "30947", decData);
+                }
                 byte[] data31=new byte[]{0x03,0x03,0x00,0x00,0x00,0x01,(byte)0x85,(byte)0xE8};//进水瞬时流量32445
                 s1 = queryData(data31);
-                ss = new BigInteger(s1[3]+s1[4],16).toString();//转换成十进制
-                decData = String.valueOf(Float.parseFloat(ss)/1000);
-               // System.out.println("\n获取进水瞬时流量为："+ss+"------->"+decData+"\n");
-                insertData(conn,"32445",decData);
-
+                if (s1!=null) {
+                    ss = new BigInteger(s1[3] + s1[4], 16).toString();//转换成十进制
+                    decData = String.valueOf(Float.parseFloat(ss) / 1000);
+                    // System.out.println("\n获取进水瞬时流量为："+ss+"------->"+decData+"\n");
+                    insertData(conn, "32445", decData);
+                }
                 byte[] data32=new byte[]{0x03,0x03,0x00,0x02,0x00,0x01,(byte)0x24,(byte)0x28};//进水温度32443
                 s1 = queryData(data32);
-                ss = new BigInteger(s1[3]+s1[4],16).toString();//转换成十进制
-                decData = String.valueOf(Float.parseFloat(ss)/100);
-                //System.out.println("\n获取进水温度为："+ss+"------->"+decData+"\n");
-                insertData(conn,"32443",decData);
-
+                if (s1!=null) {
+                    ss = new BigInteger(s1[3] + s1[4], 16).toString();//转换成十进制
+                    decData = String.valueOf(Float.parseFloat(ss) / 100);
+                    //System.out.println("\n获取进水温度为："+ss+"------->"+decData+"\n");
+                    insertData(conn, "32443", decData);
+                }
                 byte[] data33=new byte[]{0x03,0x03,0x00,0x0A,0x00,0x01,(byte)0xA5,(byte)0xEA};//进水正累积流量小数32279
                 s1 = queryData(data33);
-                ss = new BigInteger(s1[3]+s1[4],16).toString();//转换成十进制
-                decData = String.valueOf(Float.parseFloat(ss)/1000);
-               // System.out.println("\n获取进水正累积流量小数为："+ss+"------->"+decData+"\n");
-                insertData(conn,"32279",decData);
-
+                if (s1!=null) {
+                    ss = new BigInteger(s1[3] + s1[4], 16).toString();//转换成十进制
+                    decData = String.valueOf(Float.parseFloat(ss) / 1000);
+                    // System.out.println("\n获取进水正累积流量小数为："+ss+"------->"+decData+"\n");
+                    insertData(conn, "32279", decData);
+                }
                 byte[] data34=new byte[]{0x03,0x03,0x00,0x08,0x00,0x02,(byte)0x44,(byte)0x2B};//进水正累积流量整数32278
                 s1 = queryData(data34);
-                ss = new BigInteger(s1[3]+s1[4]+s1[5]+s1[6],16).toString();//转换成十进制
-                decData = String.valueOf(Integer.parseInt(ss));
-                //System.out.println("\n获取进水正累积流量整数为："+ss+"------->"+decData+"\n");
-                insertData(conn,"32278",decData);
-
+                if (s1!=null) {
+                    ss = new BigInteger(s1[3] + s1[4] + s1[5] + s1[6], 16).toString();//转换成十进制
+                    decData = String.valueOf(Integer.parseInt(ss));
+                    //System.out.println("\n获取进水正累积流量整数为："+ss+"------->"+decData+"\n");
+                    insertData(conn, "32278", decData);
+                }
                 byte[] data41=new byte[]{0x04,0x03,0x01,0x03,0x00,0x01,(byte)0x75,(byte)0xA3};//罐壁温度32270
                 s1 = queryData(data41);
-                ss = new BigInteger(s1[3]+s1[4],16).toString();//转换成十进制
-                decData = String.valueOf(Float.parseFloat(ss)/10);
-                System.out.println("\n获取罐壁温度为："+ss+"------->"+decData+"\n");
-                insertData(conn,"32270",decData);
-
+                if (s1!=null) {
+                    ss = new BigInteger(s1[3] + s1[4], 16).toString();//转换成十进制
+                    decData = String.valueOf(Float.parseFloat(ss) / 10);
+                    System.out.println("\n获取罐壁温度为：" + ss + "------->" + decData + "\n");
+                    insertData(conn, "32270", decData);
+                }
                 byte[] data42=new byte[]{0x04,0x03,0x01,0x02,0x00,0x01,(byte)0x24,(byte)0x63};//罐内温度32269
                 s1 = queryData(data42);
-                ss = new BigInteger(s1[3]+s1[4],16).toString();//转换成十进制
-                decData = String.valueOf(Float.parseFloat(ss)/10);
-               // System.out.println("\n获取罐内温度为："+ss+"------->"+decData+"\n");
-                insertData(conn,"32269",decData);
-
+                if (s1!=null) {
+                    ss = new BigInteger(s1[3] + s1[4], 16).toString();//转换成十进制
+                    decData = String.valueOf(Float.parseFloat(ss) / 10);
+                    // System.out.println("\n获取罐内温度为："+ss+"------->"+decData+"\n");
+                    insertData(conn, "32269", decData);
+                }
                 byte[] data43=new byte[]{0x04,0x03,0x01,0x00,0x00,0x01,(byte)0x85,(byte)0xA3};//设定温度32268
                 s1 = queryData(data43);
-                ss = new BigInteger(s1[3]+s1[4],16).toString();//转换成十进制
-                decData = String.valueOf(Float.parseFloat(ss)/10);
-                //System.out.println("\n获取设定温度为："+ss+"------->"+decData+"\n");
-                insertData(conn,"32268",decData);
-
+                if (s1!=null) {
+                    ss = new BigInteger(s1[3] + s1[4], 16).toString();//转换成十进制
+                    decData = String.valueOf(Float.parseFloat(ss) / 10);
+                    //System.out.println("\n获取设定温度为："+ss+"------->"+decData+"\n");
+                    insertData(conn, "32268", decData);
+                }
                 byte[] data51=new byte[]{0x05,0x03,0x00,0x02,0x00,0x01,(byte)0x24,(byte)0x4E};//高浓排进水温度41610
                 s1 = queryData(data51);
-                ss = new BigInteger(s1[3]+s1[4],16).toString();//转换成十进制
-                decData = String.valueOf(Float.parseFloat(ss)/100);
-                //System.out.println("\n获取高浓排进水温度为："+ss+"------->"+decData+"\n");
-                insertData(conn,"41610",decData);
-
+                if (s1!=null) {
+                    ss = new BigInteger(s1[3] + s1[4], 16).toString();//转换成十进制
+                    decData = String.valueOf(Float.parseFloat(ss) / 100);
+                    //System.out.println("\n获取高浓排进水温度为："+ss+"------->"+decData+"\n");
+                    insertData(conn, "41610", decData);
+                }
                 byte[] data52=new byte[]{0x05,0x03,0x00,0x00,0x00,0x01,(byte)0x85,(byte)0x8E};//高浓排瞬时流量41609
                 s1 = queryData(data52);
-                ss = new BigInteger(s1[3]+s1[4],16).toString();//转换成十进制
-                decData = String.valueOf(Float.parseFloat(ss)/1000);
-                //System.out.println("\n获取高浓排瞬时流量为："+ss+"------->"+decData+"\n");
-                insertData(conn,"41609",decData);
-
+                if (s1!=null) {
+                    ss = new BigInteger(s1[3] + s1[4], 16).toString();//转换成十进制
+                    decData = String.valueOf(Float.parseFloat(ss) / 1000);
+                    //System.out.println("\n获取高浓排瞬时流量为："+ss+"------->"+decData+"\n");
+                    insertData(conn, "41609", decData);
+                }
                 byte[] data53=new byte[]{0x05,0x03,0x00,0x0A,0x00,0x01,(byte)0xA5,(byte)0x8C};//高浓排正累计流量小数41608
                 s1 = queryData(data53);
-                ss = new BigInteger(s1[3]+s1[4],16).toString();//转换成十进制
-                decData = String.valueOf(Float.parseFloat(ss)/1000);
-                //System.out.println("\n获取高浓排正累计流量小数为："+ss+"------->"+decData+"\n");
-                insertData(conn,"41608",decData);
-
+                if (s1!=null) {
+                    ss = new BigInteger(s1[3] + s1[4], 16).toString();//转换成十进制
+                    decData = String.valueOf(Float.parseFloat(ss) / 1000);
+                    //System.out.println("\n获取高浓排正累计流量小数为："+ss+"------->"+decData+"\n");
+                    insertData(conn, "41608", decData);
+                }
                 byte[] data54=new byte[]{0x05,0x03,0x00,0x08,0x00,0x02,(byte)0x44,(byte)0x4D};//高浓排正累计流量整数41607
                 s1 = queryData(data54);
-                ss = new BigInteger(s1[3]+s1[4]+s1[5]+s1[6],16).toString();//转换成十进制
-                decData = String.valueOf(Integer.parseInt(ss));
-                //logger.info("\n获取高浓排正累计流量整数为："+ss+"------->"+decData);
-                insertData( conn,"41607",decData);
+                if (s1!=null) {
+                    ss = new BigInteger(s1[3] + s1[4] + s1[5] + s1[6], 16).toString();//转换成十进制
+                    decData = String.valueOf(Integer.parseInt(ss));
+                    //logger.info("\n获取高浓排正累计流量整数为："+ss+"------->"+decData);
+                    insertData(conn, "41607", decData);
+                }
             }catch (Exception e){
                 e.printStackTrace();
             }
@@ -206,7 +224,7 @@ public class ClientHander extends Thread{
             }
         }
         public String[] queryData(byte[] data) throws Exception{
-                String[] returnDtuData = new String[]{};
+                String[] returnDtuData = null;
                 StringBuilder sb = new StringBuilder();
                 outputStream = clientSocket.getOutputStream();
                 outputStream.write(data);//发送给Modbus Slave软件的消息
@@ -219,6 +237,7 @@ public class ClientHander extends Thread{
                     sb.append(Integer.toHexString(bytes[i])+" ");//把返回数据转换为16进制
                 }
                 logger.info("原始数据："+sb.toString());
+            if(!sb.substring(0,5).equals("77 77")){
                 returnDtuData = sb.toString().split(" ");
                 for (int i =0;i<returnDtuData.length;i++){
                     if (returnDtuData[i].charAt(0)=='f'){
@@ -229,13 +248,9 @@ public class ClientHander extends Thread{
                     if (returnDtuData[i].length()==1)
                         returnDtuData[i] = "0"+returnDtuData[i];
                 }
-                //System.out.print("获取数据16进制编码为：");
-                for (String s :returnDtuData){
-                    System.out.print(s+" ");
-                }
+               // System.out.print("获取数据16进制编码为：");
 //              String temperature = String.format("%.2f",Integer.parseInt(decimalTemperature)*0.1)+"℃";//温度
-                //SimpleDateFormat f=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-               // System.out.print("\n获取时间为："+f.format(new Date()));
+            }
                 return returnDtuData;
         }
        
