@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+/*    .right_content{
+		font-size: 18px;
+		padding: 12px 15px;
+		color: #252525;
+		position: relative;
+		transition: all 0.4s ease-in-out;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 330px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+		}*/
+.ex{
+    position: relative;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.box{
+    position: relative;margin-top: 0px;margin-left: 0px;margin-right: 0px; border:solid 1px;
+}
+.down-content{
+    display: none;
+}
+.down:hover .down-content{
+    position: fixed;
+    display: list-item;
+   
+    
+}
+.down{
+     background:  #4a9af2;
+    border-radius: 5px;
+    color:white;
+    font-size: 12px;
+    border-width: 0px;
+    height: 25px;
+    width: 80px;
+}
+.history{
+    
+    background:  #4a9af2;
+    border-radius: 5px;
+    color:white;
+    font-size: 12px;
+    border-width: 0px;
+    height: 25px;
+    width: 80px;
+}
+.more{
+/*    position:relative;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    margin-right: 10px;*/
+    display: inline-block;
+}
+.more-button{
+    background:  #4a9af2;
+    border-radius: 5px;
+    color:white;
+    font-size: 12px;
+    border-width: 0px;
+    height: 25px;
+    width: 80px;
+}
+.more-items{
+  
+    background: wheat;
+    
+    font-size: 12px;
+    border-width: 0px;
+    height: 25px;
+    width: 80px;
+}
+.span1{
+    margin-top: 20px;
+}
+
+    </style>
+
+    <title>污水智能处理系统</title>
+
+    <!-- ================= Favicon ================== -->
+    <!-- Standard -->
+    <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
+    <!-- Retina iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
+    <!-- Retina iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
+    <!-- Standard iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
+    <!-- Standard iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
+
+    <!-- Styles -->
+    <link href="assets/css/lib/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/lib/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/lib/data-table/buttons.bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/menubar/sidebar.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/lib/helper.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet"></head>
+
+<body>
+		<!-- jquery vendor -->
+    <script src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js" type="text/javascript"></script>
+    <script src="../../NIIT_Project/web/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="../resources/js/lib/jquery.min.js"></script>
+    <script src="../resources/js/lib/jquery.nanoscroller.min.js"></script>
+    <!-- nano scroller -->
+    <script src="../resources/js/lib/menubar/sidebar.js"></script>
+    <script src="../resources/js/lib/preloader/pace.min.js"></script>
+    <!-- sidebar -->
+    
+    <!-- bootstrap -->
+
+    <script src="../resources/js/lib/bootstrap.min.js"></script><script src="../resources/js/scripts.js"></script>
+    <!-- scripit init-->
+    <script src="../resources/js/lib/data-table/datatables.min.js"></script>
+    <script src="../resources/js/lib/data-table/buttons.dataTables.min.js"></script>
+    <script src="../resources/js/lib/data-table/dataTables.buttons.min.js"></script>
+    <script src="../resources/js/lib/data-table/buttons.flash.min.js"></script>
+    <script src="../resources/js/lib/data-table/jszip.min.js"></script>
+    <script src="../resources/js/lib/data-table/pdfmake.min.js"></script>
+    <script src="../resources/js/lib/data-table/vfs_fonts.js"></script>
+    <script src="../resources/js/lib/data-table/buttons.html5.min.js"></script>
+    <script src="../resources/js/lib/data-table/buttons.print.min.js"></script>
+    <script src="../resources/js/lib/data-table/datatables-init.js"></script>
+
+        <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+            <div class="nano">
+                <div class="nano-content">
+                    <div class="logo"><a href="index.html"><!-- <img src="../resources/images/logo.png" alt="" /> --><span>Focus</span></a></div>
+                    <ul>
+                        <li class="label">Main</li>
+                        <li><a class="sidebar-sub-toggle">< 监控中心 <span class="badge badge-primary">2</span> <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                            <ul>
+                                <li><a href="index.html">地图展示</a></li>
+                                <li><a href="List.html">列表展示</a></li>
+                                
+                                
+                                
+                            </ul>
+                        </li>
+
+                        <li class="label">Apps</li>
+                        <li><a class="sidebar-sub-toggle"><i class="ti-bar-chart-alt"></i>用户中心 <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                            <ul>
+                                <li><a href="chart-flot.html">角色管理</a></li>
+                                <li><a href="chart-morris.html">子用户管理</a></li>
+                                <li><a href="chartjs.html">用户信息</a></li>
+                                <li><a href="chartist.html">用户密码</a></li>
+                                <li><a href="chart-peity.html">通讯密码</a></li>
+                                <li><a href="chart-sparkline.html">微信绑定管理</a></li>
+                            
+                            </ul>
+                        </li>
+ 
+                        <li><a href="app-email.html"><i class="ti-email"></i> 手机端</a></li>
+                        <li><a href="app-profile.html"><i class="ti-user"></i> 物联网卡</a></li>
+                        <li><a href="app-widget-card.html"><i class="ti-layout-grid2-alt"></i> 摄像头管理</a></li>
+            
+                        <li><a class="sidebar-sub-toggle"><i class="ti-layout"></i> 中性管理 <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                            <ul>
+                                <li><a href="ui-typography.html"></a></li>
+                                <li><a href="ui-alerts.html">系统设置</a></li>
+                                
+                                <li><a href="ui-button.html">邮件服务器</a></li>
+                                <li><a href="ui-dropdown.html">邮件模板</a></li>
+                               
+                                <li><a href="ui-list-group.html">微信推送</a></li>
+                                
+                               
+                            </ul>
+                        </li>
+                        <li><a class="sidebar-sub-toggle"><i class="ti-panel"></i> 组态管理<span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                            <ul>
+                                <li><a href="uc-calendar.html">独立应用</a></li>
+                                <li><a href="uc-carousel.html">模板应用</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li><a class="sidebar-sub-toggle"><i class="ti-layout-grid4-alt"></i> 定时任务<span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                            <ul>
+                                <li><a href="table-basic.html">任务监控</a></li>
+                               
+                            
+                            </ul>
+                        </li>
+                    <li><a class="sidebar-sub-toggle"><i class="ti-heart"></i> 数据管理<span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                            <ul id="datamanager">
+                                <li><a href="font-themify.html">数据模板</a></li>
+                                 <li><a href="font-themify.html">数据推送</a></li>
+                                  <li><a href="table-export.html">历史纪录</a></li>
+                                </ul>
+                               <!-- <div id="datadiv">
+                                <div><p>数据模板</p></div>
+                                <div><p>数据推送</p></div>
+                                <div><p>历史记录</p></div>
+                                </div>-->	
+                               </li>
+          
+                 
+                        <li><a class="sidebar-sub-toggle"><i class="ti-target"></i>触发器管理<span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                            <ul>
+                                <li><a href="page-login.html">触发器列表</a></li>
+                                <li><a href="page-register.html">添加触发器</a></li>
+                                <li><a href="page-reset-password.html">报警联系人/组</a></li>
+                                <li><a href="invoice-editable.html">报警记录</a></li>
+                            </ul>
+                       
+                                  <li><a href="app-email.html"><i class="ti-email"></i> 手机端</a></li>
+                        <li><a href="app-profile.html"><i class="ti-user"></i> 物联网卡</a></li>
+                        <li><a href="app-widget-card.html"><i class="ti-layout-grid2-alt"></i> 摄像头管理</a></li>
+						</li></ul></div></div></div>
+    
+    <div class="right_content" style="position: relative;height: 650px; width: 400px;border: solid; border-radius:10px;border-color:#cccccc; border-width:1px;margin-left:300px; margin-top: 30px; box-shadow: 5px 5px #e6d9d9;">
+        <p class="ex"><b>迪爱生</b></p>
+        <p class="ex" style=" color: #cccccc; font-size:10px;">00015203000000000001</p>
+    </div>
+    <div id="l2"  style="position: relative; height:650px; width: 780px; margin-left: 750px; margin-top:-650px;border: solid; border-radius:10px; border-color:  #ccccff; border-width: 1px; box-shadow: 5px 5px #e6d9d9; ">
+        <div  style="position: relative;height: 39px;margin-top: 0px;margin-left: 0px;margin-right: 0px; background: #f6f5f5; ">
+            <p style="margin: 0px;margin-left: 10px; padding-top: 10px; "><b style="">设备名称:迪爱生</b></p>
+            
+            <hr style="margin: 0px; padding: 0px; margin-top: 6px;">
+        </div>
+        <br>
+        <div  style="position: relative;height: 39px;margin-top: 0px;margin-left: 0px;margin-right: 0px;  ">
+           
+            <div style=""></div> <span class="span1" style="margin-left: 50px; "><b>数据点</b></span>
+            <span class="span1" style="margin-left: 100px;"><b>从机名称</b></span>
+            <span class="span1" style="margin-left: 100px;"><b>更新时间</b></span>
+            <span class="span1" style="margin-left: 100px;"><b>当前值</b></span>
+            <span class="span1" style="margin-left: 100px;"><b>操作</b></span>                      
+            <hr>
+        </div> 
+        <div id="over" style="height: 550px; width: 780px; overflow-y:auto; " >
+        <div class="boxs">
+            <br>
+            <span style="margin-left: 40px;"><b>出水温度</b></span>
+            <span style="margin-left: 75px;"><b>出水电磁流量器</b></span>
+            <span id ="time1" style="margin-left: 50px;"><b>2019-07-09 15:43:00</b></span>
+            <span id="value1" style="margin-left: 55px;"><b>43.92</b></span>
+            <span style="margin-left: 40px;">
+              <a style="marign-left:10px; border-radius: 5px;" href="table-export.html"><input class="history" type="button" value="历史记录"></a>   
+            </span>
+            <div class="more">    
+            <ul>
+                <li class="down" style=" border-radius: 5px;"><a href="#"><input class="more-button" type="button" value="更多 ▼"></a>
+                    <ul>
+                        <li class="down-content"><a href="#"><input class="more-items" type="button" value="主动采集" onclick="Get('32442')"></a></li>
+                        <li class="down-content" style="margin-top: 25px;"><a href="#"><input class="more-items" type="button" value="定时任务"></a></li>
+                        
+                    </ul>
+
+                </li>
+                
+
+            </ul>
+               
+             </div>
+            <p id="dpoint1" value="32442" style="margin-left: 30px; color: #cccccc; font-size:10px;">数据点ID：32442</p>
+                <hr>
+        </div>
+            <div class="boxs">
+            
+            <span style="margin-left: 10px;"><b>出水累计流量小数</b></span>
+            <span style="margin-left: 49px;"><b>出水电磁流量器</b></span>
+            <span id="time2" style="margin-left: 50px;"><b>2019-07-09 15:43:00</b></span>
+            <span id="value2" style="margin-left: 55px;"><b>43.92</b></span>
+            <span style="margin-left: 40px;">
+              <a style="marign-left:10px; border-radius: 5px;" href="table-export.html"><input class="history" type="button" value="历史记录"></a>   
+            </span>
+            <div class="more">    
+            <ul>
+                <li class="down" style=" border-radius: 5px;"><a href="#"><input class="more-button" type="button" value="更多 ▼"></a>
+                    <ul>
+                        <li class="down-content"><a href="#"><input class="more-items" type="button" value="主动采集" onclick="Get('30948')"></a></li>
+                        <li class="down-content" style="margin-top: 25px;"><a href="#"><input class="more-items" type="button" value="定时任务"></a></li>
+                        
+                    </ul>
+
+                </li>
+                
+
+            </ul>
+               
+             </div>
+            <p id="dpoint2" value="30948" style="margin-left: 30px; color: #cccccc; font-size:10px;">数据点ID：30948</p>
+                <hr>
+        </div>
+            <div class="boxs">
+           
+            <span style="margin-left: 10px;"><b>出水累计流量整数</b></span>
+            <span style="margin-left: 49px;"><b>出水电磁流量器</b></span>
+            <span id="time3" style="margin-left: 50px;"><b>2019-07-09 15:43:00</b></span>
+            <span id="value3" style="margin-left: 55px;"><b>43.92</b></span>
+            <span style="margin-left: 40px;">
+              <a style="marign-left:10px; border-radius: 5px;" href="table-export.html"><input class="history" type="button" value="历史记录"></a>   
+            </span>
+            <div class="more">    
+            <ul>
+                <li class="down" style=" border-radius: 5px;"><a href="#"><input class="more-button" type="button" value="更多 ▼"></a>
+                    <ul>
+                        <li class="down-content"><a href="#"><input class="more-items" type="button" value="主动采集" onclick="Get('30946')"></a></li>
+                        <li class="down-content" style="margin-top: 25px;"><a href="#"><input class="more-items" type="button" value="定时任务"></a></li>
+                        
+                    </ul>
+
+                </li>
+                
+
+            </ul>
+               
+             </div>
+ <p id="dpoint3" value="30946" style="margin-left: 30px; color: #cccccc; font-size:10px;">数据点ID：30946</p>
+                <hr>
+        </div>
+            <div class="boxs">
+           
+            <span style="margin-left: 20px;"><b>出水瞬时流量</b></span>
+            <span style="margin-left: 65px;"><b>出水电磁流量器</b></span>
+            <span style="margin-left: 50px;"><b>2019-07-09 15:43:00</b></span>
+            <span style="margin-left: 55px;"><b>43.92</b></span>
+            <span style="margin-left: 40px;">
+              <a style="marign-left:10px; border-radius: 5px;" href="table-export.html"><input class="history" type="button" value="历史记录"></a>   
+            </span>
+            <div class="more">    
+            <ul>
+                <li class="down" style=" border-radius: 5px;"><a href="#"><input class="more-button" type="button" value="更多 ▼"></a>
+                    <ul>
+                        <li class="down-content"><a href="#"><input class="more-items" type="button" value="主动采集" onclick="Get('30945')"></a></li>
+                        <li class="down-content" style="margin-top: 25px;"><a href="#"><input class="more-items" type="button" value="定时任务"></a></li>
+                        
+                    </ul>
+
+                </li>
+                
+
+            </ul>
+               
+             </div>
+ <p id="dpoint4" value="30945" style="margin-left: 30px; color: #cccccc; font-size:10px;">数据点ID： 30945</p>
+                <hr>
+        </div>
+            <div class="boxs">
+           
+            <span style="margin-left: 26px;"><b>COD即时数据</b></span>
+            <span style="margin-left: 75px;"><b>COD在线检测</b></span>
+            <span style="margin-left: 50px;"><b>2019-07-09 15:43:00</b></span>
+            <span style="margin-left: 55px;"><b>43.92</b></span>
+            <span style="margin-left: 40px;">
+              <a style="marign-left:10px; border-radius: 5px;" href="table-export.html"><input class="history" type="button" value="历史记录"></a>   
+            </span>
+            <div class="more">    
+            <ul>
+                <li class="down" style=" border-radius: 5px;"><a href="#"><input class="more-button" type="button" value="更多 ▼"></a>
+                    <ul>
+                        <li class="down-content"><a href="#"><input class="more-items" type="button" value="主动采集" onclick="Get('30947')"></a></li>
+                        <li class="down-content" style="margin-top: 25px;"><a href="#"><input class="more-items" type="button" value="定时任务"></a></li>
+                        
+                    </ul>
+
+                </li>
+                
+
+            </ul>
+               
+             </div>
+ <p id="dpoint5" value="30947" style="margin-left: 30px; color: #cccccc; font-size:10px;">数据点ID：30947</p>
+                <hr>
+        </div>
+            <div class="boxs">
+           
+            <span style="margin-left: 40px;"><b>远程启动</b></span>
+            <span style="margin-left: 90px;"><b>COD在线检测</b></span>
+            <span style="margin-left: 50px;"><b>2019-07-09 15:43:00</b></span>
+            <span style="margin-left: 55px;"><b>43.92</b></span>
+            <span style="margin-left: 40px;">
+              <a style="marign-left:10px; border-radius: 5px;" href="table-export.html"><input class="history" type="button" value="历史记录"></a>   
+            </span>
+            <div class="more">    
+            <ul>
+                <li class="down" style=" border-radius: 5px;"><a href="#"><input class="more-button" type="button" value="更多 ▼"></a>
+                    <ul>
+                        <li class="down-content"><a href="#"><input class="more-items" type="button" value="主动采集" onclick="Get('35290')"></a></li>
+                        <li class="down-content" style="margin-top: 25px;"><a href="#"><input class="more-items" type="button" value="定时任务"></a></li>
+                        
+                    </ul>
+
+                </li>
+                
+
+            </ul>
+               
+             </div>
+ <p id="dpoint6" value="35290" style="margin-left: 30px; color: #cccccc; font-size:10px;">数据点ID：35290</p>
+                <hr>
+        </div>
+            <div class="boxs">
+           
+            <span style="margin-left: 20px;"><b>进水瞬时流量</b></span>
+            <span style="margin-left: 65px;"><b>进水电磁流量器</b></span>
+            <span style="margin-left: 50px;"><b>2019-07-09 15:43:00</b></span>
+            <span style="margin-left: 55px;"><b>43.92</b></span>
+            <span style="margin-left: 40px;">
+              <a style="marign-left:10px; border-radius: 5px;" href="table-export.html"><input class="history" type="button" value="历史记录"></a>   
+            </span>
+            <div class="more">    
+            <ul>
+                <li class="down" style=" border-radius: 5px;"><a href="#"><input class="more-button" type="button" value="更多 ▼"></a>
+                    <ul>
+                        <li class="down-content"><a href="#"><input class="more-items" type="button" value="主动采集" onclick="Get('32445')"></a></li>
+                        <li class="down-content" style="margin-top: 25px;"><a href="#"><input class="more-items" type="button" value="定时任务"></a></li>
+                        
+                    </ul>
+
+                </li>
+                
+
+            </ul>
+               
+             </div>
+ <p id="dpoint7" value="32445" style="margin-left: 30px; color: #cccccc; font-size:10px;">数据点ID：32445</p>
+                <hr>
+        </div>
+            <div class="boxs">
+           
+            <span style="margin-left: 40px;"><b>进水温度</b></span>
+            <span style="margin-left: 75px;"><b>进水电磁流量器</b></span>
+            <span style="margin-left: 50px;"><b>2019-07-09 15:43:00</b></span>
+            <span style="margin-left: 55px;"><b>43.92</b></span>
+            <span style="margin-left: 40px;">
+              <a style="marign-left:10px; border-radius: 5px;" href="table-export.html"><input class="history" type="button" value="历史记录"></a>   
+            </span>
+            <div class="more">    
+            <ul>
+                <li class="down" style=" border-radius: 5px;"><a href="#"><input class="more-button" type="button" value="更多 ▼"></a>
+                    <ul>
+                        <li class="down-content"><a href="#"><input class="more-items" type="button" value="主动采集" onclick="Get('32443')"></a></li>
+                        <li class="down-content" style="margin-top: 25px;"><a href="#"><input class="more-items" type="button" value="定时任务"></a></li>
+                        
+                    </ul>
+
+                </li>
+                
+
+            </ul>
+               
+             </div>
+ <p id="dpoint8" value="32443" style="margin-left: 30px; color: #cccccc; font-size:10px;">数据点ID：32443</p>
+                <hr>
+        </div>
+            <div class="boxs">
+           
+            <span style="margin-left: 15px;"><b>进水正累积流量小数</b></span>
+            <span style="margin-left: 30px;"><b>进水电磁流量器</b></span>
+            <span style="margin-left: 50px;"><b>2019-07-09 15:43:00</b></span>
+            <span style="margin-left: 55px;"><b>43.92</b></span>
+            <span style="margin-left: 40px;">
+              <a style="marign-left:10px; border-radius: 5px;" href="table-export.html"><input class="history" type="button" value="历史记录"></a>   
+            </span>
+            <div class="more">    
+            <ul>
+                <li class="down" style=" border-radius: 5px;"><a href="#"><input class="more-button" type="button" value="更多 ▼"></a>
+                    <ul>
+                        <li class="down-content"><a href="#"><input class="more-items" type="button" value="主动采集" onclick="Get('32279')"></a></li>
+                        <li class="down-content" style="margin-top: 25px;"><a href="#"><input class="more-items" type="button" value="定时任务"></a></li>
+                        
+                    </ul>
+
+                </li>
+                
+
+            </ul>
+               
+             </div>
+ <p id="dpoint9" value="32279" style="margin-left: 30px; color: #cccccc; font-size:10px;">数据点ID：32279</p>
+                <hr>
+        </div>
+            <div class="boxs">
+           
+            <span style="margin-left: 15px;"><b>进水正累积流量整数</b></span>
+            <span style="margin-left: 30px;"><b>进水电磁流量器</b></span>
+            <span style="margin-left: 50px;"><b>2019-07-09 15:43:00</b></span>
+            <span style="margin-left: 55px;"><b>43.92</b></span>
+            <span style="margin-left: 40px;">
+              <a style="marign-left:10px; border-radius: 5px;" href="table-export.html"><input class="history" type="button" value="历史记录"></a>   
+            </span>
+            <div class="more">    
+            <ul>
+                <li class="down" style=" border-radius: 5px;"><a href="#"><input class="more-button" type="button" value="更多 ▼"></a>
+                    <ul>
+                        <li class="down-content"><a href="#"><input class="more-items" type="button" value="主动采集" onclick="Get('32278')"></a></li>
+                        <li class="down-content" style="margin-top: 25px;"><a href="#"><input class="more-items" type="button" value="定时任务"></a></li>
+                        
+                    </ul>
+
+                </li>
+                
+
+            </ul>
+               
+             </div>
+ <p id="dpoint10" value="32278" style="margin-left: 30px; color: #cccccc; font-size:10px;">数据点ID：32278</p>
+                <hr>
+        </div>
+            <div class="boxs">
+           
+            <span style="margin-left: 40px;"><b>罐壁温度</b></span>
+            <span style="margin-left: 80px;"><b>厌氧温度控制</b></span>
+            <span style="margin-left: 58px;"><b>2019-07-09 15:43:00</b></span>
+            <span style="margin-left: 55px;"><b>43.92</b></span>
+            <span style="margin-left: 40px;">
+              <a style="marign-left:10px; border-radius: 5px;" href="table-export.html"><input class="history" type="button" value="历史记录"></a>   
+            </span>
+            <div class="more">    
+            <ul>
+                <li class="down" style=" border-radius: 5px;"><a href="#"><input class="more-button" type="button" value="更多 ▼"></a>
+                    <ul>
+                        <li class="down-content"><a href="#"><input class="more-items" type="button" value="主动采集" onclick="Get('32270')"></a></li>
+                        <li class="down-content" style="margin-top: 25px;"><a href="#"><input class="more-items" type="button" value="定时任务"></a></li>
+                        
+                    </ul>
+
+                </li>
+                
+
+            </ul>
+               
+             </div>
+ <p id="dpoint11" value="32270" style="margin-left: 30px; color: #cccccc; font-size:10px;">数据点ID：32270</p>
+                <hr>
+        </div>
+            <div class="boxs">
+           
+            <span style="margin-left: 40px;"><b>罐内温度</b></span>
+            <span style="margin-left: 80px;"><b>厌氧温度控制</b></span>
+            <span style="margin-left: 58px;"><b>2019-07-09 15:43:00</b></span>
+            <span style="margin-left: 55px;"><b>43.92</b></span>
+            <span style="margin-left: 40px;">
+              <a style="marign-left:10px; border-radius: 5px;" href="table-export.html"><input class="history" type="button" value="历史记录"></a>   
+            </span>
+            <div class="more">    
+            <ul>
+                <li class="down" style=" border-radius: 5px;"><a href="#"><input class="more-button" type="button" value="更多 ▼"></a>
+                    <ul>
+                        <li class="down-content"><a href="#"><input class="more-items" type="button" value="主动采集" onclick="Get('32269')"></a></li>
+                        <li class="down-content" style="margin-top: 25px;"><a href="#"><input class="more-items" type="button" value="定时任务"></a></li>
+                        
+                    </ul>
+
+                </li>
+                
+
+            </ul>
+               
+             </div>
+ <p id="dpoint12" value="32269" style="margin-left: 30px; color: #cccccc; font-size:10px;">数据点ID：32269</p>
+                <hr>
+        </div>
+            <div class="boxs">
+           
+            <span style="margin-left: 40px;"><b>设定温度</b></span>
+            <span style="margin-left: 80px;"><b>厌氧温度控制</b></span>
+            <span style="margin-left: 58px;"><b>2019-07-09 15:43:00</b></span>
+            <span style="margin-left: 55px;"><b>43.92</b></span>
+            <span style="margin-left: 40px;">
+              <a style="marign-left:10px; border-radius: 5px;" href="table-export.html"><input class="history" type="button" value="历史记录"></a>   
+            </span>
+            <div class="more">    
+            <ul>
+                <li class="down" style=" border-radius: 5px;"><a href="#"><input class="more-button" type="button" value="更多 ▼"></a>
+                    <ul>
+                        <li class="down-content"><a href="#"><input class="more-items" type="button" value="主动采集" onclick="Get('32268')"></a></li>
+                        <li class="down-content" style="margin-top: 25px;"><a href="#"><input class="more-items" type="button" value="定时任务"></a></li>
+                        
+                    </ul>
+
+                </li>
+                
+
+            </ul>
+               
+             </div>
+ <p id="dpoint13" value="32268" style="margin-left: 30px; color: #cccccc; font-size:10px;">数据点ID：32268</p>
+                <hr>
+        </div>
+            <div class="boxs">
+           
+            <span style="margin-left: 20px;"><b>高浓排进水温度</b></span>
+            <span style="margin-left: 42px;"><b>高浓排电磁流量计</b></span>
+            <span style="margin-left: 45px;"><b>2019-07-09 15:43:00</b></span>
+            <span style="margin-left: 55px;"><b>43.92</b></span>
+            <span style="margin-left: 40px;">
+              <a style="marign-left:10px; border-radius: 5px;" href="table-export.html"><input class="history" type="button" value="历史记录"></a>   
+            </span>
+            <div class="more">    
+            <ul>
+                <li class="down" style=" border-radius: 5px;"><a href="#"><input class="more-button" type="button" value="更多 ▼"></a>
+                    <ul>
+                        <li class="down-content"><a href="#"><input class="more-items" type="button" value="主动采集" onclick="Get('41610')"></a></li>
+                        <li class="down-content" style="margin-top: 25px;"><a href="#"><input class="more-items" type="button" value="定时任务"></a></li>
+                        
+                    </ul>
+
+                </li>
+                
+
+            </ul>
+               
+             </div>
+ <p id="dpoint14" value="41610" style="margin-left: 30px; color: #cccccc; font-size:10px;">数据点ID：41610</p>
+                <hr>
+        </div>
+            <div class="boxs">
+           
+            <span style="margin-left: 20px;"><b>高浓排瞬时流量</b></span>
+            <span style="margin-left: 43px;"><b>高浓排电磁流量计</b></span>
+            <span style="margin-left: 45px;"><b>2019-07-09 15:43:00</b></span>
+            <span style="margin-left: 55px;"><b>43.92</b></span>
+            <span style="margin-left: 40px;">
+              <a style="marign-left:10px; border-radius: 5px;" href="table-export.html"><input class="history" type="button" value="历史记录"></a>   
+            </span>
+            <div class="more">    
+            <ul>
+                <li class="down" style=" border-radius: 5px;"><a href="#"><input class="more-button" type="button" value="更多 ▼"></a>
+                    <ul>
+                        <li class="down-content"><a href="#"><input class="more-items" type="button" value="主动采集" onclick="Get('41609')"></a></li>
+                        <li class="down-content" style="margin-top: 25px;"><a href="#"><input class="more-items" type="button" value="定时任务"></a></li>
+                        
+                    </ul>
+
+                </li>
+                
+
+            </ul>
+               
+             </div>
+ <p id="dpoint15" value="41609" style="margin-left: 30px; color: #cccccc; font-size:10px;">数据点ID：41609</p>
+                <hr>
+        </div>
+            <div class="boxs">
+           
+            <span style="margin-left: 5px;"><b>高浓排正累积流量小数</b></span>
+            <span style="margin-left: 18px;"><b>高浓排电磁流量计</b></span>
+            <span style="margin-left: 40px;"><b>2019-07-09 15:43:00</b></span>
+            <span style="margin-left: 55px;"><b>43.92</b></span>
+            <span style="margin-left: 40px;">
+              <a style="marign-left:10px; border-radius: 5px;" href="table-export.html"><input class="history" type="button" value="历史记录"></a>   
+            </span>
+            <div class="more">    
+            <ul>
+                <li class="down" style=" border-radius: 5px;"><a href="#"><input class="more-button" type="button" value="更多 ▼"></a>
+                    <ul>
+                        <li class="down-content"><a href="#"><input class="more-items" type="button" value="主动采集" onclick="Get('41608')"></a></li>
+                        <li class="down-content" style="margin-top: 25px;"><a href="#"><input class="more-items" type="button" value="定时任务"></a></li>
+                        
+                    </ul>
+
+                </li>
+                
+
+            </ul>
+               
+             </div>
+ <p id="dpoint16" value="41608" style="margin-left: 30px; color: #cccccc; font-size:10px;">数据点ID：41608</p>
+                <hr>
+        </div>
+            <div class="boxs">
+            
+            <span style="margin-left: 5px;"><b>高浓排正累积流量整数</b></span>
+            <span style="margin-left: 18px;"><b>高浓排电磁流量计</b></span>
+            <span style="margin-left: 40px;"><b>2019-07-09 15:43:00</b></span>
+            <span style="margin-left: 55px;"><b>43.92</b></span>
+            <span style="margin-left: 40px;">
+              <a style="marign-left:10px; border-radius: 5px;" href="table-export.html"><input class="history" type="button" value="历史记录"></a>   
+            </span>
+            <div class="more">    
+            <ul>
+                <li class="down" style=" border-radius: 5px;"><a href="#"><input class="more-button" type="button" value="更多 ▼"></a>
+                    <ul>
+                        <li class="down-content"><a href="#"><input class="more-items" type="button" value="主动采集" onclick="Get('41607')"></a></li>
+                        <li class="down-content" style="margin-top: 25px;"><a href="#"><input class="more-items" type="button" value="定时任务"></a></li>
+                        
+                    </ul>
+
+                </li>
+                
+
+            </ul>
+               
+             </div>
+ <p id="dpoint17" value="41607" style="margin-left: 30px; color: #cccccc; font-size:10px;">数据点ID：41607</p>
+                <hr>
+        </div>
+    </div>  
+    </div>
+         
+                        
+<script type="text/javascript">
+  
+    
+    function UpdateData(){
+        console.log("test");
+        
+        var time = [];
+        var currentData = [];
+        var pointID = [];
+        $.ajax({
+            type:post,
+            url:url,
+            data:'',
+            dataType:"json",
+            success:function(data){
+                $.each(data.dataValue,function(key,value){
+//                    time.push(value.createTime);
+//                    currentData.push(value.value);
+//                    poiontID.push(value.ID);
+                var ap;
+               ap= '<div class="boxs">'+'<br>'+
+            '<span style="margin-left: 40px;"><b>'+/*出水温度*/value.dataname+'</b></span>'+
+            '<span style="margin-left: 75px;"><b>'+/*出水电磁流量器*/value.datacongji+'</b></span>'+
+            '<span id ="time'+value.number+'" style="margin-left: 50px;"><b>'+/*2019-07-09 15:43:00*/value.createTime+'</b></span>'+
+            '<span id="value'+value.number+'" style="margin-left: 55px;"><b>'+/*43.92*/value.value+'</b></span>'+
+            '<span style="margin-left: 40px;">'+
+              '<a style="marign-left:10px; border-radius: 5px;" href="table-export.html"><input class="history" type="button" value="历史记录"></a>'+   
+            '</span>'+
+            
+                '<div class="more">'+    
+            '<ul>'+
+                '<li class="down" style=" border-radius: 5px;"><a href="#"><input class="more-button" type="button" value="更多 ▼"></a>'+
+                   '<ul>'+
+                        '<li class="down-content"><a href="#"><input class="more-items" type="button" value="主动采集" onclick="Get('+'dpoint'+value.number+')"></a></li>'+
+                        '<li class="down-content" style="margin-top: 25px;"><a href="#"><input class="more-items" type="button" value="定时任务"></a></li>'+
+                        
+                    '</ul>'+
+
+                '</li>'+
+                
+
+            '</ul>'+
+               
+             '</div>'+
+            '<p id="dpoint'+value.number+'" value="32442" style="margin-left: 30px; color: #cccccc; font-size:10px;">'+/*32442*/数据点ID：value.ID+'</p>'+
+                '<hr>'+
+        '</div>';
+                $("#over").append(tr);
+                });
+                
+            
+            },
+            error: function (errorMsg) {
+            //请求失败时执行该函数
+            alert("图表请求数据失败!");
+            myChart.hideLoading();
+        }
+    
+
+        });
+        setTimeout('UpdateData()',30000);
+    }
+
+function Get(x){
+    
+    var pointID = document.getElementById(x).value;
+    var time = '';
+    var currentData = '';
+    
+    $.ajax({
+        type:post,
+        data:{"x":x},
+        dataType:'json',
+        success:function(data){
+            $.each(data.dataValue,function(key,value){
+                    time=value.createTime;
+                    currentData=value.value;
+                    
+                });
+                if(pointID == d1){
+                    time1.innerHTML=time;
+                    value1.innerHTML=currentData;
+                }else if(pointID == d2){
+                    time2.innerHTML=time;
+                    value2.innerHTML=currentData;
+                }else if(pointID == d3){
+                    time3.innerHTML=time;
+                    value3.innerHTML=currentData;
+                }else if(pointID == d4){
+                    time4.innerHTML=time;
+                    value4.innerHTML=currentData;
+                }else if(pointID == d5){
+                    time5.innerHTML=time;
+                    value5.innerHTML=currentData;
+                }else if(pointID == d6){
+                    time6.innerHTML=time;
+                    value6.innerHTML=currentData;
+                }else if(pointID == d7){
+                    time7.innerHTML=time;
+                    value7.innerHTML=currentData;
+                }else if(pointID == d8){
+                    time8.innerHTML=time;
+                    value8.innerHTML=currentData;
+                }else if(pointID == d9){
+                    time9.innerHTML=time;
+                    value9.innerHTML=currentData;
+                }else if(pointID == d10){
+                    time10.innerHTML=time;
+                    value10.innerHTML=currentData;
+                }else if(pointID == d11){
+                    time11.innerHTML=time;
+                    value11.innerHTML=currentData;
+                }else if(pointID == d12){
+                    time12.innerHTML=time;
+                    value12.innerHTML=currentData;
+                }else if(pointID == d13){
+                    time13.innerHTML=time;
+                    value13.innerHTML=currentData;
+                }else if(pointID == d14){
+                    time14.innerHTML=time;
+                    value14.innerHTML=currentData;
+                }else if(pointID == d15){
+                    time15.innerHTML=time;
+                    value15.innerHTML=currentData;
+                }else if(pointID == d16){
+                    time16.innerHTML=time;
+                    value16.innerHTML=currentData;
+                }else{
+                    time17.innerHTML=time;
+                    value17.innerHTML=currentData;
+                }
+                
+                      
+        },
+        error: function (errorMsg) {
+            //请求失败时执行该函数
+            alert("图表请求数据失败!");
+            myChart.hideLoading();
+        }
+    })
+}
+  window.onload = function(){
+        console.log("test");
+        UpdateData();
+    };
+</script>
+
+</body>
+
+</html>
