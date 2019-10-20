@@ -71,7 +71,7 @@ public class TimerTask {
      * @return
      **/
     @Async
-    @Scheduled(cron = "0 */10 * * * ?")
+    @Scheduled(cron = "0 */30 * * * ?")
     public void timerAddPhoto(){
         String url="http://39.108.213.89:10100/GetSnapshotPic";
         Map<String,Object> map=new HashMap<>();
@@ -91,15 +91,19 @@ public class TimerTask {
             String res= EntityUtils.toString(response.getEntity());
             JSONObject jsonObject=JSONObject.parseObject(res);
             String Base64=jsonObject.getString("picBase64");
-            SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-            Date current=new Date();
-            String formatCurrent=sdf.format(current);
-            Photo p=new Photo();
-            p.setCameraId("c844150007b9");
-            p.setCreateTime(formatCurrent);
-            p.setContent(Base64);
-            if(photoService.addPhoto(p)>0){
-                logger.info("添加成功");
+            if(Base64!=null){
+                SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                Date current=new Date();
+                String formatCurrent=sdf.format(current);
+                Photo p=new Photo();
+                p.setCameraId("c844150007b9");
+                p.setCreateTime(formatCurrent);
+                p.setContent(Base64);
+                if(photoService.addPhoto(p)>0){
+                    logger.info("添加成功");
+                }else{
+                    logger.warn("添加失败");
+                }
             }
         }catch (Exception e){
             map.put("msg","java获取设备实时抓拍图片接口异常");

@@ -136,6 +136,7 @@
     margin-left: 600px;
 ">实时拍摄</h>
     </div>
+
     <form class="layui-form" >
         <div class="layui-form-item" style="width: 100%">
             <label class="layui-form-label"><!--菜单名称 ：--></label>
@@ -177,8 +178,13 @@
 
         <table  id="layui_table_id" lay-filter="dataTable">
                 <td><img src="../resources/images/device/device1.jpg" style="width: 800px;height: 600px;margin-left: 300px" alt="" id="image"/></td>
+                <td> </td>
+                <td><button class="layui-icon layui-btn layui-btn-warm" id="withExport">主动获取</button></td>
 
         </table>
+
+
+
     </div>
 </div>
 
@@ -196,10 +202,14 @@
     $(document).ready(function() {
             //任何需要执行的js特效
 
+        $("#withExport").click(function(){
+            getIamge();
+        });
+
         getIamge();
         function getIamge(){
             $.ajax({
-                url: "/diaisheng/photos/getnewphototest",
+                url: "/diaisheng/photos/getnewphoto",
                 type: "get",
                 dataType: "json",
                 success: function (data) {
@@ -217,7 +227,7 @@
 
         }
 
-       setInterval(getIamge, 1800000);
+       setInterval(getIamge, 600000);
 
 
         }
