@@ -35,6 +35,8 @@ public class DeviceManagementController {
     //"diaisheng/deviceadmin/getdevice"
 
     @Autowired
+    private DeviceService deviceService;
+    @Autowired
     private DeviceDao deviceDao;
 
     @RequestMapping(value = "/adddevice",method = RequestMethod.POST)
@@ -80,7 +82,7 @@ public class DeviceManagementController {
      * @throws
      * @since
      */
-    @RequestMapping(value = "/getdevice",method = RequestMethod.POST)
+    @RequestMapping(value = "/getdevice",method = RequestMethod.GET)
     @ResponseBody
     public Map<String,Object>getDevice(HttpServletRequest request){
 
@@ -91,7 +93,7 @@ public class DeviceManagementController {
             modelMap.put("redirect","/diaisheng/admin/login");
             return modelMap;
         }else{
-            List<Device> deviceList=deviceDao.queryDevice(user.getUserId());
+            List<Device> deviceList=deviceService.getDeviceList(user);
             if(deviceList!=null&&deviceList.size()>0){
                 modelMap.put("success",true);
                 modelMap.put("device",deviceList);

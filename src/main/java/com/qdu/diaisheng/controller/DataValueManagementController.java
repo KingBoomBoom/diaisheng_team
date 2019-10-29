@@ -69,32 +69,38 @@ public class DataValueManagementController {
      */
     @RequestMapping(value = "/getdata")
     @ResponseBody
-    public PageInfo getData(int page,int limit){
+    public PageInfo getData(HttpServletRequest request,int page,int limit){
        PageInfo pageInfo = new PageInfo();
         List<DataValue> list = new ArrayList<>();
-        //Map<String,Object>modelMap=new HashMap<>();
-        try{
-          //PageHelper pageHelper = new PageHelper();
-         // pageHelper.startPage(page, limit);
-            String deviceId="00015203000000000001";
-            DataValueExecution dve=dataValueService.getnowdate(deviceId);
-            list = dve.getDataValueList();
-           //int total = (int) new com.github.pagehelper.PageInfo<>(list).getTotal();
-            if(dve.getState()==DataValueEnum.SUCCESS.getState()){
-                //modelMap.put("data",dve.getDataValueList());
-                pageInfo.setData(dve.getDataValueList());
-                pageInfo.setCode(0);
-               //pageInfo.setCount(total);
-                pageInfo.setMsg("查询数据点信息成功");
-                //modelMap.put("success",true);
-            }else{
-                //modelMap.put("success",false);
+        String deviceId=request.getParameter("deviceId");
+        if(deviceId!=null){
+            try{
+                //PageHelper pageHelper = new PageHelper();
+                // pageHelper.startPage(page, limit);
+                DataValueExecution dve=dataValueService.getnowdate(deviceId);
+                list = dve.getDataValueList();
+                //int total = (int) new com.github.pagehelper.PageInfo<>(list).getTotal();
+                if(dve.getState()==DataValueEnum.SUCCESS.getState()){
+                    //modelMap.put("data",dve.getDataValueList());
+                    pageInfo.setData(dve.getDataValueList());
+                    pageInfo.setCode(0);
+                    //pageInfo.setCount(total);
+                    pageInfo.setMsg("查询数据点信息成功");
+                    //modelMap.put("success",true);
+                }else{
+                    //modelMap.put("success",false);
+                    pageInfo.setMsg("查询数据点信息失败");
+                }
+            }catch (Exception e){
+                logger.error("查询数据点信息失败！",e);
                 pageInfo.setMsg("查询数据点信息失败");
             }
-        }catch (Exception e){
-            logger.error("查询数据点信息失败！",e);
-            pageInfo.setMsg("查询数据点信息失败");
+        }else {
+            logger.error("查询数据点信息失败！");
+
         }
+        //Map<String,Object>modelMap=new HashMap<>();
+
 
         return pageInfo;
 

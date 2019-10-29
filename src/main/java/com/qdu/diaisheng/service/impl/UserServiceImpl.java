@@ -1,5 +1,6 @@
 package com.qdu.diaisheng.service.impl;
 
+import com.qdu.diaisheng.dao.TokenDao;
 import com.qdu.diaisheng.dao.UserDao;
 import com.qdu.diaisheng.entity.User;
 import com.qdu.diaisheng.service.UserService;
@@ -13,7 +14,8 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserDao userDao;
-
+    @Autowired
+    TokenDao tokenDao;
     @Override
     public int login(String userName, String password) {
        return  userDao.findByUserNameAndPassword(userName,password);

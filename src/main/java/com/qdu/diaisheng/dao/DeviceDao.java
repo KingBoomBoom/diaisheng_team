@@ -6,4 +6,5 @@ import java.util.List;
 public interface DeviceDao {
     int insertDevice(Device device);
     List<Device> queryDevice(int userId);//通过userid查询设备
+    List<Device> getAllDevice();
 }

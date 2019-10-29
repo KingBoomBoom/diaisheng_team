@@ -137,7 +137,11 @@
 </div>-->
     <div id="l2"  style="position: relative;margin-left: 20px;/* margin-top:-150px;*/border: solid; border-radius:10px; border-color:  #ccccff; border-width: 1px; box-shadow: 5px 5px #e6d9d9; ">
     <section id="dataList" style="height: 40px">
-        <p style="margin: 0px;margin-left: 10px; padding-top: 10px; "><b style="font-size: medium">设备名称:迪爱生</b></p>
+        <p style="margin: 0px;margin-left: 10px; padding-top: 10px; ">
+            <select name="device" lay-verify="" id="device">
+                <option value="">请选择一个设备</option>
+            </select>
+        </p>
         <table class="layui-table" id="listInfo" lay-filter="demoEvent"></table>
     </section>
 </div>
@@ -150,12 +154,33 @@
 </script>
 
 <script type="text/javascript">
+
+
+
+
+    function dataInit(){
+        $.ajax({
+            url:'/diaisheng/deviceadmin/getdevice',
+            type:'get',
+            success:function(res){
+                $.each(res.device, function (index,item) {
+                    var deviceName = item.deviceName;
+                    var deviceId = item.deviceId;
+                    //构造动态option
+                    $('#device').append("<option value='"+deviceId+"'>"+deviceName+"</option>")
+                });
+            }
+        });
+    }
+
+
+
     function updateList(){
         layui.use(['table'], function() {
             var table = layui.table;
             table.render({
                 elem: '#listInfo'
-                , url: "/diaisheng/valueadmin/getdata"
+                , url: "/diaisheng/valueadmin/getdata?deviceId="+$('#device option:selected') .val()
                 , cols: [[
                     {type: 'numbers'}
                     , {field: 'dataPoint', title: 'ID', width: 100,sort:false,align: 'center',templet: '<div>{{d.dataPoint.dataPointId}}</div>'}
@@ -221,8 +246,10 @@
     }
     $(function(){
        // UpdateData();
-        updateList();
-
+        dataInit();
+        $("#device").change(function () {
+            updateList();
+        });
     });
 </script>
 

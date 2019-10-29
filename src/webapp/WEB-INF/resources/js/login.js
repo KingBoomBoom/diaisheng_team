@@ -138,7 +138,8 @@ $(document).ready(function() {
 			{
 				"userName": username,
 				"password": password,
-				"phoneNum":$('#qq').val()
+				"phoneNum":$('#qq').val(),
+				"token":$('#token').val()
 			},
 			function(data) {
 				if (data.success) {

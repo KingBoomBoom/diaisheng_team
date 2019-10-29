@@ -40,8 +40,7 @@ public class IndexManagerController {
     public Map<String,Object> getData(HttpServletRequest request){
         Map<String,Object>data= new HashMap<String,Object>();
         User user= (User) request.getSession().getAttribute("loginUser");
-        int userId=1;
-        List<Device> deviceList=deviceService.getDeviceList(userId);
+        List<Device> deviceList=deviceService.getDeviceList(user);
         int deviceCount=deviceList.size();
         int pointCnt=dataPointService.getDataPointCount(deviceList);
         if(deviceCount>-1&pointCnt>-1){

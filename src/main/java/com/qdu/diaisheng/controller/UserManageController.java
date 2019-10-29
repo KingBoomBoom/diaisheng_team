@@ -1,14 +1,17 @@
 package com.qdu.diaisheng.controller;
 
 
+import com.qdu.diaisheng.dao.TokenDao;
 import com.qdu.diaisheng.entity.DataValue;
 import com.qdu.diaisheng.entity.Result;
 import com.qdu.diaisheng.entity.User;
+import com.qdu.diaisheng.service.TokenService;
 import com.qdu.diaisheng.service.UserService;
 import com.qdu.diaisheng.util.HttpServletUtil;
 import com.qdu.diaisheng.util.Md5;
 
 import org.apache.http.HttpResponse;
+import org.apache.ibatis.annotations.Param;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
@@ -33,6 +36,9 @@ public class UserManageController {
 
     @Autowired
     public UserService userService;
+    @Autowired
+    public TokenService tokenService;
+
     private Logger logger = Logger.getLogger(this.getClass());
     /**
      * @Author changliang
@@ -46,6 +52,7 @@ public class UserManageController {
     public Result loginUser(User user,HttpServletRequest request) {
        // Map<String, Object> modelMap = new HashMap<String, Object>();
         Result result = new Result();
+
         String passwordMd5 = Md5.md5(user.getPassword());
         HttpSession session = request.getSession();
         int i = userService.login(user.getUserName(), passwordMd5);
@@ -70,28 +77,40 @@ public class UserManageController {
 
     @RequestMapping(value = "/adduser",method = RequestMethod.POST)
     @ResponseBody
-    public Result add(User user,HttpServletRequest request) {
+    public Result add(User user,@Param("token")String token, HttpServletRequest request) {
         Result result = new Result();
-        String passwordMd5 = Md5.md5(user.getPassword());
-        user.setPassword(passwordMd5);
-        try{
-            if (userService.findByUserName(user.getUserName()) == null) {//首先验证用户名是否被注册过
-                if (userService.register(user)) {
-                    result.setSuccess(true);
-                    result.setMsg("恭喜你，注册成功！");
-                } else {
+        if(token!=null){
+            if(tokenService.checkAndSetToken(token)){
+                String passwordMd5 = Md5.md5(user.getPassword());
+                user.setPassword(passwordMd5);
+                try{
+                    if (userService.findByUserName(user.getUserName()) == null) {//首先验证用户名是否被注册过
+                        if (userService.register(user)) {
+                            result.setSuccess(true);
+                            result.setMsg("恭喜你，注册成功！");
+                        } else {
+                            result.setSuccess(false);
+                            result.setErrorMsg("很遗憾，注册失败！");
+                        }
+                    } else {
+                        result.setSuccess(false);
+                        result.setErrorMsg("该用户名已存在！");
+                    }
+                }catch(Exception e){
                     result.setSuccess(false);
-                    result.setErrorMsg("很遗憾，注册失败！");
+                    result.setMsg("数据库异常！");
+                    logger.error("用户注册异常",e);
                 }
-            } else {
+            }else{
                 result.setSuccess(false);
-                result.setErrorMsg("该用户名已存在！");
+                result.setErrorMsg("token错误或者已经被使用");
             }
-        }catch(Exception e){
+        }else{
             result.setSuccess(false);
-            result.setMsg("数据库异常！");
-            logger.error("用户注册异常",e);
+            result.setErrorMsg("token不能为空");
         }
+
+
 
         return result;
     }

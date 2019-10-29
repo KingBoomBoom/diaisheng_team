@@ -336,6 +336,15 @@
             <version>2.3.1</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-core -->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>1.4.1</version>
+        </dependency>
+
+
+
 
 
     </dependencies>
@@ -382,6 +391,8 @@
                     <skipTests>true</skipTests>
                 </configuration>
             </plugin>
+
+
         </plugins>
 
 
