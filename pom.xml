@@ -23,7 +23,7 @@
         <druid.version>1.1.10</druid.version>
         <log4j.version>1.2.16</log4j.version>
         <commons-logging.version>1.2</commons-logging.version>
-        <commons-fileupload.version>1.3.2</commons-fileupload.version>
+        <commons-fileupload.version>1.3.3</commons-fileupload.version>
         <commons-io.version>1.3.2</commons-io.version>
         <commons-lang.version>2.6</commons-lang.version>
         <aopalliance.version>1.0</aopalliance.version>
@@ -283,7 +283,7 @@
         <dependency>
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
-            <version>1.3.2</version>
+            <version>1.3.3</version>
         </dependency>
 
 
