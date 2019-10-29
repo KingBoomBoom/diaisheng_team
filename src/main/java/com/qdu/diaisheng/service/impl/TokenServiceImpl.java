@@ -12,8 +12,8 @@ public class TokenServiceImpl implements TokenService {
 
     @Override
     public boolean checkAndSetToken(String token) {
-         if(tokenDao.checkToken(token)&&(tokenDao.getTokenStatus(token)==0)){
-             tokenDao.changeStatus();
+         if(tokenDao.checkToken(token)&&(tokenDao.getTokenStatus(token)==0)){//如果token存在并且token没有被使用
+             tokenDao.changeStatus();//更改token为已使用
              return  true;
          }else {
              return false;

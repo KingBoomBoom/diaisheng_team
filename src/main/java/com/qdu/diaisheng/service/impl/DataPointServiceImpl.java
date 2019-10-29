@@ -47,7 +47,7 @@ public class DataPointServiceImpl implements DataPointService {
                 res += dataPointDao.getDataPointCount(device.getDeviceId());
             }
         }else {
-            return  -1;
+            return  0;
         }
         return res;
     }

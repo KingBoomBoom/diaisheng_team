@@ -80,7 +80,7 @@ public class UserManageController {
     public Result add(User user,@Param("token")String token, HttpServletRequest request) {
         Result result = new Result();
         if(token!=null){
-            if(tokenService.checkAndSetToken(token)){
+            if(tokenService.checkAndSetToken(token)){//先验证token
                 String passwordMd5 = Md5.md5(user.getPassword());
                 user.setPassword(passwordMd5);
                 try{
