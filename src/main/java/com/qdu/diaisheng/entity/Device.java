@@ -10,7 +10,15 @@ public class Device {
     private String createTime;//设备创建时间
     private String lastTime;//最近一次的修改时间
     private Integer userId;
+    private Integer deviceStatus;//设备状态 1：在线 0：不在线
 
+    public Integer getDeviceStatus() {
+        return deviceStatus;
+    }
+
+    public void setDeviceStatus(Integer deviceStatus) {
+        this.deviceStatus = deviceStatus;
+    }
 
     @Override
     public String toString() {

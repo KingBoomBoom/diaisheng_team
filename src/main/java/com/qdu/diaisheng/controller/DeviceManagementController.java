@@ -109,6 +109,52 @@ public class DeviceManagementController {
     }
 
 
+
+
+    /**
+     * @author wangxi
+     * @Description 根据user_id获取在线设备数
+     * 通过modelMap返回数据
+     * @date  2019/8/4
+     * @return Map
+     * @throws
+     * @since
+     */
+    @RequestMapping(value = "/getdevice",method = RequestMethod.GET)
+    @ResponseBody
+    public Map<String,Object>getOnlineDevice(HttpServletRequest request){
+
+        User user=(User) request.getSession().getAttribute("loginUser");
+        Map<String,Object>modelMap=new HashMap<>();
+        if(user==null){
+            modelMap.put("success",false);
+            modelMap.put("redirect","/diaisheng/admin/login");
+            return modelMap;
+        }else{
+            List<Device> deviceList=deviceService.getDeviceList(user);
+            if(deviceList!=null&&deviceList.size()>0){
+                int online=0;
+                for(Device device:deviceList){
+                    if(device.getDeviceStatus()==1){
+                        online++;
+                    }
+                }
+                int offline=deviceList.size()-online;
+                modelMap.put("online",online);
+                modelMap.put("offline",offline);
+            }
+
+           else{
+                modelMap.put("success",false);
+                modelMap.put("errMsg","没有查到设备");
+            }
+
+        }
+
+
+        return modelMap;
+    }
+
     /**
      * @author wangxi
      * @Description 获取基站的位置信息
