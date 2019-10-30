@@ -16,6 +16,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -80,27 +81,35 @@ public class UserManageController {
     public Result add(User user,@Param("token")String token, HttpServletRequest request) {
         Result result = new Result();
         if(token!=null){
-            if(tokenService.checkAndSetToken(token)){//先验证token
+            if(tokenService.checkToken(token)){//先验证token
                 String passwordMd5 = Md5.md5(user.getPassword());
-                user.setPassword(passwordMd5);
-                try{
-                    if (userService.findByUserName(user.getUserName()) == null) {//首先验证用户名是否被注册过
-                        if (userService.register(user)) {
-                            result.setSuccess(true);
-                            result.setMsg("恭喜你，注册成功！");
+                String deviceId=tokenService.getDeviceId(token);
+                if(deviceId!=null){
+                    user.setDeviceId(deviceId);
+                    user.setPassword(passwordMd5);
+                    try{
+                        if (userService.findByUserName(user.getUserName()) == null) {//首先验证用户名是否被注册过
+                            if (userService.register(user)) {
+                                result.setSuccess(true);
+                                result.setMsg("恭喜你，注册成功！");
+                            } else {
+                                result.setSuccess(false);
+                                result.setErrorMsg("很遗憾，注册失败！");
+                            }
                         } else {
                             result.setSuccess(false);
-                            result.setErrorMsg("很遗憾，注册失败！");
+                            result.setErrorMsg("该用户名已存在！");
                         }
-                    } else {
+                    }catch(Exception e){
                         result.setSuccess(false);
-                        result.setErrorMsg("该用户名已存在！");
+                        result.setMsg("数据库异常！");
+                        logger.error("用户注册异常",e);
                     }
-                }catch(Exception e){
+                }else{
                     result.setSuccess(false);
-                    result.setMsg("数据库异常！");
-                    logger.error("用户注册异常",e);
+                    result.setMsg("token异常！");
                 }
+
             }else{
                 result.setSuccess(false);
                 result.setErrorMsg("token错误或者已经被使用");

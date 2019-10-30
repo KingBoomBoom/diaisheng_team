@@ -177,7 +177,7 @@ function getDevices(deviceId){//获取设备列表
     $("#shebei").html('<option value="">直接选择或搜索选择</option>');
     $.ajax({
         url: '/diaisheng/deviceadmin/getdevice',
-        type: 'POST',
+        type: 'get',
         dataType: 'json',
         success: function (data) {
             if (!data.success){

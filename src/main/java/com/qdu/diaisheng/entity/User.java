@@ -10,6 +10,15 @@ public class User {
     private String phoneNum;//用户联系方式
     private String password;//用户登录密码
     private String userStatus;//用户状态，‘0’表示普通用户，‘1’表示管理员用户
+    private String deviceId;//设备id
+
+    public String getDeviceId() {
+        return deviceId;
+    }
+
+    public void setDeviceId(String deviceId) {
+        this.deviceId = deviceId;
+    }
 
     public String getPhoneNum() {
         return phoneNum;

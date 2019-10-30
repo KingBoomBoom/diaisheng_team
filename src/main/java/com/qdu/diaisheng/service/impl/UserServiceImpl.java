@@ -6,6 +6,7 @@ import com.qdu.diaisheng.entity.User;
 import com.qdu.diaisheng.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Map;
 
@@ -23,7 +24,16 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean register(User user) {
-        return userDao.addUser(user);
+        boolean userAdd=userDao.addUser(user);//添加用户
+        if(userAdd){//只有在添加用户成功后才更改token状态
+            int effectNum=tokenDao.changeStatus();
+            if(effectNum>0)
+                return true;
+            else
+                return false;
+        }else
+            return false;
+
     }
 
     @Override
