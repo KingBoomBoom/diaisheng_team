@@ -31,7 +31,7 @@ public class Server {
                Socket clientSocket=serverSocket.accept();// 如果有请求到达，则接受请求，并建立一个新的套接字
                System.out.println("accept tcp client "+clientSocket.getRemoteSocketAddress().toString());
                System.out.println("本地ip为:"+clientSocket.getLocalAddress().toString()+"远程ip地址为："+clientSocket.getRemoteSocketAddress().toString());
-              ClientHander hander=new ClientHander(clientSocket);
+              com.qdu.diaisheng.task.ClientHander hander=new com.qdu.diaisheng.task.ClientHander(clientSocket);
               hander.start();
            }
       

@@ -57,7 +57,7 @@ public class TimerTask {
             Socket clientSocket=serverSocket.accept();// 如果有请求到达，则接受请求，并建立一个新的套接字
             logger.info("accept tcp client "+clientSocket.getRemoteSocketAddress().toString());
             logger.info("本地ip为:"+clientSocket.getLocalAddress().toString()+"远程ip地址为："+clientSocket.getRemoteSocketAddress().toString());
-            ClientHander hander=new ClientHander(clientSocket);
+            com.qdu.diaisheng.task.ClientHander hander=new com.qdu.diaisheng.task.ClientHander(clientSocket);
             hander.start();
         }catch (Exception e){
             logger.error("spring定时任务出错！",e);

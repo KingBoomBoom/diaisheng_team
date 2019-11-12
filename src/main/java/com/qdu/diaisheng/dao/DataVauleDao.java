@@ -3,8 +3,6 @@ package com.qdu.diaisheng.dao;
 import com.qdu.diaisheng.entity.DataValue;
 import org.apache.ibatis.annotations.Param;
 
-import java.sql.Date;
-import java.sql.Timestamp;
 import java.util.List;
 public interface DataVauleDao {
     int insertDataVaule(DataValue dataValue);

@@ -3,7 +3,6 @@ package com.qdu.diaisheng.service.impl;
 import com.qdu.diaisheng.DataValueEnum;
 import com.qdu.diaisheng.dao.DataPointDao;
 import com.qdu.diaisheng.dao.DataVauleDao;
-import com.qdu.diaisheng.dao.DeviceDao;
 import com.qdu.diaisheng.dto.DataValueExecution;
 import com.qdu.diaisheng.entity.DataPoint;
 import com.qdu.diaisheng.entity.DataValue;

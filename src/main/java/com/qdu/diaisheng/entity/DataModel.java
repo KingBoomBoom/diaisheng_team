@@ -1,6 +1,5 @@
 package com.qdu.diaisheng.entity;
 
-import java.util.Date;
 //数据模型实体类
 public class DataModel {
     private Integer dataModelId;//数据模型Id

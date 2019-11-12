@@ -2,8 +2,6 @@ package com.qdu.diaisheng.controller;
 
 import com.qdu.diaisheng.entity.Photo;
 import com.qdu.diaisheng.service.PhotoService;
-import com.qdu.diaisheng.util.HttpServletUtil;
-import com.qdu.diaisheng.util.ImageUtil;
 import com.qdu.diaisheng.util.Md5;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.methods.PostMethod;
@@ -23,11 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import java.io.IOException;
 import java.net.URI;
-import java.text.SimpleDateFormat;
 import java.util.*;
-import com.alibaba.fastjson.JSONObject;
-
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * @ClassName PhotoManageController

@@ -1,19 +1,14 @@
 package com.qdu.diaisheng.service;
 
 import com.qdu.diaisheng.BaseTest;
-import com.qdu.diaisheng.DataValueEnum;
 import com.qdu.diaisheng.dto.DataValueExecution;
 import com.qdu.diaisheng.entity.DataPoint;
 import com.qdu.diaisheng.entity.DataValue;
-import javafx.scene.chart.XYChart;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
-import java.util.ListResourceBundle;
 
 public class DataValueServiceTest extends BaseTest {
     @Autowired

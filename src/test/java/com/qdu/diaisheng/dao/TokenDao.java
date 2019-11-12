@@ -3,7 +3,6 @@ package com.qdu.diaisheng.dao;
 import com.qdu.diaisheng.BaseTest;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.TestExecutionListeners;
 
 public class TokenDao extends BaseTest {
    @Autowired

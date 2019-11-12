@@ -6,11 +6,10 @@ package com.qdu.diaisheng.controller;
  * @Date 2019/7/22
  *
  */
-import com.fasterxml.jackson.databind.util.JSONPObject;
-import com.github.pagehelper.PageHelper;
 import com.qdu.diaisheng.DataValueEnum;
 import com.qdu.diaisheng.dto.DataValueExecution;
-import com.qdu.diaisheng.entity.*;
+import com.qdu.diaisheng.entity.DataValue;
+import com.qdu.diaisheng.entity.PageInfo;
 import com.qdu.diaisheng.service.DataModelService;
 import com.qdu.diaisheng.service.DataPointService;
 import com.qdu.diaisheng.service.DataValueService;
@@ -33,16 +32,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.nio.charset.Charset;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.*;
 
-import org.apache.poi.ss.usermodel.Cell;
 @Controller
 @RequestMapping("/valueadmin")
 public class DataValueManagementController {
@@ -69,7 +61,7 @@ public class DataValueManagementController {
      */
     @RequestMapping(value = "/getdata")
     @ResponseBody
-    public PageInfo getData(HttpServletRequest request,int page,int limit){
+    public PageInfo getData(HttpServletRequest request, int page, int limit){
        PageInfo pageInfo = new PageInfo();
         List<DataValue> list = new ArrayList<>();
         String deviceId=request.getParameter("deviceId");
@@ -178,11 +170,6 @@ public class DataValueManagementController {
      */
         @RequestMapping(value = "/downLoadExcel",method =RequestMethod.GET)
         public void downLoadExcel(String[] data,String stime,String etime, HttpServletResponse response) throws IOException{
-
-
-            System.out.println(data);
-            System.out.println(stime);
-            System.out.println(etime);
             stime=stime.replace("T"," ");
             etime=etime.replace("T"," ");
             DataValueExecution dve = dataValueService.getDateValueListAtPointIdBetweenDate(stime,etime,Arrays.asList(data));

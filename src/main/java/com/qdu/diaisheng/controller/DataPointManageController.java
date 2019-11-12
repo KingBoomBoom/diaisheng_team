@@ -1,11 +1,9 @@
 package com.qdu.diaisheng.controller;
 
-import com.qdu.diaisheng.entity.DataModel;
 import com.qdu.diaisheng.entity.DataPoint;
 import com.qdu.diaisheng.service.DataModelService;
 import com.qdu.diaisheng.service.DataPointService;
 import com.qdu.diaisheng.util.HttpServletUtil;
-import javafx.beans.binding.ObjectExpression;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

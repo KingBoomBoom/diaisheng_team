@@ -6,9 +6,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-import java.sql.Date;
-import java.sql.Timestamp;
-
 public interface DataValueService {
 
 

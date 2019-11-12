@@ -1,7 +1,6 @@
 package com.qdu.diaisheng.service.impl;
 
 import com.qdu.diaisheng.dao.DeviceDao;
-import com.qdu.diaisheng.dao.TokenDao;
 import com.qdu.diaisheng.entity.Device;
 import com.qdu.diaisheng.entity.User;
 import com.qdu.diaisheng.service.DeviceService;

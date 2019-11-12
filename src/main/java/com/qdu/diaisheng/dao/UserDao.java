@@ -3,7 +3,6 @@ package com.qdu.diaisheng.dao;
 import com.qdu.diaisheng.entity.User;
 import org.apache.ibatis.annotations.Param;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public interface UserDao {

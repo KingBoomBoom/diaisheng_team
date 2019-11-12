@@ -1,8 +1,5 @@
 package com.qdu.diaisheng.entity;
 
-import java.sql.Date;
-import java.sql.Timestamp;
-
 public class DataValue{
     private int dataValueId;//数据id
     private DataPoint dataPoint;//数据点

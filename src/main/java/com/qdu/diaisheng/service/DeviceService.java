@@ -1,5 +1,4 @@
 package com.qdu.diaisheng.service;
-import com.qdu.diaisheng.entity.DataPoint;
 import com.qdu.diaisheng.entity.Device;
 import com.qdu.diaisheng.entity.User;
 

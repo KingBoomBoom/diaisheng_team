@@ -1,7 +1,5 @@
 package com.qdu.diaisheng.entity;
 
-import java.util.Date;
-
 //数据点实体类
 public class DataPoint {
     private String dataPointId;//数据点ID

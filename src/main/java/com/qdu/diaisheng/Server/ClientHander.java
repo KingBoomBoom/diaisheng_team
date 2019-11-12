@@ -1,6 +1,5 @@
 package com.qdu.diaisheng.Server;
 
-import com.qdu.diaisheng.entity.DataPoint;
 import com.qdu.diaisheng.entity.DataValue;
 import com.qdu.diaisheng.entity.RequestDataConfig;
 import com.qdu.diaisheng.util.ByteUtil;
@@ -21,7 +20,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-import com.mysql.jdbc.Driver;
 
 public class ClientHander extends Thread{
 

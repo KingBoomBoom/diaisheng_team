@@ -1,31 +1,23 @@
 package com.qdu.diaisheng.controller;
 
 
-import com.qdu.diaisheng.dao.TokenDao;
-import com.qdu.diaisheng.entity.DataValue;
 import com.qdu.diaisheng.entity.Result;
 import com.qdu.diaisheng.entity.User;
 import com.qdu.diaisheng.service.TokenService;
 import com.qdu.diaisheng.service.UserService;
-import com.qdu.diaisheng.util.HttpServletUtil;
 import com.qdu.diaisheng.util.Md5;
 
-import org.apache.http.HttpResponse;
 import org.apache.ibatis.annotations.Param;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.*;
 import org.springframework.stereotype.Controller;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
