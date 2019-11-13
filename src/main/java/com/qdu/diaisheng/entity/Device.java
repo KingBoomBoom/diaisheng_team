@@ -11,6 +11,8 @@ public class Device {
     private String lastTime;//最近一次的修改时间
     private Integer userId;
     private Integer deviceStatus;//设备状态 1：在线 0：不在线
+    private String lon;
+    private String lat;
 
     public Integer getDeviceStatus() {
         return deviceStatus;
@@ -29,6 +31,22 @@ public class Device {
                 ", lastTime='" + lastTime + '\'' +
                 ", userId=" + userId +
                 '}';
+    }
+
+    public String getLon() {
+        return lon;
+    }
+
+    public void setLon(String lon) {
+        this.lon = lon;
+    }
+
+    public String getLat() {
+        return lat;
+    }
+
+    public void setLat(String lat) {
+        this.lat = lat;
     }
 
     public int getUserId() {

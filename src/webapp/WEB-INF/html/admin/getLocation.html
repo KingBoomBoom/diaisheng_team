@@ -126,7 +126,7 @@
 			<script type="text/javascript">
 	// 百度地图API功能
 	var map = new BMap.Map("allmap");
-	map.centerAndZoom(new BMap.Point(116.331398,39.897445),15);
+	map.centerAndZoom(new BMap.Point(116.331398,39.897445),17);
 	map.enableScrollWheelZoom(true);
 	var lat;
 	var lon;
@@ -135,11 +135,9 @@
 	                        type:"get",
 	                        dataType:"json",
 	                        success:function(data){
-	                           if(data.errcode==0){
+	                           if(data.success){
 								   lat=data.lat;
 								   lon=data.lon;
-								   console.log(lat);
-								   console.log(lon);
 								   map.clearOverlays();
 								   var new_point = new BMap.Point(lon,lat);
 								   var marker = new BMap.Marker(new_point);  // 创建标注
@@ -151,8 +149,13 @@
                                        titile:'设备地址',
                                        enableMessage:true
                                    }
-                                   var infoWindow=new BMap.InfoWindow("详细地址："+data.address,opts);
-                                   map.openInfoWindow(infoWindow,new_point); //开启信息窗口
+								   var geoc = new BMap.Geocoder();
+								   geoc.getLocation(new_point, function(rs){
+									   var addComp = rs.addressComponents;
+									   var result = addComp.province + addComp.city + addComp.district + addComp.street + addComp.streetNumber+'迪爱生精细化工厂';
+									   var infoWindow=new BMap.InfoWindow("详细地址："+result,opts);
+									   map.openInfoWindow(infoWindow,new_point); //开启信息窗口
+								   });
 
 							   }
 							   else{

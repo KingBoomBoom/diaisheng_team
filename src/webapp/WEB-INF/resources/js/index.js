@@ -65,20 +65,7 @@ $(function() {
     var myLineChart = new Chart(ctx).Line(data, options);
     var myBarChart = new Chart(ctx2).Doughnut(data2, options2);
   var legend = myBarChart.generateLegend();
-    $.ajax({
-        url:"/diaisheng/indexadmin/getdata",
-        type: "get",
-        dataType: "json",
-        success:function(data){
-               if(data.success=true){
-                   document.getElementById("device").innerHTML=data.deviceCnt;
-                   document.getElementById("point").innerHTML=data.dataPointCnt;
-               }else {
-                   alert(data.errMsg);
-               }
 
-        }
-    });
 
   $("#dashboard-stat-chart-legend").append(legend);
 });

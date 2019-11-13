@@ -7,82 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5505eefe-6939-4759-b25b-857a31b359e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/quartz/HelloJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/quartz/HelloSchedule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/QuartzTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/diaisheng_team_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/diaisheng_team_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/Client/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/Server/ClientHander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/Server/ClientHander.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataPointManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataPointManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataValueManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataValueManagementController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DeviceManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DeviceManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/IndexManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/IndexManagerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/PhotoManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/PhotoManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/UserManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/UserManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/dao/DataVauleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/dao/DataVauleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/DataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/DataModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/DataPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/DataPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/DataValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/DataValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/DataModelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/DataModelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/DataPointService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/DataPointService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/DataValueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/DataValueService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/DeviceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/DeviceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/DataValueServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/DataValueServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/DeviceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/DeviceServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/PhotoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/PhotoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/ClientHander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/ClientHander.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/TimerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/TimerTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/TokenDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TokenDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qdu/diaisheng/dao/DataModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qdu/diaisheng/dao/DataModelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qdu/diaisheng/dao/DataPointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qdu/diaisheng/dao/DataPointTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qdu/diaisheng/dao/DataValueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qdu/diaisheng/dao/DataValueTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qdu/diaisheng/dao/DeviceDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qdu/diaisheng/dao/DeviceDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qdu/diaisheng/dao/TokenDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qdu/diaisheng/dao/TokenDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qdu/diaisheng/service/DataValueServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qdu/diaisheng/service/DataValueServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/classes/mapper/TokenDao" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/classes/mapper/TokenDao" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/Client/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/Server/ClientHander.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/Server/ClientHander.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DataPointManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DataPointManageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DataValueManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DataValueManagementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DeviceManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DeviceManagementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/IndexManagerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/IndexManagerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/PhotoManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/PhotoManageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/UserManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/UserManageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/entity/DataModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/entity/DataModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/entity/DataPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/entity/DataPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/entity/DataValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/entity/DataValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/entity/Device.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/entity/Device.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/impl/DataValueServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/impl/DataValueServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/impl/DeviceServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/impl/DeviceServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/impl/PhotoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/impl/PhotoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/Client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/Client/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/Server/ClientHander.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/Server/ClientHander.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/DataPointManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/DataPointManageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/DataValueManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/DataValueManagementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/DeviceManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/DeviceManagementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/IndexManagerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/IndexManagerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/PhotoManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/PhotoManageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/UserManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/UserManageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/entity/DataModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/entity/DataModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/entity/DataPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/entity/DataPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/entity/DataValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/entity/DataValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/entity/Device.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/entity/Device.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/impl/DataValueServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/impl/DataValueServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/impl/DeviceServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/impl/DeviceServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/impl/PhotoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/impl/PhotoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qdu/diaisheng/dao/DataModelTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qdu/diaisheng/dao/DataModelTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qdu/diaisheng/dao/DataPointTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qdu/diaisheng/dao/DataPointTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qdu/diaisheng/dao/DataValueTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qdu/diaisheng/dao/DataValueTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qdu/diaisheng/dao/DeviceDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qdu/diaisheng/dao/DeviceDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qdu/diaisheng/service/DataValueServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qdu/diaisheng/service/DataValueServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/Device.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/getLocation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/getLocation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/indx.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/indx.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/getLocation.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/getLocation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/indx.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/indx.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/js/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -521,7 +456,8 @@
       <workItem from="1573216359827" duration="646000" />
       <workItem from="1573542770879" duration="143000" />
       <workItem from="1573550779562" duration="8000" />
-      <workItem from="1573552952243" duration="9838000" />
+      <workItem from="1573552952243" duration="10239000" />
+      <workItem from="1573610864221" duration="3963000" />
     </task>
     <task id="LOCAL-00001" summary="（version2.0）list页面样式修整，注册协议添加，跳转到list时显示当前时间前一小时至当前时间，冗余代码归并">
       <created>1565162879142</created>
@@ -621,7 +557,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572436575484</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="更新主页和设备定位">
+      <created>1573563743953</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1573563743953</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +607,8 @@
     <MESSAGE value="更新token以及权限管理" />
     <MESSAGE value="更新主页数据点以及设备数" />
     <MESSAGE value="修改bug更新token" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改bug更新token" />
+    <MESSAGE value="更新主页和设备定位" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新主页和设备定位" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -26,10 +26,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URI;
 import java.net.URL;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.List;
+import java.util.*;
 
 @Controller
 @RequestMapping("/deviceadmin")
@@ -173,13 +170,8 @@ public class DeviceManagementController {
     @RequestMapping(value = "/getlocation",method = RequestMethod.GET)
     @ResponseBody
     public Map<String,Object> getDeviceLoaction(HttpServletRequest request){
-
-
         String res=null;
         Map<String,Object>map=new HashMap<>();
-
-
-
         User user=(User) request.getSession().getAttribute("loginUser");
         Map<String,Object>modelMap=new HashMap<>();
         if(user==null){
@@ -188,7 +180,7 @@ public class DeviceManagementController {
             return modelMap;
         }else{
             List<Device> deviceList=deviceService.getDeviceList(user);
-            if(deviceList!=null&&deviceList.size()>0){
+            if(deviceList!=null&&deviceList.size()>0){//目前仅支持一个设备
                 Device device=deviceList.get(0);
                 map.put("lon",device.getLon());
                 map.put("lat",device.getLat());
@@ -201,7 +193,6 @@ public class DeviceManagementController {
         }
         return map;
     }
-
 
 
 
