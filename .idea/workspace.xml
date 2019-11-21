@@ -6,18 +6,74 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5505eefe-6939-4759-b25b-857a31b359e3" name="Default Changelist" comment="">
+    <list default="true" id="5505eefe-6939-4759-b25b-857a31b359e3" name="Default Changelist" comment="更新主页">
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/css/fontawesome-all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/css/noscript.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/js/breakpoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/js/browser.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/js/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/base/_page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/base/_reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/base/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/components/_actions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/components/_box.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/components/_button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/components/_form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/components/_icon.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/components/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/components/_image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/components/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/components/_table.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/layout/_bg.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/layout/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/layout/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/layout/_main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/layout/_wrapper.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/libs/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/libs/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/libs/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/libs/_vars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/libs/_vendor.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/noscript.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/images/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/images/overlay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/images/pic01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/images/pic02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/images/pic03.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DeviceManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DeviceManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/getLocation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/getLocation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/indx.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/indx.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/getLocation.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/getLocation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/indx.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/indx.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/Server/ClientHander.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/Server/MysqlHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/Server/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/IndexAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/IndexAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/quartz/HelloJob.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/quartz/HelloSchedule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/Server/ClientHander.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/Server/MysqlHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/Server/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/IndexAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/IndexAdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/Server/ClientHander.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/Server/ClientHander.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/Server/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/IndexAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/IndexAdminController.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +126,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -86,16 +142,16 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\wangxi\diaisheng_team\diaisheng_team\src\webapp\WEB-INF\html\admin" />
-      <recent name="C:\Users\wangxi\diaisheng_team\diaisheng_team\src\webapp\WEB-INF\classes\mapper" />
-      <recent name="C:\JavaProject\diaiisheng-dataplatform-master\src\main\java\com\qdu\diaisheng\task" />
-      <recent name="C:\Users\wangxi\diaisheng_team\src\webapp\WEB-INF\html\admin" />
-      <recent name="C:\Users\wangxi\diaisheng_team\src\webapp\WEB-INF\resources\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\diaiisheng-dataplatform-master\src\webapp\WEB-INF\resources" />
       <recent name="E:\diaiisheng-dataplatform-master\src\test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wangxi\diaisheng_team\diaisheng_team\src\webapp\WEB-INF\html\admin" />
+      <recent name="C:\Users\wangxi\diaisheng_team\diaisheng_team\src\webapp\WEB-INF\resources" />
+      <recent name="C:\Users\wangxi\diaisheng_team\diaisheng_team\src\webapp\WEB-INF\resources\images" />
+      <recent name="C:\Users\wangxi\diaisheng_team\diaisheng_team\src\webapp\WEB-INF\classes\mapper" />
+      <recent name="C:\JavaProject\diaiisheng-dataplatform-master\src\main\java\com\qdu\diaisheng\task" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -458,6 +514,14 @@
       <workItem from="1573550779562" duration="8000" />
       <workItem from="1573552952243" duration="10239000" />
       <workItem from="1573610864221" duration="3963000" />
+      <workItem from="1573648890969" duration="3549000" />
+      <workItem from="1573716813986" duration="1145000" />
+      <workItem from="1573808228722" duration="709000" />
+      <workItem from="1573959586386" duration="3175000" />
+      <workItem from="1574051122859" duration="17000" />
+      <workItem from="1574065824416" duration="1503000" />
+      <workItem from="1574233388286" duration="2200000" />
+      <workItem from="1574340777874" duration="237000" />
     </task>
     <task id="LOCAL-00001" summary="（version2.0）list页面样式修整，注册协议添加，跳转到list时显示当前时间前一小时至当前时间，冗余代码归并">
       <created>1565162879142</created>
@@ -564,7 +628,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573563743953</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="更新主页和设备定位">
+      <created>1573649078864</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1573649078864</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,7 +679,8 @@
     <MESSAGE value="更新主页数据点以及设备数" />
     <MESSAGE value="修改bug更新token" />
     <MESSAGE value="更新主页和设备定位" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新主页和设备定位" />
+    <MESSAGE value="更新主页" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新主页" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
