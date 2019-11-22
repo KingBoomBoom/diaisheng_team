@@ -1,5 +1,5 @@
 $(function (){
-    getDevices('00015203000000000001');
+    getDevices(/*'00015203000000000001'*/);
     var urlData = decodeURI(location.search); //获取url中"?"符后的字串
     var theRequest = new Object();
     if (urlData.indexOf("?") != -1) {
@@ -187,9 +187,9 @@ function getDevices(deviceId){//获取设备列表
             }else{
                 $.each(data.device, function (key, value) {
                     var option = new Option(value.deviceName,value.deviceId);
-                    if(value.deviceId == deviceId) {
+                   /* if(value.deviceId == deviceId) {
                         option.setAttribute("selected",'true');
-                    }
+                    }*/
                     $('#shebei').append(option);//往下拉菜单里添加元素
                     renderForm();
                 });
@@ -238,8 +238,8 @@ function downLoad(){
 function initEcharts() {
     var option = {
         title:{
-            text:'Line Test',
-            subtext:"Mountain Technology"
+            text:'即时数据',
+            subtext:"每隔五分钟更新"
         },
         tooltip:{
             trigger:'axis'

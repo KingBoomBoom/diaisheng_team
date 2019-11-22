@@ -2,79 +2,133 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="diaisheng_team:war exploded" />
+      <artifact name="diaisheng-dataplatform:war" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5505eefe-6939-4759-b25b-857a31b359e3" name="Default Changelist" comment="更新主页">
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/index2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/css/fontawesome-all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/css/noscript.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/js/breakpoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/js/browser.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/js/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/base/_page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/base/_reset.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/base/_typography.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/components/_actions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/components/_box.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/components/_button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/components/_form.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/components/_icon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/components/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/components/_image.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/components/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/components/_table.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/layout/_bg.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/layout/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/layout/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/layout/_main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/layout/_wrapper.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/libs/_breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/libs/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/libs/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/libs/_vars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/libs/_vendor.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/sass/noscript.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/assets/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/images/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/images/overlay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/images/pic01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/images/pic02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/images/pic03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/diaisheng-dataplatform.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/dao/TokenDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/entity/Token.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/TokenService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/impl/TokenServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/task/TimerTask.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/util/TokenProcessor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/TokenDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/META-INF/diaisheng-dataplatform.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/dao/TokenDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/entity/Token.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/TokenService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/impl/TokenServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/task/TimerTask.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/util/TokenProcessor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/mapper/TokenDao" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/mapper/TokenDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/qdstsIndex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/lib/HikariCP-java6-2.3.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/lib/c3p0-0.9.5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/lib/mchange-commons-java-0.2.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/lib/quartz-2.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/css/fontawesome-all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/css/noscript.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/js/breakpoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/js/browser.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/js/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/base/_page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/base/_reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/base/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/components/_actions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/components/_box.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/components/_button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/components/_form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/components/_icon.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/components/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/components/_image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/components/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/components/_table.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/layout/_bg.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/layout/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/layout/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/layout/_main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/layout/_wrapper.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/libs/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/libs/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/libs/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/libs/_vars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/libs/_vendor.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/sass/noscript.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/assets/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/images/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/images/overlay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/images/pic01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/images/pic02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/images/pic03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/qdu/diaisheng/dao/TokenDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/diaisheng_team_war_exploded.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/Server/ClientHander.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/Server/MysqlHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/Server/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataAdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/IndexAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/IndexAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/quartz/HelloJob.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/quartz/HelloSchedule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/Server/ClientHander.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/Server/MysqlHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/Server/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/ClientHander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/ClientHander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/QuartzTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/TimerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/TimerTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DataValueDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DataValueDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/List.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/List.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/indx.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/newList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/qdstsIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/qdstsIndex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/js/dataexport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/resources/js/dataexport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DataAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DataAdminController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/IndexAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/IndexAdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/Server/ClientHander.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/Server/ClientHander.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/Server/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/PhotoManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/PhotoManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/task/ClientHander.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/task/ClientHander.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/task/DBMysqlUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/task/DBMysqlUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/task/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/util/DBMysqlUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/util/DBMysqlUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/DataValueDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/DataValueDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/DataAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/DataAdminController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/IndexAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/IndexAdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/PhotoManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/PhotoManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/task/ClientHander.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/task/ClientHander.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/task/DBMysqlUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/task/DBMysqlUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/task/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/util/DBMysqlUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/util/DBMysqlUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/mapper/DataValueDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/mapper/DataValueDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/spring/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/spring/spring-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/List.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/List.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/indx.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/newList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/js/dataexport.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/resources/js/dataexport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng.war" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +140,9 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="diaisheng-dataplatform" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -99,10 +156,38 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>indx</find>
+      <find>device</find>
+      <find>pieAjax</find>
+      <find>query</find>
+      <find>工程</find>
+      <find>dataInit</find>
+      <find>/getdata</find>
+      <find>getnowdate</find>
+      <find>getDevices</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/indx.html" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataAdminController.java" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/List.html" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/DataValueDao.xml" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/resources/js/dataexport.js" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/qdstsIndex.html" />
+      </list>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -118,15 +203,56 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="diaisheng-dataplatform" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="diaisheng-dataplatform" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
+  </component>
   <component name="ProjectId" id="1PGShppOFAh9hC4V6UzmIIkjjCd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="diaisheng-dataplatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diaiisheng-dataplatform-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="ChangesTree.GroupingKeys" value="module&#10;directory" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -136,22 +262,23 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31352153" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\changliang\Desktop" />
       <recent name="E:\diaiisheng-dataplatform-master\src\webapp\WEB-INF\resources" />
       <recent name="E:\diaiisheng-dataplatform-master\src\test" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\JavaProject\diaiisheng-dataplatform-master\out" />
+      <recent name="C:\JavaProject\diaiisheng-dataplatform-master\src\main\java\com\qdu\diaisheng\task" />
       <recent name="C:\Users\wangxi\diaisheng_team\diaisheng_team\src\webapp\WEB-INF\html\admin" />
       <recent name="C:\Users\wangxi\diaisheng_team\diaisheng_team\src\webapp\WEB-INF\resources" />
       <recent name="C:\Users\wangxi\diaisheng_team\diaisheng_team\src\webapp\WEB-INF\resources\images" />
-      <recent name="C:\Users\wangxi\diaisheng_team\diaisheng_team\src\webapp\WEB-INF\classes\mapper" />
-      <recent name="C:\JavaProject\diaiisheng-dataplatform-master\src\main\java\com\qdu\diaisheng\task" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -166,7 +293,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.22">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.0">
     <configuration name="Client" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qdu.diaisheng.Client.Client" />
       <module name="diaisheng_team" />
@@ -251,11 +378,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 9.0.22" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.22" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 8.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/diaisheng" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="diaisheng_team:war exploded">
+        <artifact name="diaisheng-dataplatform:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/diaisheng" />
           </settings>
@@ -321,7 +448,6 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="diaisheng-dataplatform:war exploded" />
-          <artifact name="diaisheng_team:war exploded" />
         </option>
       </method>
     </configuration>
@@ -398,6 +524,7 @@
           <artifact name="diaisheng-dataplatform:war exploded" />
           <artifact name="diaisheng_team:war exploded" />
           <artifact name="diaisheng_team:war" />
+          <artifact name="diaisheng-dataplatform:war" />
         </option>
       </method>
     </configuration>
@@ -408,7 +535,7 @@
       <item itemvalue="JUnit.AuthenticationTest" />
       <item itemvalue="JUnit.TokenDao" />
       <item itemvalue="JUnit.DeviceDaoTest" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.22" />
+      <item itemvalue="Tomcat Server.Tomcat 8.0" />
     </list>
     <recent_temporary>
       <list>
@@ -522,6 +649,7 @@
       <workItem from="1574065824416" duration="1503000" />
       <workItem from="1574233388286" duration="2200000" />
       <workItem from="1574340777874" duration="237000" />
+      <workItem from="1574417004896" duration="7251000" />
     </task>
     <task id="LOCAL-00001" summary="（version2.0）list页面样式修整，注册协议添加，跳转到list时显示当前时间前一小时至当前时间，冗余代码归并">
       <created>1565162879142</created>
@@ -638,6 +766,84 @@
     <option name="localTasksCounter" value="17" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14441000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22319035" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Learn" order="7" weight="0.3297587" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49865952" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.23087819" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49798927" weight="0.3286119" />
+      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49932975" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49932975" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013405" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49731904" weight="0.3286119" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49798927" weight="0.20113315" />
+      <window_info anchor="bottom" id="Spring" order="15" sideWeight="0.49932975" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21648793" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Learn" order="7" weight="0.3297587" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.26912183" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49798927" weight="0.3286119" />
+      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49932975" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49932975" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50268096" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49731904" weight="0.3286119" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.20113315" />
+      <window_info anchor="bottom" id="Spring" order="15" sideWeight="0.49932975" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout-to-restore>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -647,6 +853,12 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -688,75 +900,275 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataPointManageController.java</url>
           <line>76</line>
+          <properties />
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/ClientHander.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/ClientHander.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/ClientHander.java</url>
-          <line>215</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/quartz/HelloJob.java</url>
           <line>56</line>
+          <properties />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/quartz/HelloJob.java</url>
           <line>57</line>
+          <properties />
           <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/TimerTask.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/TimerTask.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/TimerTask.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/TimerTask.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/TimerTask.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/ClientHander.java</url>
-          <line>206</line>
-          <properties class="com.qdu.diaisheng.task.ClientHander" method="insertData">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/TimerTask.java</url>
-          <line>49</line>
-          <properties class="com.qdu.diaisheng.task.TimerTask" method="queryDatasFromDtu">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/IndexManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/device.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/loginAdmin.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/getLocation.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/photoShow.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="382" column="29" selection-start-line="382" selection-start-column="29" selection-end-line="382" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/UserManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/UserAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/IndexAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding>
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/table-export.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="197" column="53" selection-start-line="197" selection-start-column="45" selection-end-line="197" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="73" column="26" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+          <folding>
+            <element signature="e#2234#2235#0" expanded="true" />
+            <element signature="e#2270#2271#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/DataValueDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/DataValueService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/DataValueServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="87" column="49" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataValueManagementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="71" column="56" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/resources/js/dataexport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="43" lean-forward="true" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/resources/images/pic03.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/resources/images/overlay.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/resources/images/bg.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/resources/images/pic02.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/resources/images/pic01.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="54" column="65" selection-start-line="54" selection-start-column="65" selection-end-line="54" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/List.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="183" column="53" selection-start-line="183" selection-start-column="45" selection-end-line="183" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#p#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/ClientHander.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2964">
+          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/task/TimerTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/qdstsIndex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="349" column="19" lean-forward="true" selection-start-line="349" selection-start-column="19" selection-end-line="349" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>diaisheng-dataplatform:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31352153" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (diaisheng-dataplatform)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31352153" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web|diaisheng-dataplatform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31352153" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31352153" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

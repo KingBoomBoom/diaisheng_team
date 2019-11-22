@@ -10,7 +10,7 @@ public class IndexAdminController {
 
     @RequestMapping(value = "/index")
     public String index(){
-        return "admin/indx";
+        return "admin/index";
     }
     @RequestMapping(value = "/qdsts")
     public String indexx(){

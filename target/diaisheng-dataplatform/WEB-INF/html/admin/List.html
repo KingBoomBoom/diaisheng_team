@@ -141,17 +141,18 @@
             <select name="device" lay-verify="" id="device">
                 <option value="">请选择一个设备</option>
             </select>
+            <button type="button" class="btn btn-info" id="collectionTop" style="margin-left: 75%" onclick="updateList()">主动采集</button>
         </p>
         <table class="layui-table" id="listInfo" lay-filter="demoEvent"></table>
     </section>
 </div>
-<script type="text/html" id="barDemo">
+<!--<script type="text/html" id="barDemo">
     <div id="caozuo">
         <button type="button" class="layui-btn" id="history" lay-event="history">历史记录</button>
         <button type="button" class="layui-btn" id="collection" lay-event="collection">主动采集</button>
         <button type="button" class="layui-btn" id="task" lay-event="task">定时任务</button>
     </div>
-</script>
+</script>-->
 
 <script type="text/javascript">
 
@@ -183,12 +184,13 @@
                 , url: "/diaisheng/valueadmin/getdata?deviceId="+$('#device option:selected') .val()
                 , cols: [[
                     {type: 'numbers'}
-                    , {field: 'dataPoint', title: 'ID', width: 100,sort:false,align: 'center',templet: '<div>{{d.dataPoint.dataPointId}}</div>'}
-                    , {field: 'dataPoint', title: '从机名称', width: 250,align: 'center',templet: '<div>{{d.dataPoint.dataModel.dataModelName}}</div>'}
-                    , {field: 'createTime', title: '更新时间', width: 260,sort:true,align: 'center'}
-                    , {field: 'dataPoint', title: '数据点', width: 200,align: 'center',templet: '<div>{{d.dataPoint.dataPointName}}</div>'}
-                    , {field: 'value', title: '当前值', width: 120,sort:true,align: 'center'}
-                    , {
+                    , {field: 'dataPoint', title: 'ID', width: 120,sort:false,align: 'center',templet: '<div>{{d.dataPoint.dataPointId}}</div>'}
+                    , {field: 'dataPoint', title: '数据点', width: 260,align: 'center',templet: '<div>{{d.dataPoint.dataPointName}}</div>'}
+                    , {field: 'value', title: '当前值', width: 217,sort:true,align: 'center'}
+                    , {field: 'dataPoint', title: '从机名称', width: 300,align: 'center',templet: '<div>{{d.dataPoint.dataModel.dataModelName}}</div>'}
+                    , {field: 'createTime', title: '更新时间', width: 300,sort:true,align: 'center'}
+
+                   /* , {
                         field: 'modify',
                         title: '操作',
                         width: 270,
@@ -197,7 +199,7 @@
                         toolbar: '#barDemo',
                         event: "modifyAdmin",
                         style: "cursor:pointer"
-                    }
+                    }*/
                 ]]
             });
             //监听单元格事件

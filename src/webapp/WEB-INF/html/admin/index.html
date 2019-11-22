@@ -11,8 +11,6 @@
     <link href='../resources/css/indexShow.css' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" type="text/css" href="../resources/css/index/animate.css">
-    <link rel="stylesheet" type="text/css" href="../resources/css/index/cbootstrap-select.min.css">
-    <link rel="stylesheet" type="text/css" href="../resources/css/index/cawesome-bootstrap-checkbox.css">
     <link rel="stylesheet" type="text/css" href="../resources/css/index/select2.css">
     <link rel="stylesheet" type="text/css" href="../resources/css/index/style.css">
     <link rel="stylesheet" type="text/css" href="../resources/css/index/theme.css">
@@ -25,7 +23,7 @@
     <link href="../resources/css/style.css" rel="stylesheet">
 
     <!-- jquery vendor -->
-    <script src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js" type="text/javascript"></script>
+    <script src="../resources/js/echarts.js" type="text/javascript"></script>
     <!--<script src="../../NIIT_Project/web/js/jquery-2.2.4.min.js" type="text/javascript"></script>-->
     <script src="../resources/js/lib/jquery.min.js"></script>
     <script src="../resources/js/lib/jquery.nanoscroller.min.js"></script>
@@ -213,7 +211,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Emily Hart <span class="caret"></span></a>
                         <ul class="dropdown-menu user-info">
                             <li class="dropdown-title-bar">
-                                <img src="images/profile.jpg" class="profile-img">
+                                   <!-- <img src="images/profile.jpg" class="profile-img">-->
                             </li>
                             <li>
                                 <div class="navbar-login">
@@ -236,16 +234,16 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12">
-                <span class="page-title red"><h2>工程概况</h2></span>
+                <span class="page-title red"><h2>系统概况</h2></span>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12">
 
                 <ol class="breadcrumb">
-                    <li><a href="#">Home</a>
+                    <li><a href="#">主页</a>
                     </li>
-                    <li class="active">工程概况</a>
+                    <li class="active">系统概况</a>
                     </li>
                 </ol>
             </div>
@@ -260,7 +258,7 @@
                                     <i class="fa fa-inbox fa-stack-1x fa-inverse"></i>
                                 </span>
                             <div class="banner-content">
-                                <div class="title" id="device"></div>
+                                <div class="title" id="device">2</div>
                                 <div class="sub-title">设备数</div>
                             </div>
                             <div class="clear-both"></div>
@@ -275,10 +273,10 @@
                         <div class="block-content">
                                 <span class="fa-stack fa-3x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-comments fa-stack-1x fa-inverse"></i>
+                                 <i class="fa fa-inbox fa-stack-1x fa-inverse"></i>
                             </span>
                             <div class="banner-content">
-                                <div class="title" id="point"></div>
+                                <div class="title" id="point">17</div>
                                 <div class="sub-title">设备数据点数
                                 </div>
                             </div>
@@ -311,7 +309,7 @@
                         <div class="block-content">
                             <span class="fa-stack fa-3x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-<strong>shar</strong>e-alt fa-stack-1x fa-inverse"></i>
+                               <i class="fa fa-comments fa-stack-1x fa-inverse"></i>
                             </span>
                             <div class="banner-content">
                                 <div class="title">0</div>
@@ -329,8 +327,8 @@
                 <div class="banner-block white">
                     <div class="block-content">
                         <!--<div class="block-title">访问人数</div>-->
-                        <div id="main" style="height:400px;width: 800px;"></div>
-                        <canvas id="dashboard-order-chart" style="padding:10px 30px 10px 10px;"></canvas>
+                        <div id="main" style="height:300px;width: 700px;"></div>
+                        <!--<canvas id="dashboard-order-chart" style="padding:10px 30px 10px 10px;"></canvas>-->
                     </div>
                 </div>
             </div>
@@ -338,25 +336,25 @@
                 <div class="banner-block white">
                     <div class="block-content">
                         <!--<div class="block-title">设备在线数</div>-->
-                        <div id="main2" style="width: 800px;height:400px;"></div>
+                        <div id="main2" style="width: 800px;height:300px;"></div>
                         <div class="row">
                             <div class="col-md-9">
-                                <canvas id="dashboard-stat-chart" style="padding:10px 30px 10px 10px;"></canvas>
+                                <!--<canvas id="dashboard-stat-chart" style="padding:10px 30px 10px 10px;"></canvas>-->
                             </div>
 
-                            <div class="col-md-3">
+                            <!--<div class="col-md-3">
                                 <div id="dashboard-stat-chart-legend" class="pie-legend"></div>
-                            </div>
+                            </div>-->
                         </div>
 
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
+   <!--     <div class="row">
 
 
-        </div>
+        </div>-->
     </div>
 </div>
 
@@ -365,8 +363,8 @@
         var myCharts = echarts.init(document.getElementById("main"));
         var option = {
             title:{
-                text:'COD Echarts',
-                subtext:"Mountain Technology"
+                text:'COD即时数据',
+                subtext:"近一个月"
             },
             tooltip:{
                 trigger:'axis'
@@ -383,7 +381,7 @@
             },
             xAxis:{
                 type:'category',
-                data:['18:00','18:20','18:40','18:50','19:00','19:05','19:10','19:20','19:30','19:40','19:50'],
+                //data:['18:00','18:20','18:40','18:50','19:00','19:05','19:10','19:20','19:30','19:40','19:50'],
 
                 axisLine:{
                     lineStyle:{
@@ -426,7 +424,7 @@
                 type:'line',
                 symbolSize:3,
                 color:['green'],
-                data:[1000,200,500,600,800,1100,500,800,600,500,600],
+               // data:[1000,200,500,600,800,1100,500,800,600,500,600],
 //                data:[],
                 //关键点：实线虚线
                 smooth:true,
@@ -444,14 +442,35 @@
 
         }
         myCharts.setOption(option);
-//    myCharts.showLoading();
+         //myCharts.showLoading();
         var name = [];
         var series = [];
+        //获取当前时间
+        var date = new Date();
+        var seperator1 = "-";
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var strDate = date.getDate();
+        if (month >= 1 && month <= 9) {
+            month = "0" + month;
+        }
+        if (strDate >= 0 && strDate <= 9) {
+            strDate = "0" + strDate;
+        }
+        var minute=date.getMinutes()<=9?"0"+date.getMinutes():date.getMinutes();
+        var initEndTime = year + seperator1 + month + seperator1 + strDate+" "+date.getHours()+":"+minute+":"+date.getSeconds();
+        var initStartTime;
+        if (date.getMonth()==0){//判断是否为1月份
+            initStartTime = (year-1) + seperator1 + 12+ seperator1 + strDate+" "+date.getHours()+":"+minute+":"+date.getSeconds();
+        }else {
+            initStartTime = year + seperator1 + (month-1) + seperator1 + strDate+" "+date.getHours()+":"+minute+":"+date.getSeconds();
+        }
+
         $.ajax({
             type:"post",
             url:"/diaisheng/valueadmin/getdatabetweendate",
             dataType:"json",
-            data:{data:'30947',stime:'2019-10-01',etime:'2019-11-01'},
+            data:{data:'30947',stime:initStartTime,etime:initEndTime},
             success:function(result){
                 $.each(result.dataValue,function(key,value){
                     name.push(value.createTime);
@@ -526,7 +545,7 @@
             ]
         } ;
         //3.配置百度Echarts的Option
-        myChart.setOption(option)   ;
+        myChart.setOption(option);
     }
     function pieAjax(){
         $.ajax({
@@ -534,10 +553,7 @@
             url:"/diaisheng/deviceadmin/getonlinedevice",
             dataType:"json",
             success:function(json){
-                if(json.code==1){
-                    shebeiPie();
-                }
-
+                    shebeiPie(json);
             },
             error: function (errorMsg) {
                 //请求失败时执行该函数
@@ -551,12 +567,23 @@
     }
 
     window.onload=function(){
-        shebeiPie();
+        $.ajax({
+            url:"/diaisheng/valueadmin/getdata",
+            type: "get",
+            dataType: "json",
+            success:function(data){
+                if(data.success){
+                    document.getElementById("device").innerHTML=data.deviceCnt;
+                    document.getElementById("point").innerHTML=data.dataPointCnt;
+                }else {
+                    alert(data.errMsg);
+                }
+
+            }
+        });
+        pieAjax();
         query();
-        setInterval(function () {
-            shebeiPie();
-            query();
-        },5000);
+
 
 
     }
