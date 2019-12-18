@@ -161,7 +161,7 @@ public class ClientHander {
                     decData = String.valueOf(Float.parseFloat(ss) / 10);
                    // System.out.println("\n获取设定温度为：" + ss + "------->" + decData + "\n");
                     insertData(conn,"32268", decData);
-                }*/
+                }
                 byte[] data51=new byte[]{0x05,0x03,0x00,0x02,0x00,0x01,(byte)0x24,(byte)0x4E};//高浓排进水温度41610
                 s1 = queryData(data51);
                 if (s1!=null) {
@@ -193,7 +193,7 @@ public class ClientHander {
                     decData = String.valueOf(Integer.parseInt(ss));
                     //System.out.println("\n获取高浓排正累计流量整数为：" + ss + "------->" + decData);
                     insertData(conn,"41607", decData);
-                }
+                }*/
             }catch (Exception e){
                 e.printStackTrace();
             }
