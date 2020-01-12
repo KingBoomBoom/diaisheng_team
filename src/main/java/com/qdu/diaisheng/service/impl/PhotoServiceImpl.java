@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @Component
 public class PhotoServiceImpl implements PhotoService {
@@ -34,7 +36,20 @@ public class PhotoServiceImpl implements PhotoService {
         }
     }
 
-
+    /**
+     * 查询历史图片数据
+     * @param stime
+     * @param etime
+     * @return list
+     */
+    @Override
+    public List<Photo> getHistoryPhotos(String stime, String etime) {
+        if (stime==null||etime==null)
+            return null;
+        else{
+            return photoDao.getHistoryPhotos(stime,etime);
+        }
+    }
 
 
 }

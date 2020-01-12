@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.qdu.diaisheng.dao.PhotoDao">
+    <resultMap id="photoDataMap" type="com.qdu.diaisheng.entity.Photo">
+        <id column="photo_id" property="photoId"/>
+        <result column="camera_id" property="cameraId"/>
+        <result column="create_time" property="createTime"/>
+        <result column="content" property="content"/>
+    </resultMap>
     <insert id="addPhoto" keyProperty="photoId" keyColumn="photo_id" useGeneratedKeys="true">
         insert into photo(camera_id,create_time,content) values (#{cameraId},#{createTime},#{content});
     </insert>
 
     <select id="getNewPhotoByCamera" resultType="com.qdu.diaisheng.entity.Photo">
         select*from photo where camera_id=#{cameraId} order by create_time desc limit 0,1;
+    </select>
+
+    <!--查询历史图片数据-->
+    <select id="getHistoryPhotos" resultMap="photoDataMap">
+    select *
+    from photo
+     where create_time between DATE_FORMAT(#{stime}, '%Y-%m-%d %H:%i:%S') and DATE_FORMAT(#{etime}, '%Y-%m-%d %H:%i:%S')
     </select>
 </mapper>

@@ -42,8 +42,6 @@ public class ClientHander {
             DBUtil=new DBMysqlUtil(DBDRIVER,DBURL,DBUSER,DBPASSWORD);
 
         }
-
-
         
         public  void readData() {
             //byte[] toDTU2=new byte[]{0x02,0x06,0x00,0x13,0x00,(byte)0xFF,(byte)0x38,(byte)0x7C};//开启COD
@@ -106,7 +104,7 @@ public class ClientHander {
                    // System.out.println("\n获取COD即时数据为：" + ss + "------->" + decData + "\n");
                     insertData(conn,"30947", decData);
                 }
-                byte[] data31=new byte[]{0x03,0x03,0x00,0x00,0x00,0x01,(byte)0x85,(byte)0xE8};//进水瞬时流量32445
+               byte[] data31=new byte[]{0x03,0x03,0x00,0x00,0x00,0x01,(byte)0x85,(byte)0xE8};//进水瞬时流量32445
                 s1 = queryData(data31);
                 if (s1!=null) {
                     ss = new BigInteger(s1[3] + s1[4], 16).toString();//转换成十进制
@@ -138,7 +136,7 @@ public class ClientHander {
                    // System.out.println("\n获取进水正累积流量整数为：" + ss + "------->" + decData + "\n");
                     insertData(conn,"32278", decData);
                 }
-                /*byte[] data41=new byte[]{0x04,0x03,0x01,0x03,0x00,0x01,(byte)0x75,(byte)0xA3};//罐壁温度32270
+                byte[] data41=new byte[]{0x04,0x03,0x01,0x03,0x00,0x01,(byte)0x75,(byte)0xA3};//罐壁温度32270
                 s1 = queryData(data41);
                 if (s1!=null) {
                     ss = new BigInteger(s1[3] + s1[4], 16).toString();//转换成十进制
@@ -162,7 +160,7 @@ public class ClientHander {
                    // System.out.println("\n获取设定温度为：" + ss + "------->" + decData + "\n");
                     insertData(conn,"32268", decData);
                 }
-                byte[] data51=new byte[]{0x05,0x03,0x00,0x02,0x00,0x01,(byte)0x24,(byte)0x4E};//高浓排进水温度41610
+                /*byte[] data51=new byte[]{0x05,0x03,0x00,0x02,0x00,0x01,(byte)0x24,(byte)0x4E};//高浓排进水温度41610
                 s1 = queryData(data51);
                 if (s1!=null) {
                     ss = new BigInteger(s1[3] + s1[4], 16).toString();//转换成十进制
@@ -208,13 +206,9 @@ public class ClientHander {
                     e.printStackTrace();
                 }
             }
-
-
-
         }
         public void insertData(Connection conn,String dataPointId,String data){
             //插入数据库的代码
-
             String sql="insert into data_value(data_point_id,create_time,val) values(?,?,?)";
             try{
                 PreparedStatement ps=conn.prepareStatement(sql);

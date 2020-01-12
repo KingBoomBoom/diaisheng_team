@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="diaisheng_team" />
         <module name="diaisheng-dataplatform" />
+        <module name="diaiisheng-dataplatform-master" />
         <module name="project" />
       </profile>
     </annotationProcessing>

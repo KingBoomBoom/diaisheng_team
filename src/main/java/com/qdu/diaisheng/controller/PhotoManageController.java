@@ -2,6 +2,7 @@ package com.qdu.diaisheng.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.qdu.diaisheng.entity.Photo;
+import com.qdu.diaisheng.entity.Result;
 import com.qdu.diaisheng.service.PhotoService;
 import com.qdu.diaisheng.util.Md5;
 import org.apache.commons.httpclient.HttpClient;
@@ -19,6 +20,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import java.io.IOException;
 import java.net.URI;
@@ -334,6 +336,10 @@ public class PhotoManageController {
                     map.put("success",false);
                     map.put("message","插入失败！");
                 }
+            }else{
+                logger.warn("摄像头图片为空！");
+                map.put("success",false);
+                map.put("message","抓拍图片接口异常！！");
             }
         } catch (Exception e) {
             map.put("msg", "java获取设备实时抓拍图片接口异常");
@@ -352,5 +358,37 @@ public class PhotoManageController {
         }
         return map;
     }
-
+    /**
+     * 历史图片页面
+     * @author changliang
+     */
+    @RequestMapping(value = "/historyPhotos")
+    public String historyPhotos(){
+        return "admin/historyPhotos";
+    }
+    /**
+     * 图片历史数据滚动查询
+     * @author changliang
+     */
+    @RequestMapping(value = "/selectHistoryPhotos",method = RequestMethod.GET)
+    @ResponseBody
+    public Result selectPhotos(String stime,String etime){
+        Result result = new Result();
+       try{
+           if (stime!=null&&etime!=null){
+               result.setSuccess(true);
+               List<Photo> listPhoto = photoService.getHistoryPhotos(stime,etime);
+               result.setObject(listPhoto);
+               result.setMsg("恭喜您，查询成功！");
+           }else{
+               result.setErrorMsg("查询失败，请选择正确时间");
+               result.setSuccess(false);
+           }
+       }catch (Exception e){
+           logger.error("查询历史图片异常！");
+           result.setErrorMsg("查询失败，数据库异常");
+           result.setSuccess(false);
+       }
+        return result;
+    }
 }

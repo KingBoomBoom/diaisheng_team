@@ -4,10 +4,12 @@ import com.alibaba.fastjson.JSONObject;
 import com.qdu.diaisheng.entity.Photo;
 import com.qdu.diaisheng.service.PhotoService;
 import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -84,7 +86,8 @@ public class TimerTask {
             String charset="UTF-8";
             client= HttpClientBuilder.create().build();
             httpGet=new HttpGet(url);
-            RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(50000).setConnectTimeout(50000).build();
+            //HttpClient中可设置三个超时：RequestTimeout（连接池获取到连接的超时时间）、ConnectTimeout（建立连接的超时）、SocketTimeout（获取数据的超时时间）。
+            RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(100000).setConnectTimeout(100000).build();
             httpGet.setConfig(requestConfig);
             httpGet.addHeader("Content-Type","application/x-www-form-urlencoded");
             httpGet.addHeader("charset",charset);
@@ -106,6 +109,8 @@ public class TimerTask {
                 }else{
                     logger.warn("摄像头图片添加失败");
                 }
+            }else{
+                logger.warn("摄像头图片为空！");
             }
         }catch (Exception e){
             map.put("msg","java获取设备实时抓拍图片接口异常");
