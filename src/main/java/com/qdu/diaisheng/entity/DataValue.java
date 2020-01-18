@@ -5,6 +5,15 @@ public class DataValue{
     private DataPoint dataPoint;//数据点
     private String createTime;
     private Float value;
+    private Integer red;//0 不标红 1标红
+
+    public Integer getRed() {
+        return red;
+    }
+
+    public void setRed(Integer red) {
+        this.red = red;
+    }
 
     @Override
     public String toString() {

@@ -4,6 +4,7 @@ import com.qdu.diaisheng.dto.DataValueExecution;
 import com.qdu.diaisheng.entity.DataValue;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.text.ParseException;
 import java.util.List;
 
 public interface DataValueService {
@@ -14,7 +15,7 @@ public interface DataValueService {
 
    // DataValueExecution getDataValueListByPointId(String ponitId);
     @Transactional
-    DataValueExecution getnowdate(String deviceId);
+    DataValueExecution getnowdate(String deviceId) throws ParseException;
 
     List<DataValue> getDataValueListByDate(String date);
 

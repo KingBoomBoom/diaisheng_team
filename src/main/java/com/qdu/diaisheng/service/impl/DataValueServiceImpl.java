@@ -8,7 +8,11 @@ import com.qdu.diaisheng.entity.DataPoint;
 import com.qdu.diaisheng.entity.DataValue;
 
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 import com.qdu.diaisheng.service.DataValueService;
@@ -75,11 +79,12 @@ public class DataValueServiceImpl implements DataValueService {
  */
 
     @Override
-    public DataValueExecution getnowdate(String deviceId) {
+    public DataValueExecution getnowdate(String deviceId) throws ParseException {
 
         List<DataValue>dataValueList=new ArrayList<>();
         DataValueExecution dve=new DataValueExecution();
         List<DataPoint> dataPointList=dataPointDao.getDataPointbyDevice(deviceId);
+
         List<String>ds=new ArrayList<>();
         if(dataPointList!=null){
             for(DataPoint dataPoint:dataPointList){
@@ -91,6 +96,18 @@ public class DataValueServiceImpl implements DataValueService {
             dve.setState(DataValueEnum.EMPTY.getState());
         }
         if(dataValueList!=null){
+            for(DataValue dataValue:dataValueList){
+                Date now=new Date();
+                SimpleDateFormat sdf=new SimpleDateFormat("yyyy-mm-dd");
+                Date valueDate=sdf.parse(dataValue.getCreateTime());
+                long diff=now.getTime()-valueDate.getTime();
+                int day= (int) (diff / (24 * 60 * 60 * 1000));
+                if(day>=1){
+                    dataValue.setRed(1);
+                }else{
+                    dataValue.setRed(0);
+                }
+            }
             dve.setDataValueList(dataValueList);
             dve.setState(DataValueEnum.SUCCESS.getState());
         }else{

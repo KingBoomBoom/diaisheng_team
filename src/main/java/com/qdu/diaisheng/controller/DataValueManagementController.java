@@ -61,7 +61,7 @@ public class DataValueManagementController {
      */
     @RequestMapping(value = "/getdata")
     @ResponseBody
-    public PageInfo getData(HttpServletRequest request, int page, int limit){
+    public PageInfo getData(HttpServletRequest request, Integer page, Integer limit){
        PageInfo pageInfo = new PageInfo();
         List<DataValue> list = new ArrayList<>();
         String deviceId=request.getParameter("deviceId");
