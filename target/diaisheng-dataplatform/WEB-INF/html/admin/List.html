@@ -186,7 +186,14 @@
                     {type: 'numbers'}
                     , {field: 'dataPoint', title: 'ID', width: 120,sort:false,align: 'center',templet: '<div>{{d.dataPoint.dataPointId}}</div>'}
                     , {field: 'dataPoint', title: '数据点', width: 260,align: 'center',templet: '<div>{{d.dataPoint.dataPointName}}</div>'}
-                    , {field: 'value', title: '当前值', width: 217,sort:true,align: 'center'}
+                    , {field: 'value', title: '当前值', width: 217,sort:true,align: 'center'
+                            ,templet: function(d){
+                                if(d.red==1)
+                                    return '<span style="color: red;">'+ d.value +'</span>'
+                                else
+                                    return '<span>'+d.value+'</span>'
+                     }
+                        }
                     , {field: 'dataPoint', title: '从机名称', width: 300,align: 'center',templet: '<div>{{d.dataPoint.dataModel.dataModelName}}</div>'}
                     , {field: 'createTime', title: '更新时间', width: 300,sort:true,align: 'center'}
                    /* , {
@@ -217,7 +224,22 @@
                         data:{"x":dataPointId},
                         dataType:"json",
                         success:function(data){
-                            layer.open({
+                            if(data.dataValue.color==1){
+                                layer.open({
+                                type: 1,
+                                title:"最新信息",
+                                area: ['250px', '220px'],
+                                fixed: false, //不固定
+                                maxmin: false,
+                                content: "<p align='center'>ID："+data.dataValue.dataPoint.dataPointId+"</p>"+
+                                         "<p align='center'>从机名称："+data.dataValue.dataPoint.dataModel.dataModelName+"</p>"+
+                                         "<p align='center'>更新时间："+data.dataValue.createTime+"</p>"+
+                                         "<p align='center'>数据点："+data.dataValue.dataPoint.dataPointName+"</p>"+
+                                         "<p align='center' style='color:red;'>当前值："+data.dataValue.value+"</p>"
+
+                            });
+                            }else{
+                                layer.open({
                                 type: 1,
                                 title:"最新信息",
                                 area: ['250px', '220px'],
@@ -230,6 +252,9 @@
                                          "<p align='center'>当前值："+data.dataValue.value+"</p>"
 
                             });
+                                
+                            }
+                            
                         },
                         error: function (errorMsg) {
                             //请求失败时执行该函数

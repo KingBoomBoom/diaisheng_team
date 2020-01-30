@@ -6,36 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5505eefe-6939-4759-b25b-857a31b359e3" name="Default Changelist" comment="摄像头主动获取功能添加">
-      <change afterPath="$PROJECT_DIR$/.idea/diaisheng.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="5505eefe-6939-4759-b25b-857a31b359e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataValueManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataValueManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/DataValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/DataValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/DataValueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/DataValueService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/DataValueServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/DataValueServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qdu/diaisheng/service/DataValueServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qdu/diaisheng/service/DataValueServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/diaiisheng-dataplatform-master.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DataValueManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DataValueManagementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/PhotoManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/PhotoManageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/entity/DataValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/entity/DataValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/DataValueService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/DataValueService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/impl/DataValueServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/impl/DataValueServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/task/ClientHander.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/task/ClientHander.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/task/DBMysqlUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/task/DBMysqlUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/task/TimerTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/task/TimerTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/util/DBMysqlUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/util/DBMysqlUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/DataValueManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/DataValueManagementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/PhotoManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/PhotoManageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/entity/DataValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/entity/DataValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/DataValueService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/DataValueService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/impl/DataValueServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/impl/DataValueServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/task/ClientHander.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/task/ClientHander.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/task/DBMysqlUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/task/DBMysqlUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/task/TimerTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/task/TimerTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/util/DBMysqlUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/util/DBMysqlUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qdu/diaisheng/service/DataValueServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qdu/diaisheng/service/DataValueServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/List.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/List.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/List.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/List.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +69,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -117,11 +91,11 @@
       <recent name="E:\diaiisheng-dataplatform-master\src\test" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wangxi\Downloads\diaisheng\src\webapp\WEB-INF\html\admin" />
       <recent name="C:\JavaProject\diaiisheng-dataplatform-master\src\webapp\WEB-INF\resources\images" />
       <recent name="C:\JavaProject\diaiisheng-dataplatform-master\src\webapp\WEB-INF\html\admin" />
       <recent name="C:\JavaProject\diaiisheng-dataplatform-master\src\webapp\WEB-INF\resources\js\photoLibrary" />
       <recent name="C:\JavaProject\diaiisheng-dataplatform-master\out\artifacts\diaisheng\WEB-INF\html\admin" />
-      <recent name="C:\JavaProject\diaiisheng-dataplatform-master\out" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -205,7 +179,7 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/diaisheng" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/diaisheng" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="diaisheng:war">
@@ -216,6 +190,8 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_0_diaisheng-dataplatform" />
+        <option name="HTTP_PORT" value="8081" />
+        <option name="JNDI_PORT" value="1090" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -355,6 +331,7 @@
           <artifact name="diaisheng-dataplatform:war" />
           <artifact name="diaiisheng-dataplatform-master:war exploded" />
           <artifact name="diaiisheng-dataplatform-master:war" />
+          <artifact name="diaisheng:war exploded" />
         </option>
       </method>
     </configuration>
@@ -495,7 +472,12 @@
       <workItem from="1578832278848" duration="953000" />
       <workItem from="1578833307665" duration="684000" />
       <workItem from="1578835107615" duration="957000" />
-      <workItem from="1579346421086" duration="1813000" />
+      <workItem from="1579346421086" duration="2012000" />
+      <workItem from="1580209846057" duration="3000" />
+      <workItem from="1580210223447" duration="6000" />
+      <workItem from="1580211422882" duration="159000" />
+      <workItem from="1580211837221" duration="3275000" />
+      <workItem from="1580368268898" duration="1528000" />
     </task>
     <task id="LOCAL-00001" summary="（version2.0）list页面样式修整，注册协议添加，跳转到list时显示当前时间前一小时至当前时间，冗余代码归并">
       <created>1565162879142</created>
@@ -623,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576651307383</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="更新标记后端">
+      <created>1579348342500</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1579348342500</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,7 +659,8 @@
     <MESSAGE value="更新主页" />
     <MESSAGE value="主页样式优化，数据获取、摄像头代码bug修改" />
     <MESSAGE value="摄像头主动获取功能添加" />
-    <option name="LAST_COMMIT_MESSAGE" value="摄像头主动获取功能添加" />
+    <MESSAGE value="更新标记后端" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新标记后端" />
   </component>
   <component name="WindowStateProjectService">
     <state x="360" y="73" key="#Web_Browsers" timestamp="1578205874039">
