@@ -6,11 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5505eefe-6939-4759-b25b-857a31b359e3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/List.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/List.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/List.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/List.html" afterDir="false" />
-    </list>
+    <list default="true" id="5505eefe-6939-4759-b25b-857a31b359e3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -477,7 +473,7 @@
       <workItem from="1580210223447" duration="6000" />
       <workItem from="1580211422882" duration="159000" />
       <workItem from="1580211837221" duration="3275000" />
-      <workItem from="1580368268898" duration="1528000" />
+      <workItem from="1580368268898" duration="1654000" />
     </task>
     <task id="LOCAL-00001" summary="（version2.0）list页面样式修整，注册协议添加，跳转到list时显示当前时间前一小时至当前时间，冗余代码归并">
       <created>1565162879142</created>
@@ -612,7 +608,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579348342500</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="更新标记前端">
+      <created>1580369964831</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1580369964831</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -660,7 +663,8 @@
     <MESSAGE value="主页样式优化，数据获取、摄像头代码bug修改" />
     <MESSAGE value="摄像头主动获取功能添加" />
     <MESSAGE value="更新标记后端" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新标记后端" />
+    <MESSAGE value="更新标记前端" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新标记前端" />
   </component>
   <component name="WindowStateProjectService">
     <state x="360" y="73" key="#Web_Browsers" timestamp="1578205874039">
