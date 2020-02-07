@@ -1,6 +1,7 @@
 package com.qdu.diaisheng.service.impl;
 
 import com.qdu.diaisheng.dao.PhotoDao;
+import com.qdu.diaisheng.entity.Camera;
 import com.qdu.diaisheng.entity.Photo;
 import com.qdu.diaisheng.service.PhotoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +37,14 @@ public class PhotoServiceImpl implements PhotoService {
         }
     }
 
+    @Override
+    public Camera getCameraBydeviceId(String deviceId) {
+        if (deviceId==null||deviceId.equals("")){
+            return null;
+        }
+        return photoDao.getCameraIdBydeviceId(deviceId);
+    }
+
     /**
      * 查询历史图片数据
      * @param stime
@@ -43,11 +52,11 @@ public class PhotoServiceImpl implements PhotoService {
      * @return list
      */
     @Override
-    public List<Photo> getHistoryPhotos(String stime, String etime) {
-        if (stime==null||etime==null)
+    public List<Photo> getHistoryPhotos(String stime, String etime,String cameraId) {
+        if (stime==null||etime==null||cameraId==null)
             return null;
         else{
-            return photoDao.getHistoryPhotos(stime,etime);
+            return photoDao.getHistoryPhotos(stime,etime,cameraId);
         }
     }
 

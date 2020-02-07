@@ -52,6 +52,6 @@
         <context:include-filter type="annotation"
                                 expression="org.springframework.stereotype.Controller" />
     </context:component-scan>
-    <mvc:view-controller path="/" view-name="forward:/admin/qdsts"/>
+    <mvc:view-controller path="/" view-name="forward:/stsIndex/qdsts"/>
     <mvc:resources mapping="/resources/**"  location="/WEB-INF/resources/" />
 </beans>

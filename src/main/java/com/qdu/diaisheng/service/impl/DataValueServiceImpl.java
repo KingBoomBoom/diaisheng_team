@@ -53,7 +53,7 @@ public class DataValueServiceImpl implements DataValueService {
 
     /**
      * 通过数据点Id来查询数据列表
-     * @param ponitId
+     * @param
      * @return
      */
     /*
@@ -97,11 +97,15 @@ public class DataValueServiceImpl implements DataValueService {
         }
         if(dataValueList!=null){
             for(DataValue dataValue:dataValueList){
-                Date now=new Date();
-                SimpleDateFormat sdf=new SimpleDateFormat("yyyy-mm-dd");
-                Date valueDate=sdf.parse(dataValue.getCreateTime());
-                long diff=now.getTime()-valueDate.getTime();
-                int day= (int) (diff / (24 * 60 * 60 * 1000));
+                String s = dataValue.getCreateTime();
+                SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                Date nowTime=new Date();
+                String ss = s.substring(0,19);
+                dataValue.setCreateTime(ss);
+                Date dataDate=sdf.parse(ss);
+                long end  = nowTime.getTime();
+                long diff=end - dataDate.getTime();
+                float day= diff / (24 * 60 * 60 * 1000);
                 if(day>=1){
                     dataValue.setRed(1);
                 }else{

@@ -1,6 +1,7 @@
 package com.qdu.diaisheng.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.qdu.diaisheng.entity.Camera;
 import com.qdu.diaisheng.entity.Photo;
 import com.qdu.diaisheng.entity.Result;
 import com.qdu.diaisheng.service.PhotoService;
@@ -240,10 +241,21 @@ public class PhotoManageController {
 
     @RequestMapping(value = "/getnewphoto")
     @ResponseBody
-    public Map<String, Object> getNewPhoto() {
-        String camerId = "c844150007b9";
-        Photo p = photoService.getNewPhoto(camerId);
+    public Map<String, Object> getNewPhoto(String deviceId) {
         Map<String, Object> map = new HashMap<String, Object>();
+        if (deviceId==null||"".equals(deviceId)){
+            map.put("err", 1);
+            map.put("errMag", "未查到图片");
+            return map;
+        }
+        //String camerId = "c844150007b9";
+        Camera camera = photoService.getCameraBydeviceId(deviceId);
+        if (camera == null) {
+            map.put("err", 1);
+            map.put("errMag", "未查到图片");
+            return map;
+        }
+        Photo p = photoService.getNewPhoto(camera.getCameraId());
         if (p == null) {
             map.put("err", 1);
             map.put("errMag", "未查到图片");
@@ -300,13 +312,24 @@ public class PhotoManageController {
      */
     @RequestMapping(value = "/insertCurrentPhoto")
     @ResponseBody
-    public Map getcurrentPhoto() {
+    public Map getcurrentPhoto(String deviceId) {
         String url = "http://39.108.213.89:10100/GetSnapshotPic";
         Map<String, Object> map = new HashMap<>();
         CloseableHttpClient client = null;
         HttpGet httpGet = null;
         HttpResponse response = null;
         try {
+            if (deviceId==null||"".equals(deviceId)){
+                map.put("success",false);
+                map.put("message","设备点异常！！");
+                return map;
+            }
+            Camera camera= photoService.getCameraBydeviceId(deviceId);
+            if (camera==null){
+                map.put("success",false);
+                map.put("message","设备点异常！！");
+                return map;
+            }
             String charset = "UTF-8";
             client = HttpClientBuilder.create().build();
             httpGet = new HttpGet(url);
@@ -314,7 +337,7 @@ public class PhotoManageController {
             httpGet.setConfig(requestConfig);
             httpGet.addHeader("Content-Type", "application/x-www-form-urlencoded");
             httpGet.addHeader("charset", charset);
-            httpGet.setURI(URI.create(url + "?deviceid=c844150007b9&serverip=39.108.213.89"));
+            httpGet.setURI(URI.create(url + "?deviceid="+camera.getCameraId()+"&serverip="+camera.getServerIp()));
             response = client.execute(httpGet);
             String res = EntityUtils.toString(response.getEntity());
             JSONObject jsonObject = JSONObject.parseObject(res);
@@ -324,7 +347,8 @@ public class PhotoManageController {
                 Date current = new Date();
                 String formatCurrent = sdf.format(current);
                 Photo p = new Photo();
-                p.setCameraId("c844150007b9");
+               // p.setCameraId("c844150007b9");
+                p.setCameraId(camera.getCameraId());
                 p.setCreateTime(formatCurrent);
                 p.setContent(Base64);
                 if (photoService.addPhoto(p) > 0) {
@@ -372,12 +396,22 @@ public class PhotoManageController {
      */
     @RequestMapping(value = "/selectHistoryPhotos",method = RequestMethod.GET)
     @ResponseBody
-    public Result selectPhotos(String stime,String etime){
+    public Result selectPhotos(String stime,String etime,String deviceId){
         Result result = new Result();
        try{
+           if (deviceId==null||"".equals(deviceId)){
+               result.setErrorMsg("查询失败，设备点异常");
+               result.setSuccess(false);
+           }
+           Camera camera= photoService.getCameraBydeviceId(deviceId);
+           if (camera==null){
+               result.setErrorMsg("查询失败，设备点异常");
+               result.setSuccess(false);
+               return result;
+           }
            if (stime!=null&&etime!=null){
                result.setSuccess(true);
-               List<Photo> listPhoto = photoService.getHistoryPhotos(stime,etime);
+               List<Photo> listPhoto = photoService.getHistoryPhotos(stime,etime,camera.getCameraId());
                result.setObject(listPhoto);
                result.setMsg("恭喜您，查询成功！");
            }else{

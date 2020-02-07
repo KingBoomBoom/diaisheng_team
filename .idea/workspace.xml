@@ -2,12 +2,61 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="diaisheng:war" />
+      <artifact name="diaiisheng-dataplatform-master:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5505eefe-6939-4759-b25b-857a31b359e3" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="5505eefe-6939-4759-b25b-857a31b359e3" name="Default Changelist" comment="定时拍照设备权限增加，实时监控bug修改">
+      <change afterPath="$PROJECT_DIR$/target/server.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataModelAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DataModelAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DeviceAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/DeviceAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/IndexAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/IndexAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/PhotoManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/controller/PhotoManageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/dao/PhotoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/dao/PhotoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/entity/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/PhotoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/PhotoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/DataValueServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/DataValueServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/PhotoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qdu/diaisheng/service/impl/PhotoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PhotoDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PhotoDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/List.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/List.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/historyPhotos.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/historyPhotos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/photoShow.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/html/admin/photoShow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DataAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DataAdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DataModelAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DataModelAdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DeviceAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/DeviceAdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/IndexAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/IndexAdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/PhotoManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/controller/PhotoManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/dao/PhotoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/dao/PhotoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/entity/Camera.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/entity/Camera.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/PhotoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/PhotoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/impl/DataValueServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/impl/DataValueServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/impl/PhotoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qdu/diaisheng/service/impl/PhotoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/PhotoDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/PhotoDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/DataAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/DataAdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/DataModelAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/DataModelAdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/DeviceAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/DeviceAdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/IndexAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/IndexAdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/PhotoManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/controller/PhotoManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/dao/PhotoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/dao/PhotoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/entity/Camera.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/entity/Camera.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/PhotoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/PhotoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/impl/DataValueServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/impl/DataValueServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/impl/PhotoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/service/impl/PhotoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/com/qdu/diaisheng/task/photoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/mapper/PhotoDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/mapper/PhotoDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/spring/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/classes/spring/spring-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/List.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/List.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/historyPhotos.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/historyPhotos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/photoShow.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng-dataplatform/WEB-INF/html/admin/photoShow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/diaisheng.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/diaisheng.war" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +124,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31352153" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -93,18 +142,6 @@
       <recent name="C:\JavaProject\diaiisheng-dataplatform-master\src\webapp\WEB-INF\resources\js\photoLibrary" />
       <recent name="C:\JavaProject\diaiisheng-dataplatform-master\out\artifacts\diaisheng\WEB-INF\html\admin" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.0">
     <configuration name="Client" type="Application" factoryName="Application" nameIsGenerated="true">
@@ -175,10 +212,11 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/diaisheng" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/diaisheng" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
-        <artifact name="diaisheng:war">
+        <artifact name="diaiisheng-dataplatform-master:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/diaisheng" />
           </settings>
@@ -186,7 +224,6 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_0_diaisheng-dataplatform" />
-        <option name="HTTP_PORT" value="8081" />
         <option name="JNDI_PORT" value="1090" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
@@ -347,6 +384,29 @@
         <item itemvalue="JUnit.DeviceDaoTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.1079235" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\wangxi\AppData\Roaming\Subversion</configuration>
@@ -679,17 +739,18 @@
     <MESSAGE value="摄像头主动获取功能添加" />
     <MESSAGE value="更新标记后端" />
     <MESSAGE value="更新标记前端" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新标记前端" />
+    <MESSAGE value="定时拍照设备权限增加，实时监控bug修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="定时拍照设备权限增加，实时监控bug修改" />
   </component>
   <component name="WindowStateProjectService">
     <state x="360" y="73" key="#Web_Browsers" timestamp="1578205874039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="360" y="73" key="#Web_Browsers/0.0.1536.824@0.0.1536.824" timestamp="1578205874039" />
-    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578832649410">
+    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581078836576">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1578832649410" />
+    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1581078836576" />
     <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1578809487711">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -702,94 +763,94 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="142" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1578153045368" />
-    <state x="300" y="10" key="CommitChangelistDialog2" timestamp="1578836145545">
+    <state x="300" y="10" key="CommitChangelistDialog2" timestamp="1581085625807">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="300" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578836145545" />
+    <state x="300" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581085625807" />
     <state x="548" y="170" key="FileChooserDialogImpl" timestamp="1578717965565">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1578717965565" />
-    <state width="1305" height="164" key="GridCell.Tab.0.bottom" timestamp="1578835838226">
+    <state width="1305" height="258" key="GridCell.Tab.0.bottom" timestamp="1581079399783">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="164" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578835838226" />
-    <state width="1305" height="164" key="GridCell.Tab.0.center" timestamp="1578835838226">
+    <state width="1305" height="258" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581079399783" />
+    <state width="1305" height="258" key="GridCell.Tab.0.center" timestamp="1581079399782">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="164" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578835838226" />
-    <state width="1305" height="164" key="GridCell.Tab.0.left" timestamp="1578835838225">
+    <state width="1305" height="258" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581079399782" />
+    <state width="1305" height="258" key="GridCell.Tab.0.left" timestamp="1581079399782">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="164" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578835838225" />
-    <state width="1305" height="164" key="GridCell.Tab.0.right" timestamp="1578835838226">
+    <state width="1305" height="258" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581079399782" />
+    <state width="1305" height="258" key="GridCell.Tab.0.right" timestamp="1581079399783">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="164" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578835838226" />
-    <state width="1305" height="164" key="GridCell.Tab.1.bottom" timestamp="1578835838227">
+    <state width="1305" height="258" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581079399782" />
+    <state width="1305" height="258" key="GridCell.Tab.1.bottom" timestamp="1581079399785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="164" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578835838227" />
-    <state width="1305" height="164" key="GridCell.Tab.1.center" timestamp="1578835838226">
+    <state width="1305" height="258" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581079399785" />
+    <state width="1305" height="258" key="GridCell.Tab.1.center" timestamp="1581079399784">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="164" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1578835838226" />
-    <state width="1305" height="164" key="GridCell.Tab.1.left" timestamp="1578835838226">
+    <state width="1305" height="258" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1581079399784" />
+    <state width="1305" height="258" key="GridCell.Tab.1.left" timestamp="1581079399784">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="164" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1578835838226" />
-    <state width="1305" height="164" key="GridCell.Tab.1.right" timestamp="1578835838226">
+    <state width="1305" height="258" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1581079399784" />
+    <state width="1305" height="258" key="GridCell.Tab.1.right" timestamp="1581079399784">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="164" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1578835838226" />
-    <state width="1305" height="164" key="GridCell.Tab.2.bottom" timestamp="1578835838227">
+    <state width="1305" height="258" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1581079399784" />
+    <state width="1305" height="258" key="GridCell.Tab.2.bottom" timestamp="1581079399785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="164" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578835838227" />
-    <state width="1305" height="164" key="GridCell.Tab.2.center" timestamp="1578835838227">
+    <state width="1305" height="258" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581079399785" />
+    <state width="1305" height="258" key="GridCell.Tab.2.center" timestamp="1581079399785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="164" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1578835838227" />
-    <state width="1305" height="164" key="GridCell.Tab.2.left" timestamp="1578835838227">
+    <state width="1305" height="258" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1581079399785" />
+    <state width="1305" height="258" key="GridCell.Tab.2.left" timestamp="1581079399785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="164" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1578835838227" />
-    <state width="1305" height="164" key="GridCell.Tab.2.right" timestamp="1578835838227">
+    <state width="1305" height="258" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1581079399785" />
+    <state width="1305" height="258" key="GridCell.Tab.2.right" timestamp="1581079399785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="164" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1578835838227" />
-    <state width="1305" height="164" key="GridCell.Tab.3.bottom" timestamp="1578835838227">
+    <state width="1305" height="258" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1581079399785" />
+    <state width="1305" height="258" key="GridCell.Tab.3.bottom" timestamp="1581079399786">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="164" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578835838227" />
-    <state width="1305" height="164" key="GridCell.Tab.3.center" timestamp="1578835838227">
+    <state width="1305" height="258" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581079399786" />
+    <state width="1305" height="258" key="GridCell.Tab.3.center" timestamp="1581079399785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="164" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1578835838227" />
-    <state width="1305" height="164" key="GridCell.Tab.3.left" timestamp="1578835838227">
+    <state width="1305" height="258" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1581079399785" />
+    <state width="1305" height="258" key="GridCell.Tab.3.left" timestamp="1581079399785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="164" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1578835838227" />
-    <state width="1305" height="164" key="GridCell.Tab.3.right" timestamp="1578835838227">
+    <state width="1305" height="258" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1581079399785" />
+    <state width="1305" height="258" key="GridCell.Tab.3.right" timestamp="1581079399786">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="164" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1578835838227" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1578834910480">
+    <state width="1305" height="258" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1581079399786" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1581078804301">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1578834910480" />
-    <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578195872249">
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581078804301" />
+    <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581085409067">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1578195872249" />
-    <state x="457" y="167" width="621" height="490" key="find.popup" timestamp="1578831894482">
+    <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1581085409067" />
+    <state x="457" y="167" width="621" height="490" key="find.popup" timestamp="1581084332874">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="457" y="167" width="621" height="490" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1578831894482" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1578827751673">
+    <state x="457" y="167" width="621" height="490" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1581084332874" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1581072844038">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1578827751673" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1581072844038" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

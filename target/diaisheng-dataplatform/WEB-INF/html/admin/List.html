@@ -184,8 +184,22 @@
                 , url: "/diaisheng/valueadmin/getdata?deviceId="+$('#device option:selected') .val()
                 , cols: [[
                     {type: 'numbers'}
-                    , {field: 'dataPoint', title: 'ID', width: 120,sort:false,align: 'center',templet: '<div>{{d.dataPoint.dataPointId}}</div>'}
-                    , {field: 'dataPoint', title: '数据点', width: 260,align: 'center',templet: '<div>{{d.dataPoint.dataPointName}}</div>'}
+                    , {field: 'dataPoint', title: 'ID', width: 120,sort:false,align: 'center',templet:/* '<div>{{d.dataPoint.dataPointId}}</div>'*/
+                            function(d){
+                                if(d.red==1)
+                                    return '<span style="color: red;">'+ d.dataPoint.dataPointId +'</span>'
+                                else
+                                    return '<span>'+d.dataPoint.dataPointId+'</span>'
+                            }
+                    }
+                    , {field: 'dataPoint', title: '数据点', width: 260,align: 'center',templet: /*'<div>{{d.dataPoint.dataPointName}}</div>'*/
+                         function(d){
+                            if(d.red==1)
+                                return '<span style="color: red;">'+ d.dataPoint.dataPointName +'</span>'
+                            else
+                                return '<span>'+d.dataPoint.dataPointName+'</span>'
+                        }
+                    }
                     , {field: 'value', title: '当前值', width: 217,sort:true,align: 'center'
                             ,templet: function(d){
                                 if(d.red==1)
@@ -194,8 +208,22 @@
                                     return '<span>'+d.value+'</span>'
                      }
                         }
-                    , {field: 'dataPoint', title: '从机名称', width: 300,align: 'center',templet: '<div>{{d.dataPoint.dataModel.dataModelName}}</div>'}
-                    , {field: 'createTime', title: '更新时间', width: 300,sort:true,align: 'center'}
+                    , {field: 'dataPoint', title: '从机名称', width: 300,align: 'center',templet: /*'<div>{{d.dataPoint.dataModel.dataModelName}}</div>'*/
+                            function(d){
+                                if(d.red==1)
+                                    return '<span style="color: red;">'+d.dataPoint.dataModel.dataModelName+'</span>'
+                                else
+                                    return '<span>'+d.dataPoint.dataModel.dataModelName+'</span>'
+                            }
+                    }
+                    , {field: 'createTime', title: '更新时间', width: 300,sort:true,align: 'center',templet:
+                            function(d){
+                                if(d.red==1)
+                                    return '<span style="color: red;">'+ d.createTime +'</span>'
+                                else
+                                    return '<span>'+d.createTime+'</span>'
+                            }
+                }
                    /* , {
                         field: 'modify',
                         title: '操作',

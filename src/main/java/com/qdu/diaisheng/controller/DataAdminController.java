@@ -1,6 +1,7 @@
 package com.qdu.diaisheng.controller;
 
 
+import com.qdu.diaisheng.entity.User;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/data")
@@ -36,18 +39,26 @@ public class DataAdminController {
         }
     }
     @RequestMapping(value = "/test",method = RequestMethod.GET)
-    private String test(){
+    private String test(HttpServletRequest request){
+        User user=(User) request.getSession().getAttribute("loginUser");
+        if(user==null){
+            return "redirect:/admin/login";
+        }
         return "admin/test";
     }
     /**
      * @Author changliang
-     * @Description data-export主页面，即除了导航栏之外的页面
+     * @Description data-export主页面
      * @Date 2019/8/2 17:38
      * @Param []
      * @return
      **/
     @RequestMapping(value = "/dataexport",method = RequestMethod.GET)
-    private String dataExport(){
+    private String dataExport(HttpServletRequest request){
+        User user=(User) request.getSession().getAttribute("loginUser");
+        if(user==null){
+            return "redirect:/admin/login";
+        }
         return "admin/table-export";
     }
 
@@ -59,7 +70,11 @@ public class DataAdminController {
      * @return
      **/
     @RequestMapping(value = "/list")
-    private String dataList(){
+    private String dataList(HttpServletRequest request){
+        User user=(User) request.getSession().getAttribute("loginUser");
+        if(user==null){
+            return "redirect:/admin/login";
+        }
         return "admin/List";
     }
     /**
@@ -70,12 +85,20 @@ public class DataAdminController {
      * @return
      **/
     @RequestMapping(value = "/default")
-    private String defaultPage(){
+    private String defaultPage(HttpServletRequest request){
+        User user=(User) request.getSession().getAttribute("loginUser");
+        if(user==null){
+            return "redirect:/admin/login";
+        }
         return "admin/index";
     }
 
     @RequestMapping(value = "/photo")
-    private String photoShow(){
+    private String photoShow(HttpServletRequest request){
+        User user=(User) request.getSession().getAttribute("loginUser");
+        if(user==null){
+            return "redirect:/admin/login";
+        }
         return "admin/photoShow";
     }
 }

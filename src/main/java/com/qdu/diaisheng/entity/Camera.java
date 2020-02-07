@@ -5,6 +5,15 @@ public class Camera {
     private String cameraName;
     private String serverIp;
     private Integer userId;
+    private String deviceId;
+
+    public String getDeviceId() {
+        return deviceId;
+    }
+
+    public void setDeviceId(String deviceId) {
+        this.deviceId = deviceId;
+    }
 
     public String getCameraId() {
         return cameraId;

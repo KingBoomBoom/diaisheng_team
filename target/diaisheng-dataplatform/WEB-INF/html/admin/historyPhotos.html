@@ -134,6 +134,7 @@
 </form>
 
 <script>
+    var theRequest = new Object();
     $(document).ready(function() {
         laydate.render({
             elem: '#start_time'
@@ -144,33 +145,45 @@
             ,type: 'datetime'
         });
         var time = null;
+        var urlData = decodeURI(location.search); //获取url中"?"符后的字串
+        if (urlData.indexOf("?") != -1) {
+            var str = urlData.substr(1);
+            strs = str.split("&");
+            for(var i = 0; i < strs.length; i ++) {
+                theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+            }
+        }
     })
 
    function query(){
         var stime = $("#start_time").val();
         var etime = $("#end_time").val();
-       $("#fullPhoto").html("");
-       $("#spotPhoto").html("");
+       $(".box_big").empty();
+       $("#spotPhoto").empty();
         alert("正在加载，请稍后。。。");
+
         $.ajax({
             url: "/diaisheng/photos/selectHistoryPhotos",
             type: "get",
-            data:{"stime":stime,"etime":etime},
+            data:{"stime":stime,"etime":etime,"deviceId":theRequest.deviceId},
             dataType: "json",
             success: function (data) {
-
                 console.log(data);
                 if (data.success) {
                     alert(data.msg);
                     $(".block").removeAttr("hidden");
                     var length = 1;
-                    $.each(data.object, function(key,value){
-                        $(".box_big").append('<div class="box"><img src="data:image/jpg;base64,'+value.content+'" alt=""/></div>');
-                        $("#spotPhoto").append('<div class="spot_list">'+(key+1)+'</div>');
-                        length++;
-                    });
-                    $(".box_big").css("width",length*100+"%");
-                    photoScroll();
+                    if (data.object.length==0){
+                        $(".box_big").empty();
+                    }else {
+                        $.each(data.object, function(key,value){
+                            $(".box_big").append('<div class="box"><img src="data:image/jpg;base64,'+value.content+'" alt=""/></div>');
+                            $("#spotPhoto").append('<div class="spot_list">'+(key+1)+'</div>');
+                            length++;
+                        });
+                        $(".box_big").css("width",length*100+"%");
+                        photoScroll();
+                    }
                 } else {
                     alert(data.errorMsg);
                 }

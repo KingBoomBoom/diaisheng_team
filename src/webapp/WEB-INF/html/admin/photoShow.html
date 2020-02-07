@@ -82,7 +82,6 @@
 
         <li class="submenu">
             <a href="/diaisheng/data/photo" >
-
                 <div>
                     <i class="menu-icon fa fa-camera-retro"></i>
                     <span class="menu-title">实时摄像</span>
@@ -126,41 +125,94 @@
     </ul>
 </div>
 
-<div style="">
-    <div>
-    <h style="
-    font-size: xx-large;
-    color: #8e5050;
-    margin-left: 47%;
-">实时摄像</h>
+
+<h style="font-size: xx-large;color: #8e5050;margin-left: 49%;">实时摄像</h>
+<form class="layui-form" style="padding-left: 10%;margin-left: 10%;margin-top: 1%">
+    <div class="layui-form-item">
+        <div class="layui-inline" id="deviceSelect" style="margin-left: 18%">
+            <label for="shebei" class="layui-form-label" style="width: 100px">设备：</label>
+            <div class="layui-input-inline">
+                <select name="shebei" id="shebei" lay-verify="required" lay-search="" lay-filter="device">
+                    <option value="">直接选择或搜索选择</option>
+                </select>
+            </div>
+        </div>
         <button class="layui-icon layui-btn layui-btn-warm" style="margin-left: 12%" id="activeRequirement" onclick="getCurrentPhoto()">主动获取</button>
-        <button class="layui-icon layui-btn layui-btn-warm" style="margin-left: 2%" id="historyPhoto">历史数据</button>
-    </div>
+        <button type="button" class="layui-icon layui-btn layui-btn-warm" style="margin-left: 6%" id="historyPhoto">历史数据</button>
 
-</div>
-<div class="layui-card-body">
-    <div id="pTable" style="width: 99%;;margin-left: 8%;">
-        <table align="center"  id="layui_table_id" lay-filter="dataTable">
-                <td><img src="#" style="width: 800px;height: 600px" alt="" id="image"/></td>
+        <div class="layui-card-body">
+            <div id="pTable" style="width: 99%;">
+                <table align="center"  id="layui_table_id" lay-filter="dataTable">
+                    <td><img src="#" style="width: 800px;height: 600px" alt="" id="image"/></td>
 
-        </table>
+                </table>
+            </div>
+        </div>
     </div>
-</div>
+</form>
+
+
+
+
 
 <script>
-    $(document).ready(function() {
-        getIamge();
-       setInterval(getIamge, 60*1000*30);
-        }
-    );
+    var deviceId  = null;
+$(function () {
+    getDevices();
+    layui.use('form', function(){
+        var form = layui.form;
+        form.render();
+        form.on('select(device)', function (data) {
+            deviceId = data.value;
+            //getIamge(deviceId);
+            setInterval(getIamge(deviceId), 60*1000*30);
+        });
+    });
+    //getIamge();
+
+})
+    function getDevices(){//获取设备列表
+        $("#shebei").html('<option value="">直接选择或搜索选择</option>');
+        $.ajax({
+            url: '/diaisheng/deviceadmin/getdevice',
+            type: 'get',
+            dataType: 'json',
+            success: function (data) {
+                if (!data.success){
+                    if (data.redirect){
+                        parent.window.location.href=data.redirect;
+                    }
+                }else{
+                    $.each(data.device, function (key, value) {
+                        var option = new Option(value.deviceName,value.deviceId);
+                        $('#shebei').append(option);//往下拉菜单里添加元素
+                        renderForm();
+                    });
+                }
+            },
+            error:function (data) {
+                console.log(data.errMsg);
+            }
+        });
+    }
+function renderForm(){
+    layui.use('form', function(){
+        var form = layui.form;
+        form.render();
+    });
+}
     $("#historyPhoto").click(function () {
+        if (deviceId==null){
+            alert("请先选择设备！");
+            return;
+        }
         layer.open({
             type : 2,
             title : "历史图片数据",
             area : [ '65%', '85%' ],
             fixed : false, //不固定
             maxmin : false,
-            content :"/diaisheng/photos/historyPhotos"
+            content :"/diaisheng/photos/historyPhotos?deviceId="+deviceId
         });
     });
     function getCurrentPhoto() {
@@ -168,11 +220,12 @@
         $.ajax({
             url: "/diaisheng/photos/insertCurrentPhoto",
             type: "get",
+            data: {"deviceId": deviceId},
             dataType: "json",
             success: function (data) {
                 console.log(data);
                 if (data.success) {
-                    getIamge();
+                    setInterval(getIamge(deviceId), 60*1000*30);
                     alert("加载成功！")
                 } else {
                     alert("加载失败，请重新加载！");
@@ -183,16 +236,18 @@
             }
         });
     }
-    function getIamge(){
+    function getIamge(deviceId){
         $.ajax({
             url: "/diaisheng/photos/getnewphoto",
             type: "get",
+            data: {"deviceId": deviceId},
             dataType: "json",
             success: function (data) {
                 if (data.err == 0) {
                     $('#image').attr('src', 'data:image/jpg;base64,' + data.picBase64);
                 } else {
-                    alert("获取图片查询出错");
+                    $('#image').attr('src', '#');
+                    alert("未查询到图片！");
                 }
             },
             error: function (data) {
