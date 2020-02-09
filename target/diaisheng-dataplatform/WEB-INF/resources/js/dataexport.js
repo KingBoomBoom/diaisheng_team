@@ -118,10 +118,18 @@ function query(){
                 });
                 myCharts.hideLoading();
                 myCharts.setOption({
+                    legend: {
+                    data:$("#data").find("option:selected").text()
+                     },
                     xAxis:{
+                        axisLabel:{
+                        interval: 0
+                        },
                         data:name
                     },
                     series:{
+                        // 根据名字对应到相应的系列
+                        name: $("#data").find("option:selected").text(),
                         data:series
                     }
                 });
@@ -245,7 +253,7 @@ function initEcharts() {
             trigger:'axis'
         },
         legend:{
-            data:'出水量'
+            data:$("#data").find("option:selected").text()/**/
 //                data:[]
         },
         grid:{
